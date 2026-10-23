@@ -1,0 +1,9 @@
+{
+  "version": "0.10.0",
+  "profile": "medium-android",
+  "materials": {"cream": "#f2ead6", "wood": "#b38c63", "sage": "#91ad86", "sand": "#ecdbb3", "wetSand": "#c4b58f", "shallow": "#a6dcd0", "nearSea": "#55b9b0", "deepSea": "#368eab", "coral": "#d28670"},
+  "water": {"shortAmplitude": 0.022, "longAmplitude": 0.035, "shortFrequency": 1.1, "longFrequency": 0.34, "maxWalkDepth": 0.64, "maxCarDepth": 0.34, "rippleCapacity": 16, "splashCapacity": 32, "footprintCapacity": 64, "reflectionPasses": 0},
+  "traffic": {"greenSeconds": 9, "yellowSeconds": 2.2, "allRedSeconds": 1.2, "pedestrianSeconds": 6, "clearanceSeconds": 3.5, "brakingAcceleration": 4.5, "stopMargin": 1.1, "signalLimit": 6},
+  "actors": {"blendSeconds": 0.18, "nearAnimationHz": 60, "farAnimationHz": 12.5, "visibleHumans": 24, "shadowDistance": 18},
+  "performance": {"targetFPS": 30, "maxParticles": 112, "leafWindDistance": 58, "environmentDetailDistance": 74, "shadowEveryFrames": 3, "waterSegments": [192, 96], "maxPixelRatio": 1.5}
+}

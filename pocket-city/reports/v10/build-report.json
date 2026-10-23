@@ -1,0 +1,65 @@
+{
+  "version": "0.10.0",
+  "reference_session": "01a16708-2512-71fc-94bc-1e85de06a0a9",
+  "repository": "Yangcrazy1/-",
+  "source_commit": "cc14139576a489310a549ca7a41696af6c0dc595",
+  "branch": "codex/fresh-bay-v010",
+  "html_sha256": "60c380d5407060c849457a602ca48e3cdee524e04900d81d2bca55a116e82c8a",
+  "html_bytes": 2984412,
+  "source_rebuild_identical": true,
+  "logic_checks": 81,
+  "same_camera": true,
+  "water_pixel_change": {
+    "selected": 6923,
+    "changed": 5299
+  },
+  "control_layouts": 9,
+  "traffic_20": {
+    "stopped": 20,
+    "passed": 20
+  },
+  "preview_resources": {
+    "warm": {
+      "geometries": 16,
+      "textures": 6
+    },
+    "after_six_switches": {
+      "geometries": 16,
+      "textures": 6
+    }
+  },
+  "endurance_seconds": 602.77,
+  "endurance_phases": [
+    {
+      "mode": "walk",
+      "actual_seconds": 180.22,
+      "frames": 900,
+      "average_fps": 4.998811393735267,
+      "p95_render_interval_ms": 283.3000000000029
+    },
+    {
+      "mode": "car",
+      "actual_seconds": 180.38,
+      "frames": 1153,
+      "average_fps": 6.398701834923481,
+      "p95_render_interval_ms": 233.39999999996508
+    },
+    {
+      "mode": "heli",
+      "actual_seconds": 120.28,
+      "frames": 687,
+      "average_fps": 5.7180811218425704,
+      "p95_render_interval_ms": 283.30000000004657
+    },
+    {
+      "mode": "jet",
+      "actual_seconds": 120.51,
+      "frames": 835,
+      "average_fps": 6.944149907147982,
+      "p95_render_interval_ms": 250
+    }
+  ],
+  "gpu_note": "Linux Chromium WebGL / SwiftShader, shared cloud CPU; not a physical Android benchmark",
+  "phone_validation": "Not performed; no physical Android/iPhone available",
+  "platform_upload": "Not performed; offline H5 playtest only"
+}

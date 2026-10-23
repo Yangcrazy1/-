@@ -1,0 +1,14 @@
+{
+  "pocket-city-v0.10-mobile.html": {
+    "bytes": 2984412,
+    "sha256": "60c380d5407060c849457a602ca48e3cdee524e04900d81d2bca55a116e82c8a"
+  },
+  "pocket-city-v0.10-mobile.zip": {
+    "bytes": 1764304,
+    "sha256": "98a089235dc0b45dfa616c6f45ca8a963ccf8498f234d0a1fa1dc9a55f0839d6"
+  },
+  "pocket-city-v0.10-source.zip": {
+    "bytes": 15487080,
+    "sha256": "486d7fc976bb104558305f0df2ac87ecb38bc9197f51c693108f53e8011daf3d"
+  }
+}
