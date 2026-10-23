@@ -1,0 +1,4 @@
+node_modules/
+__pycache__/
+*.pyc
+assets/source/UAL*_Standard.glb

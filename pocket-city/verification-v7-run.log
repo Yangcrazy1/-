@@ -1,0 +1,117 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> pocket-city-mobile@0.7.0 test
+> node verify-v7.cjs
+
+Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation
+WORLD {"lat":-0.1239674111043785,"lon":-0.029739744219579953,"heading":0.4127557780283713,"car":false,"heli":false,"health":100,"wanted":0,"cash":1992,"taxiTrips":0,"raceWins":0,"flightTrips":0,"roads":21,"buildings":1514,"crowd":288,"types":21,"police":11,"job":{"type":"taxi","stage":"seek","completed":0,"aboard":false}}
+MODEL7 [{"id":0,"bones":65,"vertices":7281,"uuid":true,"weights":[113,72,46,24,113,72,46,24,216,39,0,0,216,39,0,0,221,34,0,0,221,34,0,0],"ranges":[{"speed":0,"min":[-0.35169416664915515,0.03640744983206901,-0.35551748002023414],"max":[0.34799727907831196,1.811598242206316,0.34419791626167756],"finite":true},{"speed":2,"min":[-0.3167568636559475,0.041797808308928104,-0.433442884568752],"max":[0.3434993075191493,1.8047891209424454,0.4472535854147567],"finite":true},{"speed":6,"min":[-0.40409288222550865,0.13336692608558567,-0.768624494418461],"max":[0.38554622987136133,1.6629731977123758,0.6714258580079965],"finite":true},{"speed":0,"min":[-0.35169416664915515,0.03640744983206901,-0.35551748002023414],"max":[0.34799727907831196,1.811598242206316,0.34419791626167756],"finite":true}]},{"id":1,"bones":65,"vertices":7281,"uuid":true,"weights":[113,72,46,24,113,72,46,24,216,39,0,0,216,39,0,0,221,34,0,0,221,34,0,0],"ranges":[{"speed":0,"min":[-0.35169416664915515,0.03640744983206901,-0.35551748002023414],"max":[0.34799727907831196,1.811598242206316,0.34419791626167756],"finite":true},{"speed":2,"min":[-0.3167568636559475,0.041797808308928104,-0.433442884568752],"max":[0.3434993075191493,1.8047891209424454,0.4472535854147567],"finite":true},{"speed":6,"min":[-0.40409288222550865,0.13336692608558567,-0.768624494418461],"max":[0.38554622987136133,1.6629731977123758,0.6714258580079965],"finite":true},{"speed":0,"min":[-0.35169416664915515,0.03640744983206901,-0.35551748002023414],"max":[0.34799727907831196,1.811598242206316,0.34419791626167756],"finite":true}]},{"id":2,"bones":65,"vertices":7281,"uuid":true,"weights":[113,72,46,24,113,72,46,24,216,39,0,0,216,39,0,0,221,34,0,0,221,34,0,0],"ranges":[{"speed":0,"min":[-0.35169416664915515,0.03640744983206901,-0.35551748002023414],"max":[0.34799727907831196,1.811598242206316,0.34419791626167756],"finite":true},{"speed":2,"min":[-0.3167568636559475,0.041797808308928104,-0.433442884568752],"max":[0.3434993075191493,1.8047891209424454,0.4472535854147567],"finite":true},{"speed":6,"min":[-0.40409288222550865,0.13336692608558567,-0.768624494418461],"max":[0.38554622987136133,1.6629731977123758,0.6714258580079965],"finite":true},{"speed":0,"min":[-0.35169416664915515,0.03640744983206901,-0.35551748002023414],"max":[0.34799727907831196,1.811598242206316,0.34419791626167756],"finite":true}]}]
+PASS authored CC0 humanoids keep one mesh and bounded finite deformation for idle walk sprint 148ms
+POPULATION7 [{"id":0,"peds":50,"cars":19,"visible":48,"attached":48,"blocked":false},{"id":1,"peds":24,"cars":11,"visible":37,"attached":37,"blocked":false},{"id":2,"peds":24,"cars":11,"visible":29,"attached":29,"blocked":false},{"id":1,"peds":24,"cars":11,"visible":37,"attached":37,"blocked":false},{"id":0,"peds":50,"cars":19,"visible":48,"attached":48,"blocked":false},{"id":2,"peds":24,"cars":11,"visible":29,"attached":29,"blocked":false}]
+PASS all three districts and return trips have nearby cars and pedestrians immediately 395ms
+PASS population simulation remains finite after returning to the second district 1626ms
+PASS 300-second day begins 08:00 and includes sunset night dawn then loops 0ms
+PASS solar clock advances during play and pauses in menus and background, new start resets morning 182ms
+PASS adaptive rendering never shrinks below one CSS pixel per canvas pixel 1ms
+PASS offline build stays below 10 MB and embeds rig fabric inventory and source credit 5ms
+PASS full sphere reaches both poles with no open ground edge 28ms
+PASS every street connects to one road network 22ms
+PASS three city styles coexist without rebuilding scenes 0ms
+PASS one great-circle circuit closes without a map boundary 11ms
+PASS travel crosses the north pole continuously 0ms
+PASS adult head proportion, knees and elbows, weapon attached to hand 24ms
+PASS swept walking collision stops at a thin wall 10ms
+PASS high-speed car rebounds instead of tunnelling through a wall 7ms
+PASS player cannot walk through parked car body 11ms
+PASS initial overlaps are repaired outside obstacles 0ms
+PASS screen click locks a visible civilian and equips pistol 127ms
+PASS weapon and radio wheels select and close 2ms
+PASS taxi passenger walks to door without clipping then rides and exits for payment 175ms
+PASS helicopter takeoff, hover, horizontal flight, landing and safe exit 25ms
+PASS helicopter fuselage and rotor footprint cannot cross buildings 8ms
+PASS helicopter delivery has a start, landing condition and reward 3ms
+PASS six race checkpoints complete with a reward 119ms
+PASS local save round-trips money and activity results 16ms
+PASS joystick screen-right and outer-ring running remain correct 0ms
+PASS camera stays outside the planet surface 110ms
+PASS civilian capsules separate rather than overlap 21ms
+PASS flight camera frames helicopter and nearby city ground 2ms
+PASS muzzle is clamped before a wall so shots cannot start beyond it 1ms
+PASS cancelling an occupied taxi order releases rider and clears the fare 91ms
+PASS single-file download has no remote script or texture requirement 5ms
+PASS RPG destroys a vehicle with persistent burned wreck, smoke, fire and collision 113ms
+PASS destroyed occupied car ejects player safely and supports resource cleanup 7ms
+PASS explosion particles have a fixed allocation limit and all expire 4ms
+PASS portrait globe fits fully, rotates finitely and restores street fog and camera 131ms
+PASS classic minimap queries local cached road segments and draws an opaque player 158ms
+PASS long stalled animation frame is capped at three swept physics steps 22ms
+V06 CANOPY CAMERA {"clear":true,"proxies":206,"extra":1348,"distance":6.116523841818244,"subjectY":-0.06128526949618461}
+PASS coastal awnings stop the camera while the character stays in frame 157ms
+PASS eight weapon and eight radio sectors can all be selected by dragging 1ms
+PASS katana uses melee damage, infinite ammo and temporary non-graphic effects 14ms
+PASS rocket impacts a thin wall and cannot damage civilians through it 10ms
+PASS rocket flies to an actor then produces knockdown and comic impact 14ms
+PASS new firearms consume correct ammunition and use finite hand-mounted muzzles 3ms
+PASS two Ferrari silhouettes have wheels, bespoke bodies and stronger drivetrain 9ms
+PASS dense neighboring buildings retain non-overlapping collision footprints 223ms
+PASS fighter boards, takes off, cruises, stays boarded aloft, lands and exits 38ms
+PASS fighter swept collision blocks the fuselage at buildings 9ms
+PASS parked fighter body blocks the walking capsule and allows clear space 3ms
+PASS all six radio arrangements have valid chords, drums and four sections 12ms
+PASS offline package embeds three portraits, song import and release checklist 3ms
+{
+  "passed": 51,
+  "checks": [
+    "authored CC0 humanoids keep one mesh and bounded finite deformation for idle walk sprint",
+    "all three districts and return trips have nearby cars and pedestrians immediately",
+    "population simulation remains finite after returning to the second district",
+    "300-second day begins 08:00 and includes sunset night dawn then loops",
+    "solar clock advances during play and pauses in menus and background, new start resets morning",
+    "adaptive rendering never shrinks below one CSS pixel per canvas pixel",
+    "offline build stays below 10 MB and embeds rig fabric inventory and source credit",
+    "full sphere reaches both poles with no open ground edge",
+    "every street connects to one road network",
+    "three city styles coexist without rebuilding scenes",
+    "one great-circle circuit closes without a map boundary",
+    "travel crosses the north pole continuously",
+    "adult head proportion, knees and elbows, weapon attached to hand",
+    "swept walking collision stops at a thin wall",
+    "high-speed car rebounds instead of tunnelling through a wall",
+    "player cannot walk through parked car body",
+    "initial overlaps are repaired outside obstacles",
+    "screen click locks a visible civilian and equips pistol",
+    "weapon and radio wheels select and close",
+    "taxi passenger walks to door without clipping then rides and exits for payment",
+    "helicopter takeoff, hover, horizontal flight, landing and safe exit",
+    "helicopter fuselage and rotor footprint cannot cross buildings",
+    "helicopter delivery has a start, landing condition and reward",
+    "six race checkpoints complete with a reward",
+    "local save round-trips money and activity results",
+    "joystick screen-right and outer-ring running remain correct",
+    "camera stays outside the planet surface",
+    "civilian capsules separate rather than overlap",
+    "flight camera frames helicopter and nearby city ground",
+    "muzzle is clamped before a wall so shots cannot start beyond it",
+    "cancelling an occupied taxi order releases rider and clears the fare",
+    "single-file download has no remote script or texture requirement",
+    "RPG destroys a vehicle with persistent burned wreck, smoke, fire and collision",
+    "destroyed occupied car ejects player safely and supports resource cleanup",
+    "explosion particles have a fixed allocation limit and all expire",
+    "portrait globe fits fully, rotates finitely and restores street fog and camera",
+    "classic minimap queries local cached road segments and draws an opaque player",
+    "long stalled animation frame is capped at three swept physics steps",
+    "coastal awnings stop the camera while the character stays in frame",
+    "eight weapon and eight radio sectors can all be selected by dragging",
+    "katana uses melee damage, infinite ammo and temporary non-graphic effects",
+    "rocket impacts a thin wall and cannot damage civilians through it",
+    "rocket flies to an actor then produces knockdown and comic impact",
+    "new firearms consume correct ammunition and use finite hand-mounted muzzles",
+    "two Ferrari silhouettes have wheels, bespoke bodies and stronger drivetrain",
+    "dense neighboring buildings retain non-overlapping collision footprints",
+    "fighter boards, takes off, cruises, stays boarded aloft, lands and exits",
+    "fighter swept collision blocks the fuselage at buildings",
+    "parked fighter body blocks the walking capsule and allows clear space",
+    "all six radio arrangements have valid chords, drums and four sections",
+    "offline package embeds three portraits, song import and release checklist"
+  ]
+}

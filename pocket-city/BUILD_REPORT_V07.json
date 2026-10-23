@@ -1,0 +1,58 @@
+{
+  "version": "0.7.0",
+  "built_date": "2026-10-23",
+  "html_bytes": 2857629,
+  "html_sha256": "8e188d36b6a115dd3249fe6426f912afeb9f70316834a302e0dc767c072cec43",
+  "regressions_passed": 51,
+  "sphere": {
+    "radius_m": 154,
+    "roads": 21,
+    "junctions": 135,
+    "buildings": 1514,
+    "pedestrians": 288,
+    "cars": 125
+  },
+  "model": {
+    "creator": "Quaternius / CC0",
+    "hero_body_vertices": 7281,
+    "hero_body_triangles": 12566,
+    "bones": 65,
+    "citizen_body_vertices": 2142,
+    "citizen_body_triangles": 4358,
+    "persistent_locomotion_mesh": true
+  },
+  "time": {
+    "start": "08:00",
+    "cycle_active_seconds": 300,
+    "pauses": [
+      "menu",
+      "wheel",
+      "overview",
+      "background"
+    ]
+  },
+  "browser_qa": {
+    "portrait": [
+      393,
+      790
+    ],
+    "landscape": [
+      852,
+      393
+    ],
+    "render_path": "Canvas software fallback; cloud WebGL disabled",
+    "passed": [
+      "second district has 24 nearby pedestrians and 11 cars",
+      "same hero mesh UUID before and after wardrobe change",
+      "inventory selects rocket launcher",
+      "day sunset night dawn controls",
+      "globe overview enters and returns with correct fog"
+    ]
+  },
+  "limitations": [
+    "Real phone GPU performance and temperature are unverified",
+    "Fine WebGL ink and sky shaders require hardware verification",
+    "Three heroes use a shared anatomical base with distinct clothes and hair; not separately sculpted official GTA characters",
+    "No external Codex task, repository, publication or store review was created"
+  ]
+}

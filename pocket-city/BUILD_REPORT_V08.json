@@ -1,0 +1,36 @@
+{
+  "version": "0.8.0",
+  "html_bytes": 2889843,
+  "html_sha256": "b18bc6edfd0912a5a671069fe2b697e785ad289c6c4a088dacc3526abbef4aaf",
+  "logic_checks_passed": 61,
+  "browser_checks": "passed: portrait, landscape, native fleet swipe, tank spawn, joystick walk, fully embedded assets",
+  "webgl_backend": "Chromium headless WebGL with SwiftShader; not a physical phone FPS measurement",
+  "baseline_v07": {
+    "draw_calls": 1639,
+    "triangles": 1076082,
+    "viewport": [
+      844,
+      390
+    ]
+  },
+  "v08": {
+    "draw_calls": 647,
+    "triangles": 779334,
+    "draw_call_reduction_percent": 60.5,
+    "viewport": [
+      844,
+      390
+    ]
+  },
+  "comparison_note": "Same cloud browser, spawn district and viewport; the updated camera and visibility budgets also change visible geometry. This is a frame snapshot, not a phone FPS benchmark.",
+  "load_to_ready_ms": 4249.2,
+  "runtime_network_requests": 0,
+  "file_launch_limit": "Cloud Chromium policy blocks file navigation; file launch on phones remains unverified.",
+  "platform_review": "Not uploaded or submitted; user chose H5 first.",
+  "remaining": [
+    "Android Chrome and iPhone Safari physical-device performance and file launch",
+    "Device heat and long-session memory testing",
+    "Specific Xiaohongshu SDK and upload requirements after destination is chosen",
+    "Commercial distribution review of existing character and vehicle names/assets"
+  ]
+}

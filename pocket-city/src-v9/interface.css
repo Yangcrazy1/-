@@ -1,0 +1,19 @@
+/* Paper, sea glass and warm sandstone; keep all menus natively scrollable. */
+body.edition9{--paper:#f8f3e5;--mint:#a8d5bf;--pink:#e9b4a9;--ink:#284c4a}
+.edition9 .sheet{background:#f6f1e4;color:#2c4d49;border-color:#e5ddca}
+.edition9 .sheet-head{background:#f6f1e4}.edition9 .tabs{background:#e9ecdf}
+.edition9 .tabs button{color:#486760}.edition9 .tabs button.active{background:#467f79;color:#fff6df}
+.edition9 .sheet .card,.edition9 .sheet .activity-list button,.edition9 .sheet .station-grid button{background:#fffcf1;color:#34554d;border-color:#d4ddcb}
+.edition9 .sheet .tag,.edition9 .sheet .card small,.edition9 .sheet-footer,.edition9 .model-note{color:#61776c}
+.edition9 .sheet h2,.edition9 .sheet h3{color:#31554f}.edition9 .sheet button.subtle-button{color:#386a63;border-color:#a9bfac}
+.edition9 .character-showcase{background:#e4ebe1;color:#35564c}.edition9 .character-profile p{color:#4e6a5f}.edition9 #characterTags span{background:#d5e2d1;color:#3b6657}
+.edition9 #modelPreview{max-height:430px;object-fit:contain}.edition9 #cover{background:linear-gradient(145deg,#cde7dfcc,#f0e5ca33 55%,#91bbab55)}
+.edition9 .cover-card{background:#f8f2e7ee;color:#36564c;border-color:#fdf8eb}.edition9 .cover-card h1{color:#335e55}.edition9 .cover-card p{color:#5c7668}
+.atlas-heading9 small{letter-spacing:.2em;color:#738a7b}.atlas-heading9 h2{font-size:25px;margin:7px 0}.atlas-heading9 p{color:#668173;font-size:13px;line-height:1.7}
+.atlas-frame9{overflow:hidden;border:1px solid #bacfc1;border-radius:18px;background:#69b6b7;margin:18px 0 12px;box-shadow:0 8px 24px #3c6d5e13}
+#atlasCanvas9{display:block;width:100%;height:auto;touch-action:pan-y}.atlas-legend9{display:flex;flex-wrap:wrap;gap:12px;color:#637e6d;font-size:12px;margin-bottom:17px}
+.places9{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.places9 button{touch-action:pan-y;text-align:left;background:#fffcf1;border:1px solid #d4ddcb;border-radius:14px;padding:17px 14px;color:#365c52;min-height:112px}.places9 small{display:block;line-height:1.7;color:#6a8173;margin-top:7px}.places9 em{font-size:11px;letter-spacing:.15em;display:block;margin-bottom:8px;color:#a37c4a;font-style:normal}
+.edition9 .sheet .requirements{color:#557164}.edition9 .sheet .requirements details{border-color:#ccdac9;background:#fff9ed}
+@media(max-width:520px){.places9{grid-template-columns:1fr}.places9 button{min-height:85px}.atlas-heading9 h2{font-size:22px}.atlas-frame9{margin-top:12px}#atlas9{padding-bottom:20px}}
+
+.edition9 .sheet-head>b{color:#426b61}.edition9 #modelAngles button,.edition9 #modelPoses button,.edition9 #modelToggle{color:#f8f0d9;background:#497d74;border-color:#6c9687}.edition9 .cover h1,.edition9 .cover p,.edition9 .cover .issue,.edition9 .cover-note,.edition9 .cover .version,.edition9 .cover-label{color:#355e51}.edition9 .cover em{color:#b86e58}

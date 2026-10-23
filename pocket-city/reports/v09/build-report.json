@@ -1,0 +1,36 @@
+{
+  "version": "0.9.0",
+  "kind": "mobile H5 playtest",
+  "html_bytes": 2922810,
+  "html_sha256": "d779dad60b7cc8aeb6da147056fca9d6743d02a67e6ed29e71dbf09cec6e71ce",
+  "regression_checks": 70,
+  "rendered_motion": {
+    "cars": {
+      "sampled": 25,
+      "moved": 24,
+      "animated": 24
+    },
+    "peds": {
+      "sampled": 27,
+      "moved": 21,
+      "animated": 21
+    }
+  },
+  "native_fleet_swipe": {
+    "before": {
+      "left": 3,
+      "width": 648,
+      "total": 2332,
+      "touch": "pan-x pan-y"
+    },
+    "after": 447
+  },
+  "browser_errors": [],
+  "offline_network_requests": [],
+  "limitations": [
+    "Cloud Chromium uses SwiftShader; no physical phone FPS validation.",
+    "Cloud policy blocks file navigation; the same HTML was run from memory with network disabled.",
+    "Download success on the user phone is unconfirmed.",
+    "Casino is an exterior landmark; no platform upload or review was performed."
+  ]
+}

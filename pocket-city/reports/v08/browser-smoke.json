@@ -1,0 +1,145 @@
+{
+  "html_sha256": "b18bc6edfd0912a5a671069fe2b697e785ad289c6c4a088dacc3526abbef4aaf",
+  "gpu_note": "Chromium headless WebGL with SwiftShader; not a physical phone FPS measurement",
+  "viewports": [
+    [
+      844,
+      390
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "device_scale_factor": 1,
+  "loading": {
+    "opened": 224.59999999962747,
+    "engine": 297.6999999997206,
+    "ready": 4473.799999999814
+  },
+  "landscape": {
+    "state": {
+      "started": true,
+      "menuOpen": false,
+      "city": 0,
+      "character": 0,
+      "weapon": 0,
+      "ammo": null,
+      "inCar": false,
+      "car": null,
+      "player": {
+        "lat": -0.12396741110437833,
+        "lon": -0.02973974421957991,
+        "heading": 0.41275577802837443,
+        "position": [
+          -4.545874251463705,
+          152.81012290388912,
+          -19.04953976840862
+        ],
+        "speed": 0,
+        "jumpHeight": 0
+      },
+      "cash": 1992,
+      "health": 100,
+      "wanted": 0,
+      "missionStage": 3,
+      "driveDistance": 0,
+      "targetHits": 0,
+      "stolenCount": 0,
+      "orbit": false,
+      "cars": 125,
+      "pedestrians": 286,
+      "buildings": 1514,
+      "targets": 4,
+      "nearestCar": {
+        "occupied": false,
+        "distance": 1.9000000000000008
+      },
+      "aimTarget": null,
+      "renderer": {
+        "frame": 47,
+        "calls": 647,
+        "triangles": 779334,
+        "points": 0,
+        "lines": 0
+      },
+      "frame": 27
+    },
+    "metrics": {
+      "drawCalls": 647,
+      "triangles": 779334,
+      "textures": 75,
+      "atlasTiles": 898,
+      "visibleHumans": 28,
+      "renderFPS": 10.646019840309702,
+      "heroFoot": [
+        0.0002654659940167708,
+        -0.23701083942955023,
+        0.9754089961805597
+      ],
+      "heroHead": [
+        0.0016715382209795233,
+        0.14110396537535924,
+        0.9738120168437105
+      ],
+      "cameraDistance": 8.120597268674274,
+      "renderer": "webgl"
+    }
+  },
+  "native_fleet_swipe": {
+    "before": {
+      "left": 3,
+      "width": 648,
+      "total": 2332,
+      "touch": "pan-x pan-y"
+    },
+    "after": 444
+  },
+  "tank_spawn": {
+    "before": 125,
+    "after": 126,
+    "toast": "履带坦克已到达 · 靠近后上车"
+  },
+  "touch_walk": {
+    "before": {
+      "lat": -0.12396741110437833,
+      "lon": -0.02973974421957991,
+      "heading": 0.41275577802837443,
+      "position": [
+        -4.545874251463705,
+        152.81012290388912,
+        -19.04953976840862
+      ],
+      "speed": 0,
+      "jumpHeight": 0
+    },
+    "after": {
+      "lat": -0.11856909720452767,
+      "lon": -0.0273592081466541,
+      "heading": 0.4124678004343811,
+      "position": [
+        -4.1848438982030585,
+        152.92108121219033,
+        -18.223984263666562
+      ],
+      "speed": 0,
+      "jumpHeight": 0
+    }
+  },
+  "portrait_overflow": {
+    "body": 390,
+    "viewport": 390
+  },
+  "portrait_modal": {
+    "x": 21,
+    "y": 103,
+    "width": 348,
+    "height": 638
+  },
+  "file_protocol": "Cloud Chromium policy blocks file navigation; file launch on phones remains unverified.",
+  "offline_file": {
+    "started": true,
+    "networkRequests": []
+  },
+  "pageErrors": []
+}

@@ -1,0 +1,4 @@
+{"load": {"opened": 188.20000000018626, "engine": 247, "ready": 4372.299999999814}, "state": {"edition": "0.9.0", "islands": [{"id": 0, "name": "圣安地列斯"}, {"id": 1, "name": "自由城 · 海湾"}, {"id": 2, "name": "洛圣都市区"}], "streets": 43, "landmarks": [{"id": "beach", "name": "自由城 · 海湾沙滩", "lat": -0.17229168103403378, "lon": 1.733268400497438, "arrival": {"lat": -0.2176067660745822, "lon": 1.91693290273283}}, {"id": "casino", "name": "圣安地列斯 · 绿洲赌场", "lat": 0.475, "lon": 0.175, "arrival": {"lat": 0.48083676855760216, "lon": -0.04438199488261546}}, {"id": "sphinx", "name": "圣安地列斯 · 狮身人面像", "lat": 0.35338066404399904, "lon": 0.14391681177928797, "arrival": {"lat": 0.3585215680979819, "lon": 0.06096166952509371}}], "wardrobe": "white-rib-tank / loose-indigo-denim", "walkable": true, "campusClearance": 19.672565386798325}}
+beach 已抵达 自由城 · 海湾沙滩
+casino 已抵达 圣安地列斯 · 绿洲赌场
+sphinx 已抵达 圣安地列斯 · 狮身人面像

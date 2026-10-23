@@ -1,0 +1,27 @@
+/* Cream comic utility cards keep the street visible on portrait phones. */
+.comic-v7{--panel:rgba(36,49,52,.86);--mint:#e8e4c8;--pink:#ecb7cb}
+.comic-v7 .glass{backdrop-filter:none;border:1.5px solid #f2e9d25c;box-shadow:0 3px 0 #1b2c3b24;background:#344345d4}
+.comic-v7 .stats{filter:drop-shadow(1px 2px 0 #152d3b);font-family:ui-monospace,monospace}
+.comic-v7 #gameClock{color:#f5ebcd;font-size:17px;letter-spacing:.5px}
+.comic-v7 .topbar .brand-icon{background:#e9e5ca;color:#233f42}
+.comic-v7 #classicWeapon{background:#f4eddaed;border:2px solid #425858;border-radius:10px;box-shadow:2px 3px 0 #22393f55}
+.comic-v7 #classicWeapon svg path{fill:#3b5659;stroke:#e1bf93}
+.comic-v7 #radar{border-color:#eae4c8;box-shadow:0 0 0 2px #314a51,2px 5px 0 #142c3c50}
+.comic-v7 .action{backdrop-filter:none;border:1.5px solid #f5efd49c;background:#30464c87;box-shadow:1px 3px 0 #21374030}
+.comic-v7 .action.fire{background:#eee7cce8;color:#254147;border:2px solid #fff4d8}
+.comic-v7 .joystick{backdrop-filter:none;background:#304c4427;border:1px solid #f7f4d968}
+.comic-v7 #stick{background:#ecebd35e;border:1.5px solid #faf5df9c}
+.comic-v7 .sheet{background:#233a41f7;backdrop-filter:none;border:2px solid #e6dec9aa}
+.comic-v7 .card.selected{border-color:#efe1aa;box-shadow:0 0 0 2px #e8d4a038}
+#utility7{position:fixed;right:max(12px,env(safe-area-inset-right));top:38%;display:flex;flex-direction:column;gap:6px;z-index:14;pointer-events:auto}
+#utility7 button{width:39px;height:39px;padding:7px;color:#38555a;background:#f2ecd6ed;border:1.5px solid #4b6963;border-radius:7px;box-shadow:2px 3px 0 #243e4a40}
+#utility7 svg{width:100%;height:100%;fill:currentColor;stroke:currentColor;stroke-linejoin:round}
+#itemDrawer7{display:none;position:absolute;right:47px;top:0;width:220px;background:#f3eddcfa;border:2px solid #50655d;border-radius:10px;padding:10px;color:#345059;box-shadow:3px 5px 0 #1c354b40}
+#itemDrawer7.open{display:block}#itemDrawer7 small{font-size:10px;letter-spacing:1px}#itemDrawer7 b{display:block;font-size:14px;margin:3px 0 8px}
+.item-grid7{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}#utility7 .item-grid7 button{width:43px;height:43px;padding:5px;background:#dddac6;border:1px solid #738478;box-shadow:none}.item-grid7 button.equipped{outline:2px solid #c08e68;background:#f9f1dd!important}.item-grid7 svg path{stroke:none}
+#solarLabel7{position:fixed;left:50%;transform:translateX(-50%);top:max(12px,env(safe-area-inset-top));padding:5px 10px;border-radius:20px;background:#f4ecdabf;color:#3f5d60;font:10px ui-monospace,monospace;z-index:12;pointer-events:none;border:1px solid #546a6266}
+body:not(.comic-v7) #utility7,body:not(.comic-v7) #solarLabel7,.planet-overview #utility7,.planet-overview #solarLabel7{display:none}
+body:has(#hud.inactive) #utility7,body:has(#hud.inactive) #solarLabel7{display:none}
+.comic-v7 #world{image-rendering:auto!important;filter:none}
+@media(max-width:600px){#solarLabel7{top:138px;font-size:9px}#utility7{top:40%}.comic-v7 .brand small{font-size:8px}}
+@media(max-height:500px){#utility7{top:30%;right:10px}#utility7 button{width:33px;height:33px}#solarLabel7{top:9px}.comic-v7 #missionCard{max-width:290px}.comic-v7 #gameClock{font-size:14px}}
