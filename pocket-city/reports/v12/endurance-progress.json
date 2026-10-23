@@ -1,0 +1,58 @@
+{
+  "elapsed_seconds": 603.81,
+  "phase": "jet",
+  "sample": {
+    "clock": 88.44999999999712,
+    "solar": 8.131423999999996,
+    "quality": "\u5747\u8861",
+    "ratio": 1,
+    "render": {
+      "frame": 1797,
+      "calls": 543,
+      "triangles": 1058513,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 1329,
+      "textures": 175
+    },
+    "heap": 435000000,
+    "effects": {
+      "ripples": {
+        "capacity": 16,
+        "active": 0
+      },
+      "footprints": {
+        "capacity": 64,
+        "active": 0
+      },
+      "splashes": {
+        "capacity": 32,
+        "active": 0
+      }
+    },
+    "effectCounters": {
+      "foot": 0,
+      "car": 0,
+      "rotor": 0
+    },
+    "position": {
+      "lat": -0.6085435615066708,
+      "lon": 0.5524942164762537
+    },
+    "signal": {
+      "index": 5,
+      "elapsed": 8.742799999999889,
+      "remaining": 0.2572000000001111,
+      "a": "red",
+      "b": "red",
+      "ped": false,
+      "clearing": false,
+      "occupied": true
+    },
+    "elapsed_seconds": 603.81,
+    "mode": "jet"
+  },
+  "errors": []
+}

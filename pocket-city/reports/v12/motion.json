@@ -1,0 +1,146 @@
+[
+  {
+    "pos": {
+      "lat": 0,
+      "lon": 0
+    },
+    "speed": 0,
+    "maxFootAngle": 0.007465056158738235,
+    "maxFootStep": 0.002618928274378422,
+    "maxBodyStep": 0,
+    "minHeight": 0.060093037493729184,
+    "maxHeight": 0.08162696718576967
+  },
+  {
+    "pos": {
+      "lat": 0,
+      "lon": 0
+    },
+    "speed": 3.3,
+    "maxFootAngle": 0.11555761529540357,
+    "maxFootStep": 0.0557428766971667,
+    "maxBodyStep": 0,
+    "minHeight": 0.04124536680185997,
+    "maxHeight": 0.29006275182831587
+  },
+  {
+    "pos": {
+      "lat": 0,
+      "lon": 0
+    },
+    "speed": 7,
+    "maxFootAngle": 0.1683961693686002,
+    "maxFootStep": 0.16667564184568692,
+    "maxBodyStep": 0,
+    "minHeight": 0.04940642193663791,
+    "maxHeight": 0.5758528619710432
+  },
+  {
+    "pos": {
+      "lat": 0,
+      "lon": 0
+    },
+    "speed": 0,
+    "maxFootAngle": 0.007465056158738235,
+    "maxFootStep": 0.0026189303777260633,
+    "maxBodyStep": 0,
+    "minHeight": 0.05356632894930158,
+    "maxHeight": 0.38007512623613593
+  },
+  {
+    "pos": {
+      "lat": 0.7,
+      "lon": 2.9
+    },
+    "speed": 0,
+    "maxFootAngle": 0.007465056158916702,
+    "maxFootStep": 0.0026241277640253976,
+    "maxBodyStep": 0,
+    "minHeight": 0.06009328624975295,
+    "maxHeight": 0.07720864491064104
+  },
+  {
+    "pos": {
+      "lat": 0.7,
+      "lon": 2.9
+    },
+    "speed": 3.3,
+    "maxFootAngle": 0.11613573831350246,
+    "maxFootStep": 0.05532208975826855,
+    "maxBodyStep": 0,
+    "minHeight": 0.04118094625529522,
+    "maxHeight": 0.2900670498981412
+  },
+  {
+    "pos": {
+      "lat": 0.7,
+      "lon": 2.9
+    },
+    "speed": 7,
+    "maxFootAngle": 0.16037678987161588,
+    "maxFootStep": 0.16839837135609492,
+    "maxBodyStep": 0,
+    "minHeight": 0.054979349788496265,
+    "maxHeight": 0.5735815401644401
+  },
+  {
+    "pos": {
+      "lat": 0.7,
+      "lon": 2.9
+    },
+    "speed": 0,
+    "maxFootAngle": 0.007465056158738235,
+    "maxFootStep": 0.0026209469521020377,
+    "maxBodyStep": 0,
+    "minHeight": 0.06009328624975295,
+    "maxHeight": 0.5425303387279569
+  },
+  {
+    "pos": {
+      "lat": 1.55,
+      "lon": -3.14
+    },
+    "speed": 0,
+    "maxFootAngle": 0.007465056158916702,
+    "maxFootStep": 0.0026240769004004685,
+    "maxBodyStep": 0,
+    "minHeight": 0.060093214198829514,
+    "maxHeight": 0.07720736631966929
+  },
+  {
+    "pos": {
+      "lat": 1.55,
+      "lon": -3.14
+    },
+    "speed": 3.3,
+    "maxFootAngle": 0.11613573831350246,
+    "maxFootStep": 0.055322090931440915,
+    "maxBodyStep": 0,
+    "minHeight": 0.04118093875565876,
+    "maxHeight": 0.29006705052091775
+  },
+  {
+    "pos": {
+      "lat": 1.55,
+      "lon": -3.14
+    },
+    "speed": 7,
+    "maxFootAngle": 0.16037678987161588,
+    "maxFootStep": 0.1683978330765911,
+    "maxBodyStep": 0,
+    "minHeight": 0.05497931889132701,
+    "maxHeight": 0.573581534414572
+  },
+  {
+    "pos": {
+      "lat": 1.55,
+      "lon": -3.14
+    },
+    "speed": 0,
+    "maxFootAngle": 0.007465056158738235,
+    "maxFootStep": 0.002620898155736227,
+    "maxBodyStep": 0,
+    "minHeight": 0.060093214198843725,
+    "maxHeight": 0.5425300168927123
+  }
+]

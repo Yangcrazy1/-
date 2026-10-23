@@ -1,10 +1,10 @@
 {
   "name": "侠盗自由城",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "entry": "index.html",
   "runtime": "H5 DOM/WebGL/WebAudio",
-  "bytes": 2998319,
-  "sha256": "14bdb6cb5b22bd199a9f3c43a0ec00bd57b7aa8a541d3394083347a261bb4cf0",
+  "bytes": 3019973,
+  "sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
   "offlineAssetsEmbedded": true,
   "platformSDKIntegrated": false,
   "uploadFormatConfirmed": false,

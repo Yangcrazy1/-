@@ -1,0 +1,198 @@
+{
+  "v011-fixed": {
+    "road": 5,
+    "index": 306,
+    "offset": [
+      -6.2,
+      3.1,
+      0.35
+    ],
+    "fov": 55
+  },
+  "v011": {
+    "html_sha256": "14bdb6cb5b22bd199a9f3c43a0ec00bd57b7aa8a541d3394083347a261bb4cf0",
+    "states": [
+      {
+        "R": 116,
+        "player": {
+          "lat": -0.1553046366839859,
+          "lon": 0.042690597903361785
+        },
+        "camera": [
+          2.8223538925568947,
+          116.83436499753094,
+          -24.18502559702778
+        ],
+        "buildings": 352,
+        "render": {
+          "frame": 28,
+          "calls": 230,
+          "triangles": 129773,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 241,
+          "textures": 67
+        },
+        "garden": null
+      },
+      {
+        "R": 116,
+        "player": {
+          "lat": -0.11436724629094291,
+          "lon": 2.595122561507879
+        },
+        "camera": [
+          60.865050776735394,
+          -100.73788199265323,
+          -19.76043305648162
+        ],
+        "buildings": 352,
+        "render": {
+          "frame": 29,
+          "calls": 228,
+          "triangles": 558602,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 363,
+          "textures": 105
+        },
+        "garden": null
+      },
+      {
+        "R": 116,
+        "player": {
+          "lat": 0.12418481786713498,
+          "lon": -1.5048242800955618
+        },
+        "camera": [
+          -118.66894076107891,
+          8.190973586156266,
+          8.600171530523838
+        ],
+        "buildings": 352,
+        "render": {
+          "frame": 30,
+          "calls": 202,
+          "triangles": 549146,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 450,
+          "textures": 143
+        },
+        "garden": null
+      }
+    ]
+  },
+  "v012-fixed": {
+    "road": 5,
+    "index": 306,
+    "offset": [
+      -6.2,
+      3.1,
+      0.35
+    ],
+    "fov": 55
+  },
+  "v012": {
+    "html_sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
+    "states": [
+      {
+        "R": 104,
+        "player": {
+          "lat": -0.34498444205322365,
+          "lon": -0.3826884078259817
+        },
+        "camera": [
+          -31.92334370756363,
+          95.9320766907147,
+          -36.12055892889243
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 28,
+          "calls": 246,
+          "triangles": 159087,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 403,
+          "textures": 36
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      },
+      {
+        "R": 104,
+        "player": {
+          "lat": 0.31446108621258695,
+          "lon": 2.7832739918001144
+        },
+        "camera": [
+          41.581564438636896,
+          -93.34090164089406,
+          32.94248880549901
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 29,
+          "calls": 390,
+          "triangles": 1059307,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 435,
+          "textures": 39
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      },
+      {
+        "R": 104,
+        "player": {
+          "lat": -0.2912165940309692,
+          "lon": -1.3157230300179312
+        },
+        "camera": [
+          -98.35935866659814,
+          31.7800032663519,
+          -29.021129269657468
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 30,
+          "calls": 435,
+          "triangles": 1080321,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 481,
+          "textures": 51
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      }
+    ]
+  },
+  "errors": []
+}
