@@ -1,14 +1,13 @@
-# 侠盗自由城 V0.11
+# 侠盗自由城 V0.12
 
-手机单 HTML：人物修复、紧凑三城与环境补充。
+手机离线单 HTML：更小的地图、更紧密的楼间距、连续远景、木庭院和成组植被。
 
-- [本轮说明](README_V11.md)
-- [验收及已知问题](ACCEPTANCE_V11.md)
-- [当前状态与真实测试环境](PROJECT_STATUS.md)
-- [地图／人物配置](src-v11/config.json)、[水面／交通配置](src-v10/config.json)
-- [小红书 H5 候选入口状态](platform/h5-candidate/README.md)
-- 运行 `dist/index.html`；源码 `src-v11/` 及原模块兼容钩子。
-- `npm run build`、`npm run check`、`npm test`（89 项）。
-- 浏览器验证、三视图、街道对比与 10 分钟云端持续运行：`reports/v11/`。
+- [本轮说明与运行方式](README_V12.md)
+- [验收与已知问题](ACCEPTANCE_V12.md)
+- [实际仓库、分支及测试状态](PROJECT_STATUS.md)
+- [地图与建筑配置](src-v11/config.json)、[水面／材质／交通配置](src-v10/config.json)
+- 源码 `src-v12/` 与原模块兼容钩子；运行 `dist/index.html`。
+- 构建 `npm run build`，语法 `npm run check`，回归 `npm test`（95 项）。
+- 截图、浏览器验收、十分钟云端运行：`reports/v12/`。
 
-正式下载位于仓库根 `downloads/`，通过实际 HTTPS 文件与 SHA-256 校验。真机性能／本地文件打开和小红书上传仍需对应设备／入口验证。V0.7–V0.10 文档和授权资源继续保留。
+手机文件在仓库根 `downloads/`，使用实际 HTTPS 响应及 SHA-256 校验。保持三城及全部已有玩法。真机性能与文件打开待设备验证；小红书 H5 候选仍需确认上传入口／格式。既有版本文档、CC0／MIT 授权记录继续保留。

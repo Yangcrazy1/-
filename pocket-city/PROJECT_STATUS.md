@@ -1,3 +1,18 @@
+# PROJECT STATUS — V0.12 紧凑街景与庭院环境
+
+- 参考会话：`01a16708-2512-71fc-94bc-1e85de06a0a9`。
+- 仓库：`Yangcrazy1/-`；当前分支 `codex/cozy-dense-v012`，基线 `fb978f9`（V0.11）。没有用旧 ZIP 覆盖工程。
+- 当前进度 88%：实现完成、最终 HTML 冻结，95 项回归通过；正在核对最终浏览器验收、截图，随后进行独立十分钟运行和下载校验。
+- 用户本轮问题：大面积路面、远处楼间空白；图 2 的木材、庭院、清新水岸为参考。保留 V0.11 三位主角和全部既有玩法。
+- 半径 116 → 104 米，线性距离减 10.3%，球面面积减 19.6%；目前 320 栋建筑，近邻近似间距中位数 1.32 / 1.25 / 1.42 米（构建最终冻结后更新）。
+- 技术原因：小球面的地平线过近，单纯缩小半径会进一步隐藏前方房屋。近景使用连续局部投影，模拟、导航、碰撞保持球面，总览仍显示真实星球；屏幕拾取及镜头障碍同步校正。
+- 测试环境：Linux Chromium WebGL / SwiftShader、Node。暂无实体安卓手机；不将云端帧率视为真机 30 FPS 证明。
+- 冻结 HTML：3,019,973 字节，SHA-256 `7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc`。逻辑报告含相同哈希。
+- 剩余：最终浏览器触控 / 渲染 / 截图证据、独立十分钟运行、英文单 HTML 及 HTTPS 下载校验。
+- 小红书上传格式仍待用户提供实际入口或文档；现有 H5 候选目录不表示已适配 SDK 或已审核。
+
+<details><summary>上一版交付记录</summary>
+
 # PROJECT STATUS — V0.11 character and compact city repair
 
 - Reference session: `01a16708-2512-71fc-94bc-1e85de06a0a9`.
@@ -25,3 +40,5 @@
 - Delivery status: mobile HTML and comparison HTML published and retrieved over HTTPS with HTTP 200 / exact bytes. Xiaohongshu upload target is still pending user input.
 
 - Main remains d30c042fff4f8bc01324b3d5440ae286463db6e0. Actual HTTPS proof: ../downloads/outlaw-liberty-city-v0.11-download-verification.json. Both download URL forms return text/plain, so long-press / download link may be required. Physical phone opening remains unverified.
+
+</details>

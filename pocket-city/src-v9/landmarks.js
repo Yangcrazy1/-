@@ -38,5 +38,5 @@ function addSphinx9(p,h){
  const tail=new THREE.Mesh(new THREE.TorusGeometry(1,.12,5,18,Math.PI*1.6),stone);tail.rotation.x=Math.PI/2;tail.position.set(1.6,.68,-3.2);g.add(tail);
  obstacle9(p,h,6.5,11.8,6.2,'狮身人面像');landmarks9.push({id:'sphinx',name:'圣安地列斯 · 狮身人面像',district:0,...p,heading:h,arrival:localPoint9(p,0,12,h),description:'狮身、前爪、人面与蓝金条纹头巾的原创砂岩雕像'});
 }
-function makeDistrictLandmarks(){makeDistrictLandmarksV7();landmarks9=[];addBeach9();addCasino9();makeBayArchitecture10();makePocketPlaces11();addVegetation10();makeSignals10();}
+function makeDistrictLandmarks(){makeDistrictLandmarksV7();landmarks9=[];addBeach9();addCasino9();makeBayArchitecture10();makePocketPlaces11();addCourtyards12();addVegetation10();makeSignals10();}
 function finishWorld9(){if(atlas8)atlas8.material.gradientMap=freshRamp9;npcPaint8.gradientMap=freshRamp9;scene.userData.edition9={islands:3,landmarks:landmarks9.map(p=>({id:p.id,name:p.name,lat:p.lat,lon:p.lon})),streets:streets.length};mapCache9=null;}

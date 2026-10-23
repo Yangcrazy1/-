@@ -7,8 +7,8 @@ function previewFootprint11(p){
 }
 function canPlaceBuilding11(p){
  if(buildings.length>=CITY_CONFIG11.maxBuildings||Math.abs(p.lat)>1.28||islandField9(p.lat,p.lon)>.935||reserveBay10(p)||campus9&&distance(p,campus9)<31)return false;
- const candidate=previewFootprint11(p),spawn=streetPoint(streets[5],306,-5.15);
- if(distance(p,spawn)<5.0)return false;
+ const candidate=previewFootprint11(p),spawn=streetPoint(streets[5],306,-(streets[5].width/2+1.1));
+ if(circleContact(nAt(spawn.lat,spawn.lon).multiplyScalar(R),candidate,.7))return false;
  for(const b of buildings)if(distance(b,p)<13&&shapeContact(candidate,{...b,w:b.w+.22,d:b.d+.22}))return false;
  for(const b of staticObstacles)if((b.minY||0)<1.8&&distance(b,p)<12&&shapeContact(candidate,b))return false;
  // Test the actual rectangle, rather than rejecting every narrow urban parcel.
@@ -33,8 +33,8 @@ function makeCompactFrontages11(index){
   }
  }
  // Back courts and small shop rows occupy usable gaps left by intersecting roads.
- for(const d of islandDefs9)for(let z=-88;z<=88;z+=8)for(let x=-72;x<=72;x+=8){
-  const p=localPoint9(d,x+(Math.round(z/8)%2)*2,z),near=nearStreet(p);
+ for(const d of islandDefs9)for(let z=-88;z<=88;z+=6)for(let x=-72;x<=72;x+=6){
+  const p=localPoint9(d,x+(Math.round(z/6)%2)*2,z),near=nearStreet(p);
   if(near.distance<8.4||near.distance>22)continue;p.heading=near.sample.heading;p.facing11=headingTo(p,near.sample);
   if(!canPlaceBuilding11(p))continue;cityId=districtAt(p.lat,p.lon);theme=themes[cityId];
   const root=makeBuilding(p.lat,p.lon,index++,p.facing11),b=buildings[buildings.length-1];b.heading=p.facing11;b.infill11=true;root.name='Neighbourhood courtyard / shop';cityStats11.infill++;
@@ -47,7 +47,7 @@ function makePocketPlaces11(){
   for(let z=-64;z<=64;z+=14)for(let x=-58;x<=58;x+=14){
    const p=localPoint9(d,x,z),near=nearStreet(p);
    if(count>=9||near.distance<5||near.distance>18||!walkable9(p)||waterDepth10(p)>.05||reserveBay10(p)||campus9&&distance(p,campus9)<30||buildings.some(b=>distance(b,p)<Math.hypot(b.w,b.d)/2+2.0)||staticObstacles.some(b=>distance(b,p)<3.5))continue;
-   const heading=headingTo(p,near.sample),g=prop9(p,heading,'Neighbourhood pocket place');
+   const heading=headingTo(p,near.sample),g=prop9(p,heading,'Neighbourhood pocket place');g.userData.pocket12={...p,heading};
    // A useful rest stop, not another empty square. Keep an unobstructed centre.
    box(g,mat(0xcfc8b0),0,.018,0,4.6,.035,4.1);
    box(g,wood,-1.35,.48,0,.55,.12,1.7);box(g,wood,-1.61,.83,0,.09,.65,1.7);

@@ -48,3 +48,12 @@
 - scripts-v11 contains final browser / visual / acceptance / 600-second endurance checks. Keep report SHA values tied to the delivered HTML; never represent software GPU results as handset FPS.
 - User explicitly wants a single HTML and no playable ZIP. New filename outlaw-liberty-city-v0.11-mobile.html. This overrides earlier ZIP packaging instructions for the playtest.
 - User also requested a Xiaohongshu upload version. The actual upload entry / docs are pending; platform/h5-candidate is explicitly a static H5 candidate, not an SDK mini-game project. Do not call it upload-ready until the target format is confirmed and tested.
+
+## V0.12 dense street continuation
+
+- Continue from current V0.11 workspace; user says distant buildings still leave too much blank space. V0.12 keeps actors and all prior gameplay, reduces radius 116 → 104 m and narrows road surfaces.
+- Read README_V12.md and PROJECT_STATUS.md. Edit src-v12/ and necessary compatibility hooks; build with scripts-v7/build.py. Current npm test is verify-v12.cjs (95 checks).
+- Rendering uses a local logarithmic street projection; physics and overview remain spherical. Any screen picking, target labels, frustum bounds or camera ray changes must use the same mapping. Never apply this mapping to simulation coordinates or the overview globe.
+- Use atan of tangent length and radial cosine near the player; acos quantizes millimetre offsets in GLSL. Nested preview / PMREM scenes must temporarily disable projection and restore the parent render state.
+- Material projection hooks use a WeakSet because cloned userData flags alone do not prove that a cloned material retained its compile callback. Preserve Canvas fallback for instanced scenery.
+- Browser checks / actual captures / final 600-second endurance live in scripts-v12 and reports/v12; freeze HTML before final evidence. No Android FPS claim from SwiftShader. Deliver single outlaw-liberty-city-v0.12-mobile.html, no playable ZIP.

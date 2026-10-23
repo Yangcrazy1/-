@@ -1,0 +1,7 @@
+/* Keep a clear central view; all interactive controls retain 48px hit areas. */
+.edition12 .toast{top:auto!important;bottom:35%!important;max-width:68vw!important}
+@media(min-width:650px) and (max-height:500px){
+ .edition12 .hud #missionCard{top:64px!important;max-width:220px!important}
+ .edition12 #utility7{top:auto!important;bottom:24px!important;right:165px!important}
+ .edition12 .hud .quickbar{top:64px!important;right:12px!important}
+}

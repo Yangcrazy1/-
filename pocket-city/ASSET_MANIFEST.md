@@ -47,3 +47,7 @@
 
 
 V0.11: wardrobe texture painting, continuous neck seams, weighted shoe shells, pocket places and offshore headland silhouettes are original procedural additions in src-v11. Existing Quaternius CC0 anatomy / animation and Three.js MIT licensing are preserved. No new third-party character or GTA-extracted resources were added.
+
+## V0.12 original procedural additions
+
+Local street projection and inverse screen picking, instanced distant window facades, wood storefront slats, pergolas, garden deck planks, fence rails, tree / shrub clusters and contact-shadow texture are authored in src-v12. No new external model or texture downloads. Existing CC0 character and MIT engine credits remain unchanged.

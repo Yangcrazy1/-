@@ -7,7 +7,7 @@ function waterDepth10(p){return Math.max(0,.04-terrainHeight10(p.lat,p.lon));}
 function makeShoreTable10(){shoreTable10=[];for(let z=-56;z<=56;z+=2){let a=-65,b=15;for(let i=0;i<16;i++){const x=(a+b)/2,p=localPoint9(beach9,x,z);if(coastDistance10(p)>0)a=x;else b=x;}shoreTable10.push((a+b)/2);}}
 function shoreX10(z){if(!shoreTable10.length)makeShoreTable10();const t=clamp((z+56)/2,0,56),i=Math.min(55,Math.floor(t));return lerp(shoreTable10[i],shoreTable10[i+1],t-i);}
 function timberSurface10(p){const q=beachLocal9(p);if(Math.abs(q.z)<1.47&&q.x>-55&&q.x<shoreX10(0)+10)return .25;if(q.z>=-43&&q.z<=43&&Math.abs(q.x-(shoreX10(q.z)+8))<1.68)return .25;const cafeX=shoreX10(-16)+18;if(Math.abs(q.x-cafeX)<4.1&&Math.abs(q.z+16)<4.1)return .24;return null;}
-function groundHeight10(p){const deck=timberSurface10(p);if(deck!==null)return deck;if(onRoad9(p))return .083+bridgeLift10(p);return terrainHeight10(p.lat,p.lon);}
+function groundHeight10(p){const garden=detailGround12(p);if(garden!==null)return garden;const deck=timberSurface10(p);if(deck!==null)return deck;if(onRoad9(p))return .083+bridgeLift10(p);return terrainHeight10(p.lat,p.lon);}
 function walkable9(p,radius=.32){if(timberSurface10(p)!==null||onRoad9(p,radius))return true;return waterDepth10(p)<=BAY_CONFIG10.water.maxWalkDepth;}
 function surfaceColor9(lat,lon){const p={lat,lon},d=coastDistance10(p);if(d>13)return 0x368eab;if(d>3)return 0x55b9b0;if(d>0)return 0xa6dcd0;if(d> -5)return 0xc4b58f;if(d> -13||inBeach9(p))return palette9.sand;return [0xa6bb91,0xa9c5a1,0xa0bba3][districtAt(lat,lon)];}
 function place(object,lat,lon,heading=0,height=0){const floor=object.userData.ground10?groundHeight10({lat,lon}):0;return placeV9(object,lat,lon,heading,height+floor);}
