@@ -37,3 +37,10 @@
 - Island coast fields, local street grids, atlas UI, beach props, boardwalk, casino exterior and sphinx are original procedural work in `src-v9/`; no reference-game meshes or textures were extracted.
 - Tommy's current palm pattern is generated locally by `palmPrint9()` with Canvas drawing; the previous V0.7 texture remains in the source assets. Hair is a sculpted variant of the licensed CC0 base.
 - Clothing seam clipping interpolates weights from the existing CC0 topology, retaining quantized totals of 255. Runtime topology changes do not constitute new scanned or commercially licensed character assets.
+
+## V0.10 additions
+
+- Warm timber grain, mottled foliage, sand shader variation, surface effects and sole masks are generated locally with Canvas or deterministic shader functions. No remote resources or new extracted reference-game assets were introduced.
+- Spherical wave geometry/normals, shore foam, lightweight sky approximation and pooled interaction meshes are authored in src-v10/coast-water.js and effects.js. No planar reflection pass or third-party water shader is bundled.
+- Bay cafe, boardwalk planks, shore props, layered vegetation instances, road facilities and signal models/logic are original procedural additions. Existing Three.js MIT and Quaternius CC0 notices remain.
+- Protagonists retain the processed Quaternius mesh/skeleton with further tailoring, facial shaping, lightweight IK and pilot pose changes; this is not a new official GTA character asset set.

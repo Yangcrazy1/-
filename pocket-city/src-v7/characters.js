@@ -39,7 +39,7 @@ function makeCharacter(id,npc=false){
  body.updateMatrixWorld(true);garment.applyMatrix4(named.spine_03.matrixWorld.clone().invert());named.spine_03.add(garment);
  gun.removeFromParent();gun.position.set(0,.055,.018);named.hand_r.add(gun);
  const p=Object.assign(old,{figure,skeleton,hips:named.pelvis,chest:named.spine_03,head,arms:[named.upperarm_r,named.upperarm_l],elbows:[named.lowerarm_r,named.lowerarm_l],hands:[named.hand_r,named.hand_l],legs:[named.thigh_r,named.thigh_l],knees:[named.calf_r,named.calf_l],ankles:[named.foot_r,named.foot_l],authored:true,animVersion:7,boneMap:named,faceSculpted:true,faceDetails,garment,hair,animationClock:0,animationState:'Idle_Loop',mixer:new THREE.AnimationMixer(body),actions:{},assetSource:'Quaternius CC0'});
- for(const clip of rig7Clips)p.actions[clip.name]=p.mixer.clipAction(clip);p.actions.Idle_Loop.play();p.mixer.update(0);p.root.updateMatrixWorld(true);p.baseModelUUID=figure.uuid;refineCharacter9(p,id,npc);return p;
+ for(const clip of rig7Clips)p.actions[clip.name]=p.mixer.clipAction(clip);p.actions.Idle_Loop.play();p.mixer.update(0);p.root.updateMatrixWorld(true);p.baseModelUUID=figure.uuid;refineCharacter9(p,id,npc);refineCharacter10(p,id,npc);return p;
 }
 function animateHuman(p,dt,moving,armed=false){
  if(!p.authored)return animateHumanV6(p,dt,moving,armed);if(animationCollect8){p.visualInput8={speed:moving,armed};return;}if(p.npc&&(!p.root.visible||p.root.parent===actorParking))return;p.animationClock+=dt;const gap=p.npc&&distance(p,player)>22?.08:0;if(p.animationClock<gap)return;const elapsed=p.animationClock;p.animationClock=0;const speed=Math.max(0,moving||0),w=p.police&&wanted>.7?2:weapon;
@@ -50,6 +50,6 @@ function animateHuman(p,dt,moving,armed=false){
  if(armed||p.police&&wanted>.7){p.body.updateMatrixWorld(true);const inv=p.hands[0].getWorldQuaternion(new THREE.Quaternion()).invert(),q=p.body.getWorldQuaternion(new THREE.Quaternion());p.gun.quaternion.copy(inv.multiply(q));if(p===player&&combatRecoil)p.gun.rotateX(-combatRecoil*.08);}
  if(p.hailing){const b=p.arms[1];b.quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(V(0,0,1),1.8));}
  if(p.reaction>0){p.reaction=Math.max(0,p.reaction-elapsed);p.body.rotation.z=Math.sin(p.reaction/.36*Math.PI)*.08;}else p.body.rotation.z=lerp(p.body.rotation.z,0,elapsed*10);
- p.body.position.y=speed>.2&&name!=='Jump_Loop'?Math.abs(Math.sin(p.mixer.time*(speed>4.5?9:5)))*.012:0;
+ p.body.position.y=speed>.2&&name!=='Jump_Loop'?Math.abs(Math.sin(p.mixer.time*(speed>4.5?9:5)))*.012:0;finishPose10(p,elapsed,speed,armed);
 }
 function humanLOD(p,full){if(!p.authored)return humanLODV6(p,full);p.hair.visible=full;p.garment.visible=full;p.faceDetails.visible=full;p.figure.castShadow=full&&distance(player,p)<15;for(const child of p.body.children)if(child.isSkinnedMesh&&child!==p.figure)child.visible=full;}

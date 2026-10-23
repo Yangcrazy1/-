@@ -1,0 +1,645 @@
+{
+  "html_sha256": "60c380d5407060c849457a602ca48e3cdee524e04900d81d2bca55a116e82c8a",
+  "environment": "Chromium WebGL / SwiftShader, not an Android device",
+  "same_camera_after": {
+    "camera": [
+      146.30630823203435,
+      -54.956154378765255,
+      -21.57447026951705
+    ],
+    "quaternion": [
+      0.4563927765226071,
+      0.5403308461186821,
+      -0.5305258921388171,
+      0.46721567615071213
+    ],
+    "fov": 51.158318547341814,
+    "clock": 0,
+    "solar": 8,
+    "quality": "均衡",
+    "ratio": 1,
+    "render": {
+      "frame": 27,
+      "calls": 74,
+      "triangles": 99464,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 141,
+      "textures": 35
+    },
+    "heap": 491000000,
+    "effects": {
+      "ripples": {
+        "capacity": 16,
+        "active": 0
+      },
+      "footprints": {
+        "capacity": 64,
+        "active": 0
+      },
+      "splashes": {
+        "capacity": 32,
+        "active": 0
+      }
+    },
+    "effectCounters": {
+      "foot": 0,
+      "car": 0,
+      "rotor": 0
+    },
+    "position": {
+      "lat": -0.13954552441073698,
+      "lon": 1.883388059509904
+    },
+    "signal": {
+      "index": 0,
+      "elapsed": 0,
+      "remaining": 9,
+      "a": "green",
+      "b": "red",
+      "ped": false,
+      "clearing": false
+    }
+  },
+  "water_pixels": {
+    "selected": 6923,
+    "changed": 5299
+  },
+  "water_interactions": {
+    "first": {
+      "clock": 1.6,
+      "solar": 8,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 28,
+        "calls": 151,
+        "triangles": 453757,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 144,
+        "textures": 35
+      },
+      "heap": 491000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 1
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 2
+        }
+      },
+      "effectCounters": {
+        "foot": 1,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.14508326934244006,
+        "lon": 1.8462294215622228
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 0,
+        "remaining": 9,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      }
+    },
+    "after": {
+      "clock": 1.6,
+      "solar": 8,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 28,
+        "calls": 151,
+        "triangles": 453757,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 144,
+        "textures": 35
+      },
+      "heap": 491000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 3
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 4
+        }
+      },
+      "effectCounters": {
+        "foot": 1,
+        "car": 1,
+        "rotor": 1
+      },
+      "position": {
+        "lat": -0.14508326934244006,
+        "lon": 1.8462294215622228
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 0,
+        "remaining": 9,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      }
+    }
+  },
+  "effects_after_leaving": {
+    "ripples": {
+      "capacity": 16,
+      "active": 0
+    },
+    "footprints": {
+      "capacity": 64,
+      "active": 0
+    },
+    "splashes": {
+      "capacity": 32,
+      "active": 0
+    }
+  },
+  "traffic_20": {
+    "stopped": 20,
+    "passed": 20
+  },
+  "night": {
+    "clock": 2.408199999999628,
+    "solar": 22,
+    "quality": "均衡",
+    "ratio": 1,
+    "render": {
+      "frame": 39,
+      "calls": 166,
+      "triangles": 456277,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 521,
+      "textures": 96
+    },
+    "heap": 491000000,
+    "effects": {
+      "ripples": {
+        "capacity": 16,
+        "active": 0
+      },
+      "footprints": {
+        "capacity": 64,
+        "active": 0
+      },
+      "splashes": {
+        "capacity": 32,
+        "active": 0
+      }
+    },
+    "effectCounters": {
+      "foot": 1,
+      "car": 1,
+      "rotor": 1
+    },
+    "position": {
+      "lat": -0.13954552441073698,
+      "lon": 1.883388059509904
+    },
+    "signal": {
+      "index": 0,
+      "elapsed": 8.549999999999983,
+      "remaining": 0.45000000000001705,
+      "a": "green",
+      "b": "red",
+      "ped": false,
+      "clearing": false
+    }
+  },
+  "overview": {
+    "overview": true,
+    "clock": 3.108199999999629,
+    "solar": 22.149328,
+    "quality": "均衡",
+    "ratio": 1,
+    "render": {
+      "frame": 47,
+      "calls": 4,
+      "triangles": 13274,
+      "points": 0,
+      "lines": 0
+    },
+    "memory": {
+      "geometries": 521,
+      "textures": 96
+    },
+    "heap": 491000000,
+    "effects": {
+      "ripples": {
+        "capacity": 16,
+        "active": 2
+      },
+      "footprints": {
+        "capacity": 64,
+        "active": 0
+      },
+      "splashes": {
+        "capacity": 32,
+        "active": 0
+      }
+    },
+    "effectCounters": {
+      "foot": 1,
+      "car": 1,
+      "rotor": 1
+    },
+    "position": {
+      "lat": -0.13954552441073698,
+      "lon": 1.883388059509904
+    },
+    "signal": {
+      "index": 1,
+      "elapsed": 1.3832999999999842,
+      "remaining": 0.816700000000016,
+      "a": "yellow",
+      "b": "red",
+      "ped": false,
+      "clearing": false
+    }
+  },
+  "control_layouts": [
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "car",
+      "boxes": {
+        "touchEnter": {
+          "x": 774,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 772,
+          "y": 246,
+          "width": 60,
+          "height": 60
+        },
+        "touchJump": {
+          "x": 702,
+          "y": 248,
+          "width": 56,
+          "height": 56
+        },
+        "touchStop": {
+          "x": 702,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "heli",
+      "boxes": {
+        "touchEnter": {
+          "x": 774,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 772,
+          "y": 178,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 702,
+          "y": 180,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 702,
+          "y": 248,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "jet",
+      "boxes": {
+        "touchEnter": {
+          "x": 774,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 772,
+          "y": 178,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 702,
+          "y": 180,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 702,
+          "y": 248,
+          "width": 56,
+          "height": 56
+        },
+        "flightMode": {
+          "x": 700,
+          "y": 112,
+          "width": 132,
+          "height": 48
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "car",
+      "boxes": {
+        "touchEnter": {
+          "x": 320,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 318,
+          "y": 700,
+          "width": 60,
+          "height": 60
+        },
+        "touchJump": {
+          "x": 248,
+          "y": 702,
+          "width": 56,
+          "height": 56
+        },
+        "touchStop": {
+          "x": 248,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "heli",
+      "boxes": {
+        "touchEnter": {
+          "x": 320,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 318,
+          "y": 632,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 248,
+          "y": 634,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 248,
+          "y": 702,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "jet",
+      "boxes": {
+        "touchEnter": {
+          "x": 320,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 318,
+          "y": 632,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 248,
+          "y": 634,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 248,
+          "y": 702,
+          "width": 56,
+          "height": 56
+        },
+        "flightMode": {
+          "x": 246,
+          "y": 566,
+          "width": 132,
+          "height": 48
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "mode": "car",
+      "boxes": {
+        "touchEnter": {
+          "x": 290,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 288,
+          "y": 596,
+          "width": 60,
+          "height": 60
+        },
+        "touchJump": {
+          "x": 218,
+          "y": 598,
+          "width": 56,
+          "height": 56
+        },
+        "touchStop": {
+          "x": 218,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "mode": "heli",
+      "boxes": {
+        "touchEnter": {
+          "x": 290,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 288,
+          "y": 528,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 218,
+          "y": 530,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 218,
+          "y": 598,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "mode": "jet",
+      "boxes": {
+        "touchEnter": {
+          "x": 290,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 288,
+          "y": 528,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 218,
+          "y": 530,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 218,
+          "y": 598,
+          "width": 56,
+          "height": 56
+        },
+        "flightMode": {
+          "x": 216,
+          "y": 462,
+          "width": 132,
+          "height": 48
+        }
+      }
+    }
+  ],
+  "multi_touch": {
+    "held": {
+      "x": 0,
+      "y": 0.7777774144732763,
+      "fire": true,
+      "brake": false,
+      "sprint": false,
+      "lift": 1,
+      "menu": false,
+      "weapon": 0,
+      "ammo": null
+    },
+    "cancelled": {
+      "x": 0,
+      "y": 0,
+      "fire": false,
+      "brake": false,
+      "sprint": false,
+      "lift": 0,
+      "menu": false,
+      "weapon": 0,
+      "ammo": null
+    }
+  },
+  "modal_click_through": false,
+  "preview_resource_recycling": {
+    "warm": {
+      "geometries": 16,
+      "textures": 6
+    },
+    "after_six_switches": {
+      "geometries": 16,
+      "textures": 6
+    }
+  },
+  "pageErrors": [],
+  "consoleErrors": []
+}

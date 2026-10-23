@@ -1,7 +1,7 @@
 // Original coastal props and Egyptian-inspired landmark architecture.
 function prop9(point,heading=0,name=''){const g=new THREE.Group();g.name=name;cityGroup.add(g);place(g,point.lat,point.lon,heading);return g;}
 function obstacle9(point,heading,w,d,h,kind,minY=0){const f=frame(point.lat,point.lon,heading),proxy=new THREE.Mesh(boxGeo,basic(0xffffff));proxy.matrixAutoUpdate=false;proxy.matrixWorld.compose(f.n.clone().multiplyScalar(R+(h+minY)/2),new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().makeBasis(f.r,f.n,f.f)),V(w,h-minY,d));const b={...point,n:f.n,e:f.r,f:f.f,center:f.n.clone().multiplyScalar(R),w,d,h,minY,kind,mesh:proxy,cameraMeshes:[proxy]};staticObstacles.push(b);buildingMeshes.push(proxy);return b;}
-function addBeach9(){
+function addBeachBase9(){
  const sand=mat(0xf2ddb1),wood=mat(0xc89d72),cream=mat(0xf5eed8),teal=mat(0x4c9898),coral=mat(0xd8806b);
  const promenade=Array.from({length:49},(_,i)=>localPoint9(beach9,17,-28+i*56/48));roadRibbon9(cityGroup,promenade,3.5,.046,cream);
  const pier=Array.from({length:71},(_,i)=>localPoint9(beach9,-51+i*.96,0));roadRibbon9(cityGroup,pier,2.8,.065,wood);
@@ -38,5 +38,5 @@ function addSphinx9(p,h){
  const tail=new THREE.Mesh(new THREE.TorusGeometry(1,.12,5,18,Math.PI*1.6),stone);tail.rotation.x=Math.PI/2;tail.position.set(1.6,.68,-3.2);g.add(tail);
  obstacle9(p,h,6.5,11.8,6.2,'狮身人面像');landmarks9.push({id:'sphinx',name:'圣安地列斯 · 狮身人面像',district:0,...p,heading:h,arrival:localPoint9(p,0,12,h),description:'狮身、前爪、人面与蓝金条纹头巾的原创砂岩雕像'});
 }
-function makeDistrictLandmarks(){makeDistrictLandmarksV7();landmarks9=[];addBeach9();addCasino9();}
+function makeDistrictLandmarks(){makeDistrictLandmarksV7();landmarks9=[];addBeach9();addCasino9();makeBayArchitecture10();addVegetation10();makeSignals10();}
 function finishWorld9(){if(atlas8)atlas8.material.gradientMap=freshRamp9;npcPaint8.gradientMap=freshRamp9;scene.userData.edition9={islands:3,landmarks:landmarks9.map(p=>({id:p.id,name:p.name,lat:p.lat,lon:p.lon})),streets:streets.length};mapCache9=null;}

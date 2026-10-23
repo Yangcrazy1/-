@@ -2,19 +2,21 @@ from pathlib import Path
 import base64,re,json
 P=Path(__file__).resolve().parents[1]
 exec((P/'scripts-v9/decorate.py').read_text())
+exec((P/'scripts-v10/decorate.py').read_text())
 s=(P/'src-v7/runtime-v6-checkpoint.js').read_text()
 def rename(name):
     global s
     k=s.rfind('function '+name+'(');assert k>=0,name
     s=s[:k]+s[k:].replace('function '+name+'(','function '+name+'V6(',1)
-for f in ['makeCharacter','animateHuman','humanLOD','fastTravel','makeBuilding','makeWorld','updatePeds','startGame','adjustResolution','refreshOneHandHUD','bindControls','staticBatch','capsuleContact','updatePlayer','updateCamera','makeCar','summonVehicle','integrateVehicle','textMaterial','makeStreetNetwork','canBuildHere','makeDistrictLandmarks','makeRoads','groundTexture','moveWithCollision','openMenu','renderInGameModel']:rename(f)
+for f in ['makeCharacter','animateHuman','humanLOD','fastTravel','makeBuilding','makeWorld','updatePeds','startGame','adjustResolution','refreshOneHandHUD','bindControls','staticBatch','capsuleContact','updatePlayer','updateCamera','makeCar','summonVehicle','integrateVehicle','textMaterial','makeStreetNetwork','canBuildHere','makeDistrictLandmarks','makeRoads','groundTexture','moveWithCollision','openMenu','renderInGameModel','place','advanceRoad','quickRoadAdvance','updateGroundPeds','attack']:rename(f)
 for name in ['staticBatch','capsuleContact','updatePlayer','updateCamera','makeCar','summonVehicle','integrateVehicle','textMaterial','makeStreetNetwork','canBuildHere','makeDistrictLandmarks','makeRoads','groundTexture','moveWithCollision','openMenu','renderInGameModel']:s=s.replace('function '+name+'V6(', 'function '+name+'V7(')
-s=s.replace('0.6.0','0.9.0').replace('Mobile v0.6','Mobile v0.7')
+for name in ['place','advanceRoad','quickRoadAdvance','updateGroundPeds','attack']:s=s.replace('function '+name+'V6(', 'function '+name+'V9(')
+s=s.replace('0.6.0','0.10.0').replace('Mobile v0.6','Mobile v0.7')
 s=s.replace('All meshes, textures and sounds below are authored procedurally for this demo.','Humanoid topology/animations: Quaternius, CC0. Clothing texture: generated for this game. Other world assets are procedural.')
 s=s.replace('antialias:!coarse','antialias:!coarse').replace('coarse?1.25:1.5','coarse?1.5:1.65')
 s=s.replace('const seconds=now/1000,raw=', 'const frameWorkStart7=performance.now();const seconds=now/1000,raw=')
 s=s.replace('updateCombat(dt);}', 'updateCombat(dt);updateSolar7(Math.min(raw,2));}')
-s=s.replace('updateCamera(dt);uiTick+=dt;', 'updateCamera(dt);updateSolar7(0);uiTick+=dt;')
+s=s.replace('updateCamera(dt);uiTick+=dt;', 'if(running)updatePilot10(0);updateCamera(dt);updateOcean10(0);updateSolar7(0);uiTick+=dt;')
 s=s.replace('adjustResolution(dt,raw*1000);','adjustResolution(dt,performance.now()-frameWorkStart7);')
 s=s.replace('h=[3.4,3.7,3.3,6.7,5.9,4.8,4.0][kind]+rng()*.6','h=[3.6,4.3,5.2,10.5,7.6,6.2,4.8][kind]+rng()*1.4')
 s=s.replace('h=[8.4,6.1,3.6,9.5,4.3,11.6,4.0][kind]+rng()*.8','h=[13.4,9.1,4.6,15.5,6.3,17.6,5.0][kind]+rng()*1.2')
@@ -27,14 +29,15 @@ s=s.replace('uniform vec3 horizon;varying vec3 dir;', 'uniform vec3 horizon;unif
 s=s.replace('gl_FragColor=vec4(pow(col,vec3(.4545)),1.);','vec3 nd=normalize(dir);float disk=smoothstep(.9993,.9998,dot(nd,sunDir));col=mix(col,vec3(1.,.78,.39),disk*(1.-night));vec3 cell=floor(nd*500.);float star=step(.9985,fract(sin(dot(cell,vec3(12.989,78.233,34.177)))*43758.5453))*night*step(.1,h);col+=vec3(star*.8);gl_FragColor=vec4(pow(col,vec3(.4545)),1.);')
 # More street context in walking view; retain all tested collision constraints.
 s=s.replace('activeCar?7.8+rush*2:5.85','activeCar?7.8+rush*2:6.85').replace('activeCar?3.65+rush*.25:3.25','activeCar?3.65+rush*.25:2.80')
-data='const RIG_DATA_V7='+ (P/'assets/rig-v7.json').read_text()+';\nconst FABRIC_DATA_V7="data:image/jpeg;base64,'+base64.b64encode((P/'assets/tommy-fabric-v7.jpg').read_bytes()).decode()+'";\n'
+data='const BAY_CONFIG10='+json.dumps(json.loads((P/'src-v10/config.json').read_text()),separators=(',',':'))+';\nconst RIG_DATA_V7='+ (P/'assets/rig-v7.json').read_text()+';\nconst FABRIC_DATA_V7="data:image/jpeg;base64,'+base64.b64encode((P/'assets/tommy-fabric-v7.jpg').read_bytes()).decode()+'";\n'
 mods=data+'\n'.join((P/'src-v7'/f).read_text() for f in ['characters.js','world.js','interface.js'])
-s=s.replace('function init(){',mods+'\n'+ '\n'.join((P/'src-v8'/f).read_text() for f in ['performance.js','physics-camera.js','vehicles-ui.js'])+'\n'+ '\n'.join((P/'src-v9'/f).read_text() for f in ['geography.js','landmarks.js','art-direction.js','map-ui.js'])+'\nfunction init(){')
-s=s.replace("version:'0.7.0'","version:'0.9.0'")
-s=s.replace('bindControls();loadProgress();','bindControls();bindRefinements8();bindEdition9();loadProgress();')
+s=s.replace('function init(){',mods+'\n'+ '\n'.join((P/'src-v8'/f).read_text() for f in ['performance.js','physics-camera.js','vehicles-ui.js'])+'\n'+ '\n'.join((P/'src-v9'/f).read_text() for f in ['geography.js','landmarks.js','art-direction.js','map-ui.js'])+'\n'+ '\n'.join((P/'src-v10'/f).read_text() for f in ['coast-water.js','environment.js','traffic.js','effects.js','characters.js','integration.js'])+'\nfunction init(){')
+s=s.replace("version:'0.7.0'","version:'0.10.0'")
+s=s.replace('bindControls();loadProgress();','bindControls();bindRefinements8();bindEdition9();bindEdition10();loadProgress();')
 (P/'game-v7.js').write_text(s)
 (P/'game-v8.js').write_text(s)
 (P/'game-v9.js').write_text(s)
+(P/'game-v10.js').write_text(s)
 shell=(P/'src-v7/shell-v6-checkpoint.html').read_text().replace('V0.6','V0.7').replace('v0.6','v0.7').replace('FILE / 0.6','FILE / 0.7')
 shell=re.sub(r'<details open><summary>V0\.7 本次更新</summary>.*?</details>','',shell,flags=re.S)
 shell=shell.replace('</style>',(P/'src-v7/interface.css').read_text()+'\n'+(P/'src-v8/interface.css').read_text()+'\n'+(P/'src-v9/interface.css').read_text()+'\n</style>')
@@ -72,6 +75,6 @@ assert len(scripts)==2,len(scripts)
 for i,code in enumerate(scripts):html=html.replace('<script>'+code+'</script>','<script type="text/pocket-source" id="bundle8-'+str(i)+'">'+code+'</script>',1)
 html=html.replace('<div class="requirements">','<div class="requirements"><details open><summary>V0.8 · 加载 / 行走 / 载具</summary><p>新增分阶段加载页、城市图集和重复招牌缓存、车辆及路人材质合批；修复持械行走使用站立动作的问题，改善动画淡出、完整高度碰撞与镜头遮挡。新增履带坦克；载具卡片支持手机原生横滑与鼠标拖动，保留出租车、法拉利风格跑车、直升机与战斗机。</p><p>本轮为离线 H5 交付，未执行平台审核。云端软件 GPU 验证不能替代手机真机 FPS 测试。详情见附带的 V0.8 开发说明与报告。</p></details>',1)
 html=html.replace('</body>','<script>'+ (P/'src-v8/loader.js').read_text()+'</script></body>')
-html=decorateHTML9(html)
+html=decorateHTML10(decorateHTML9(html))
 (P/'dist/index.html').write_text(html)
-print('Built V0.9:',len(html.encode()),'bytes; no runtime network dependencies')
+print('Built V0.10:',len(html.encode()),'bytes; no runtime network dependencies')

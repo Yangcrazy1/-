@@ -1,4 +1,4 @@
-function makeCar(color=0x738b7b,type='coupe',police=false){
+function makeCarV8(color=0x738b7b,type='coupe',police=false){
  if(type!=='tank'){const c=makeCarV7(color,type,police);const keep=[c.driver,c.passenger,...(c.beacon||[])].filter(Boolean);for(const o of keep)o.removeFromParent();staticBatch(c.body);c.body.add(...keep);return c;}
  const c=makeCarV7(0x7d8767,'van',false);for(const wheel of c.wheels)wheel.removeFromParent();c.body.clear();c.wheels=[];
  const paint=mat(0x849078),edge=mat(0xb7baa0),dark=mat(0x303d3b),rubber=mat(0x283331);box(c.body,paint,0,.83,0,2.45,.75,4.75);box(c.body,paint,0,1.21,-.25,2.04,.29,3.65);box(c.body,edge,0,1.39,-1.3,1.6,.08,.85);

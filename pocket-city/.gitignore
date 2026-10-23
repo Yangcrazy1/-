@@ -2,3 +2,10 @@ node_modules/
 __pycache__/
 *.pyc
 assets/source/UAL*_Standard.glb
+
+# Temporary diagnostic runs; keep final JSON / screenshots / evidence.
+reports/v10/endurance-progress.json
+reports/v10/*-run.log
+reports/v10/initial-*.log
+reports/v10/baseline/capture.log
+__pycache__/

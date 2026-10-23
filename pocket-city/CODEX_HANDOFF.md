@@ -2,11 +2,13 @@
 
 ## 当前交付
 
-V0.9 手机 H5 试玩工程。用户最新要求优先交付可下载试玩并调试人车运动、人物服装对位；小红书上传包等以后明确要求。先读 AGENTS.md、README_V09.md 和 reports/v09/。
+V0.10 清新海湾手机 H5。用户选择中档安卓优先，稳定 30 FPS 是目标，尚无真机验收。参考会话 01a16708-2512-71fc-94bc-1e85de06a0a9。读取 PROJECT_STATUS.md、README_V10.md、AGENTS.md 和 reports/v10/；以本工作区和当前分支为基线，不要覆盖旧压缩包。
 
-本轮加入三片岛城海岸/局部街网、海湾沙滩与木栈桥、绿洲赌场外景和狮身人面像。第二城区现在标为「自由城 · 海湾」。CJ/Tommy 服装切缝保留原骨骼与严格归一化权重；配件使用 bind inverse，不能用播放动作后的 bone.matrixWorld 代替。行人步行动画使用实际位移速度。
+本轮加入球面微波浪与同步法线、浅深水和干湿沙／缓坡海底、自然岸线、实体木栈道／咖啡／礁石／植被，四类道路与六处实际信控，限量脚印／涟漪／水花，衣服肩线、体态与接地／握持／驾驶姿态，48 CSS 像素手机热区和防穿透。保留三城完整球面和原有玩法。
 
-兼容保留 V0.8 的车辆、滑动、加载与物理优化。构建仍运行 scripts-v7/build.py；新模块在 src-v9/。npm test 执行 70 项回归；scripts-v9/browser-smoke.py 检查实际浏览器的人车位移、滚动、操作、景点与模型。云端 GPU 为 SwiftShader，不能视为手机性能验收。
+新代码 src-v10/，配置 src-v10/config.json，构建仍 scripts-v7/build.py。npm test 执行 81 项；browser-smoke.py 和 acceptance.py 保存实际 WebGL/UI 证据；endurance.py 记录十分钟真实墙钟的云端稳定性。所有报告必须与当前 HTML SHA 对应。不要将云端 SwiftShader FPS 说成手机 FPS。
+
+GitHub 下载交付沿用用户已连接仓库独立分支，主分支不变；实际取回 HTTPS 文件并校验后再给链接。小游戏平台适配留待用户指定目标。
 
 ## 保留的全部目标
 

@@ -1,6 +1,6 @@
 let wardrobe7=0,inventoryOpen7=false;
 function refreshOneHandHUD(){
- refreshOneHandHUDV6();const minutes=Math.floor(solarHours7*60)%1440;setText('gameClock',(solarHours7<5.5||solarHours7>=20?'☾ ':'☀ ')+String(Math.floor(minutes/60)).padStart(2,'0')+':'+String(minutes%60).padStart(2,'0'));setText('solarLabel7',solarPhase7+' · 5 分钟 / 天');
+ refreshOneHandHUDV6();syncMobileUI10();const minutes=Math.floor(solarHours7*60)%1440;setText('gameClock',(solarHours7<5.5||solarHours7>=20?'☾ ':'☀ ')+String(Math.floor(minutes/60)).padStart(2,'0')+':'+String(minutes%60).padStart(2,'0'));setText('solarLabel7',solarPhase7+' · 5 分钟 / 天');
  const s=JSON.parse(document.body.dataset.gameState||'{}'),near=populationNear7();Object.assign(s,{version:'0.7.0',solarHours:solarHours7,solarPhase:solarPhase7,daySeconds:dayElapsed7,cycleSeconds:300,daylight:daylight7,localPopulation:near,populationRepairs:populationRepairs7,heroAsset:player.assetSource,heroModelUUID:player.figure.uuid,heroAnimation:player.animationState,heroBones:player.skeleton.bones.length,heroVertices:player.figure.geometry.attributes.position.count,wardrobe:wardrobe7});document.body.dataset.gameState=JSON.stringify(s);
  for(const b of document.querySelectorAll('[data-item7]'))b.classList.toggle('equipped',Number(b.dataset.item7)===weapon);
 }

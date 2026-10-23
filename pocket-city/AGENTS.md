@@ -28,3 +28,14 @@
 - Read README_V09.md. Edit `src-v9/` for coast/landmarks/art/map. The build entry point remains `scripts-v7/build.py`; npm test runs 70 checks through `verify-v9.cjs`.
 - Preserve normalized weights when cutting clothing seams. Attach new accessories with skeleton bind inverses, not an animated head/hand world matrix.
 - Keep coastal blocking, walkable bridges/pier, clear landmark arrival points, and solid casino/sphinx collision. Browser checks: `scripts-v9/browser-smoke.py`.
+
+## V0.10 fresh bay continuation
+
+- User reference project/session: `01a16708-2512-71fc-94bc-1e85de06a0a9`. Read PROJECT_STATUS.md, README_V10.md, ACCEPTANCE_V10.md and current git status before editing. Current workspace is authoritative; never overwrite it with old ZIPs.
+- User selected medium Android, 30 FPS target, and explicitly requires verified HTTPS mobile downloads like V0.9. Keep offline HTML below 10,000,000 bytes. Actual phone performance remains unverified without devices.
+- Edit src-v10/ plus necessary compatibility hooks. Config is src-v10/config.json; it is embedded by scripts-v7/build.py. Maintain shared spherical wave/seabed/shore/bridge/walk/vehicle heights and local-frame normals; never project bay decks onto the antipode.
+- Signals, pedestrian lights and traffic use one active clock. Retain all-red clearance and in-progress crossing protection. Cars must brake before the stop line and start smoothly; waterfront decks remain pedestrian-only.
+- Preserve the same weighted body and skeleton through all protagonist states. Keep normalized weights, bind-space accessories, grounded feet, warm role-specific clothing, and resource disposal when changing actors/previews.
+- npm test runs verify-v10.cjs with 81 cases. Legacy assertions remain; the radial error now compares analytic terrain, and melee waits for its preparation time before checking the same damage. Do not weaken those checks.
+- UI/render changes require scripts-v10/browser-smoke.py and scripts-v10/acceptance.py; the latter injects QA hooks not present in delivered HTML. Confirm report hashes match the final HTML. Run scripts-v10/endurance.py for final 600-second cloud evidence, and describe SwiftShader limits.
+- Update PROJECT_STATUS.md at substantive stages in Chinese progress updates. Keep pre/post camera evidence and explicit acceptance gaps. Package single English-named HTML, runnable ZIP, source, config, screenshots/checklist; verify ZIP CRC and actual HTTPS bytes before claiming delivery.
