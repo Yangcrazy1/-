@@ -1,0 +1,3583 @@
+{
+  "html_sha256": "14bdb6cb5b22bd199a9f3c43a0ec00bd57b7aa8a541d3394083347a261bb4cf0",
+  "environment": "Linux Chromium WebGL / SwiftShader, shared cloud CPU; not a physical Android benchmark",
+  "viewport": [
+    844,
+    390
+  ],
+  "deviceScaleFactor": 1,
+  "duration_target_seconds": 600,
+  "phases": [
+    {
+      "mode": "walk",
+      "actual_seconds": 180.85,
+      "frames": 310,
+      "average_fps": 1.7195845705559418,
+      "p95_render_interval_ms": 766.6999999999971,
+      "begin": {
+        "clock": 0,
+        "solar": 8,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 8,
+          "calls": 4,
+          "triangles": 10538,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 4,
+          "textures": 4
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 0
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -0.48152470883187243,
+          "lon": 1.998832342792624
+        },
+        "signal": {
+          "index": 0,
+          "elapsed": 0,
+          "remaining": 9,
+          "a": "green",
+          "b": "red",
+          "ped": false,
+          "clearing": false
+        }
+      },
+      "end": {
+        "clock": 15.550000000000086,
+        "solar": 22.388776000000004,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 339,
+          "calls": 226,
+          "triangles": 578296,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 290,
+          "textures": 70
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 4
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -0.3197712185315186,
+          "lon": 1.9349376547953319
+        },
+        "signal": {
+          "index": 0,
+          "elapsed": 2.5597000000000207,
+          "remaining": 6.440299999999979,
+          "a": "green",
+          "b": "red",
+          "ped": false,
+          "clearing": false
+        }
+      }
+    },
+    {
+      "mode": "car",
+      "actual_seconds": 180.28,
+      "frames": 890,
+      "average_fps": 4.940980268278574,
+      "p95_render_interval_ms": 316.70000000001164,
+      "begin": {
+        "clock": 15.600000000000087,
+        "solar": 22.430104000000004,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 340,
+          "calls": 226,
+          "triangles": 578296,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 290,
+          "textures": 70
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 4
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -1.1919111877322996,
+          "lon": -2.8306926792548226
+        },
+        "signal": {
+          "index": 0,
+          "elapsed": 3.076300000000032,
+          "remaining": 5.923699999999968,
+          "a": "green",
+          "b": "red",
+          "ped": false,
+          "clearing": false
+        }
+      },
+      "end": {
+        "clock": 60.14999999999872,
+        "solar": 12.860200000000006,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 1232,
+          "calls": 301,
+          "triangles": 542609,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 850,
+          "textures": 156
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 0
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -1.1756204815596478,
+          "lon": -0.4775731220543036
+        },
+        "signal": {
+          "index": 0,
+          "elapsed": 8.252499999999998,
+          "remaining": 0.7475000000000023,
+          "a": "green",
+          "b": "red",
+          "ped": false,
+          "clearing": false
+        }
+      }
+    },
+    {
+      "mode": "heli",
+      "actual_seconds": 120.16,
+      "frames": 611,
+      "average_fps": 5.090453441929674,
+      "p95_render_interval_ms": 316.5,
+      "begin": {
+        "clock": 60.19999999999872,
+        "solar": 12.881528000000003,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 1233,
+          "calls": 301,
+          "triangles": 542609,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 850,
+          "textures": 156
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 0
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -0.10447365754478996,
+          "lon": 1.6832025939982103
+        },
+        "signal": {
+          "index": 0,
+          "elapsed": 8.519100000000037,
+          "remaining": 0.4808999999999628,
+          "a": "green",
+          "b": "red",
+          "ped": false,
+          "clearing": false
+        }
+      },
+      "end": {
+        "clock": 90.79999999999698,
+        "solar": 22.49580800000001,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 1846,
+          "calls": 320,
+          "triangles": 609032,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 1215,
+          "textures": 182
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 4
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -0.1478262635245211,
+          "lon": 1.5749173141250987
+        },
+        "signal": {
+          "index": 9,
+          "elapsed": 0.7976000000000081,
+          "remaining": 2.702399999999992,
+          "a": "red",
+          "b": "red",
+          "ped": false,
+          "clearing": true,
+          "occupied": true
+        }
+      }
+    },
+    {
+      "mode": "jet",
+      "actual_seconds": 120.35,
+      "frames": 750,
+      "average_fps": 6.245045597159587,
+      "p95_render_interval_ms": 266.70000000006985,
+      "begin": {
+        "clock": 90.84999999999698,
+        "solar": 22.50780800000001,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 1847,
+          "calls": 313,
+          "triangles": 608240,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 1215,
+          "textures": 182
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 4
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -0.12430694815649507,
+          "lon": 1.595386509593028
+        },
+        "signal": {
+          "index": 9,
+          "elapsed": 0.9476000000000431,
+          "remaining": 2.552399999999957,
+          "a": "red",
+          "b": "red",
+          "ped": false,
+          "clearing": true,
+          "occupied": true
+        }
+      },
+      "end": {
+        "clock": 128.39999999999495,
+        "solar": 8.13676000000001,
+        "quality": "均衡",
+        "ratio": 1,
+        "render": {
+          "frame": 2599,
+          "calls": 393,
+          "triangles": 703352,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 1572,
+          "textures": 229
+        },
+        "heap": 342000000,
+        "effects": {
+          "ripples": {
+            "capacity": 16,
+            "active": 0
+          },
+          "footprints": {
+            "capacity": 64,
+            "active": 0
+          },
+          "splashes": {
+            "capacity": 32,
+            "active": 0
+          }
+        },
+        "effectCounters": {
+          "foot": 0,
+          "car": 0,
+          "rotor": 0
+        },
+        "position": {
+          "lat": -0.6055750235522488,
+          "lon": -0.25392709547864534
+        },
+        "signal": {
+          "index": 5,
+          "elapsed": 8.309500000000085,
+          "remaining": 0.6904999999999148,
+          "a": "red",
+          "b": "red",
+          "ped": false,
+          "clearing": false,
+          "occupied": true
+        }
+      }
+    }
+  ],
+  "samples": [
+    {
+      "clock": 0.8000000000000002,
+      "solar": 8.953304,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 44,
+        "calls": 169,
+        "triangles": 553668,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 240,
+        "textures": 48
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.4595550232268501,
+        "lon": 1.9921674662998337
+      },
+      "signal": {
+        "index": 1,
+        "elapsed": 1.8162999999999982,
+        "remaining": 0.38370000000000193,
+        "a": "yellow",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 13.3,
+      "mode": "walk"
+    },
+    {
+      "clock": 1.5500000000000007,
+      "solar": 9.731943999999999,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 59,
+        "calls": 170,
+        "triangles": 555474,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 241,
+        "textures": 48
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 1
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.43927283481274526,
+        "lon": 1.9849016032040379
+      },
+      "signal": {
+        "index": 4,
+        "elapsed": 2.1492999999999967,
+        "remaining": 1.3507000000000033,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 24.75,
+      "mode": "walk"
+    },
+    {
+      "clock": 2.3999999999999995,
+      "solar": 10.68392,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 76,
+        "calls": 174,
+        "triangles": 531832,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 249,
+        "textures": 48
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.4168460361307018,
+        "lon": 1.9750230998074336
+      },
+      "signal": {
+        "index": 6,
+        "elapsed": 0.5490000000000066,
+        "remaining": 1.6509999999999936,
+        "a": "red",
+        "b": "yellow",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 35.16,
+      "mode": "walk"
+    },
+    {
+      "clock": 3.2999999999999963,
+      "solar": 11.489215999999999,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 94,
+        "calls": 193,
+        "triangles": 556020,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 259,
+        "textures": 68
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 3
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.39372930872078554,
+        "lon": 1.9630519544741505
+      },
+      "signal": {
+        "index": 9,
+        "elapsed": 1.215200000000002,
+        "remaining": 2.284799999999998,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 45.45,
+      "mode": "walk"
+    },
+    {
+      "clock": 4.149999999999993,
+      "solar": 12.33452,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 111,
+        "calls": 201,
+        "triangles": 558946,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 270,
+        "textures": 69
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.3721853704942913,
+        "lon": 1.9512131227969085
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 8.281500000000001,
+        "remaining": 0.7184999999999988,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 55.84,
+      "mode": "walk"
+    },
+    {
+      "clock": 4.94999999999999,
+      "solar": 13.171808000000002,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 127,
+        "calls": 203,
+        "triangles": 568805,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 281,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.35171013176383,
+        "lon": 1.9405890305311466
+      },
+      "signal": {
+        "index": 4,
+        "elapsed": 0.34760000000000524,
+        "remaining": 3.1523999999999948,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 66.39,
+      "mode": "walk"
+    },
+    {
+      "clock": 5.799999999999987,
+      "solar": 14.014448,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 144,
+        "calls": 211,
+        "triangles": 567596,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.32961983313118626,
+        "lon": 1.9307974787170228
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 7.380600000000001,
+        "remaining": 1.6193999999999988,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 76.83,
+      "mode": "walk"
+    },
+    {
+      "clock": 6.649999999999984,
+      "solar": 14.843744000000001,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 161,
+        "calls": 218,
+        "triangles": 571288,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.32109141134303587,
+        "lon": 1.9343511928860082
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 5.346800000000007,
+        "remaining": 0.6531999999999929,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 87.21,
+      "mode": "walk"
+    },
+    {
+      "clock": 7.4499999999999815,
+      "solar": 15.658384,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 177,
+        "calls": 218,
+        "triangles": 571288,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.32003801012783456,
+        "lon": 1.9347655575169436
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 6.0297999999999945,
+        "remaining": 2.9702000000000055,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 97.26,
+      "mode": "walk"
+    },
+    {
+      "clock": 8.349999999999984,
+      "solar": 16.457016000000003,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 195,
+        "calls": 218,
+        "triangles": 571288,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31983765049597984,
+        "lon": 1.9348302673898587
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 3.612700000000009,
+        "remaining": 2.387299999999991,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 107.39,
+      "mode": "walk"
+    },
+    {
+      "clock": 9.199999999999996,
+      "solar": 17.276984,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 212,
+        "calls": 218,
+        "triangles": 571288,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31974862403976295,
+        "lon": 1.9348522393469865
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 4.3622999999999905,
+        "remaining": 4.6377000000000095,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 117.64,
+      "mode": "walk"
+    },
+    {
+      "clock": 10.20000000000001,
+      "solar": 18.08228,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 232,
+        "calls": 218,
+        "triangles": 571288,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31974862403976295,
+        "lon": 1.9348522393469865
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 2.0284999999999993,
+        "remaining": 3.9715000000000007,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 127.67,
+      "mode": "walk"
+    },
+    {
+      "clock": 11.100000000000023,
+      "solar": 18.89692,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 250,
+        "calls": 217,
+        "triangles": 571208,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31974862403976295,
+        "lon": 1.9348522393469865
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 2.711499999999994,
+        "remaining": 6.288500000000006,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 137.92,
+      "mode": "walk"
+    },
+    {
+      "clock": 12.050000000000036,
+      "solar": 19.696888,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 269,
+        "calls": 216,
+        "triangles": 571128,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31974862403976295,
+        "lon": 1.9348522393469865
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 0.3111000000000088,
+        "remaining": 5.688899999999991,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 147.93,
+      "mode": "walk"
+    },
+    {
+      "clock": 13.150000000000052,
+      "solar": 20.516856,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 291,
+        "calls": 215,
+        "triangles": 569827,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31974862403976295,
+        "lon": 1.9348522393469865
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 1.0607000000000255,
+        "remaining": 7.9392999999999745,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 158.04,
+      "mode": "walk"
+    },
+    {
+      "clock": 14.250000000000068,
+      "solar": 21.322160000000004,
+      "quality": "流畅",
+      "ratio": 1,
+      "render": {
+        "frame": 313,
+        "calls": 215,
+        "triangles": 569827,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.31974862403976295,
+        "lon": 1.9348522393469865
+      },
+      "signal": {
+        "index": 6,
+        "elapsed": 2.1270000000000095,
+        "remaining": 0.07299999999999063,
+        "a": "red",
+        "b": "yellow",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 168.11,
+      "mode": "walk"
+    },
+    {
+      "clock": 15.250000000000082,
+      "solar": 22.12612,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 333,
+        "calls": 226,
+        "triangles": 578296,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.3197568547586476,
+        "lon": 1.9348803947213102
+      },
+      "signal": {
+        "index": 9,
+        "elapsed": 2.7765000000000057,
+        "remaining": 0.7234999999999943,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 178.14,
+      "mode": "walk"
+    },
+    {
+      "clock": 15.450000000000085,
+      "solar": 22.29012,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 337,
+        "calls": 226,
+        "triangles": 578296,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 290,
+        "textures": 70
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.3197644555258678,
+        "lon": 1.9349090205205781
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 1.32650000000001,
+        "remaining": 7.67349999999999,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 180.35,
+      "mode": "walk"
+    },
+    {
+      "clock": 17.25000000000011,
+      "solar": 23.280736000000005,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 374,
+        "calls": 115,
+        "triangles": 378987,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 467,
+        "textures": 87
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1649366374282342,
+        "lon": -2.5649580879672707
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 1.3092000000000381,
+        "remaining": 4.690799999999962,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 193.03,
+      "mode": "car"
+    },
+    {
+      "clock": 18.55000000000013,
+      "solar": 0.08337600000000478,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 400,
+        "calls": 217,
+        "triangles": 539984,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 522,
+        "textures": 97
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.163170816439701,
+        "lon": -2.288165431646427
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 1.8422000000000338,
+        "remaining": 7.157799999999966,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 203.39,
+      "mode": "car"
+    },
+    {
+      "clock": 20.550000000000157,
+      "solar": 0.9406720000000028,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 440,
+        "calls": 198,
+        "triangles": 504099,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 544,
+        "textures": 99
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1480813764007889,
+        "lon": -1.8618784136113589
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 0.1584000000000485,
+        "remaining": 5.841599999999952,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 213.59,
+      "mode": "car"
+    },
+    {
+      "clock": 23.800000000000203,
+      "solar": 1.7486400000000053,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 505,
+        "calls": 210,
+        "triangles": 538378,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 658,
+        "textures": 115
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.153302328686371,
+        "lon": -1.2447872751910616
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 0.7580000000000453,
+        "remaining": 8.241999999999955,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 223.63,
+      "mode": "car"
+    },
+    {
+      "clock": 27.300000000000253,
+      "solar": 2.556608000000004,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 575,
+        "calls": 244,
+        "triangles": 553446,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 743,
+        "textures": 145
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1736250678563134,
+        "lon": -0.49603694706784096
+      },
+      "signal": {
+        "index": 1,
+        "elapsed": 1.8576000000000548,
+        "remaining": 0.3423999999999454,
+        "a": "yellow",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 233.75,
+      "mode": "car"
+    },
+    {
+      "clock": 30.800000000000303,
+      "solar": 3.3659120000000016,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 645,
+        "calls": 285,
+        "triangles": 531360,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 782,
+        "textures": 146
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756205919579672,
+        "lon": -0.4775732189796231
+      },
+      "signal": {
+        "index": 4,
+        "elapsed": 2.573900000000023,
+        "remaining": 0.9260999999999768,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 243.87,
+      "mode": "car"
+    },
+    {
+      "clock": 34.25000000000019,
+      "solar": 4.173880000000004,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 714,
+        "calls": 275,
+        "triangles": 530300,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 782,
+        "textures": 146
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 6,
+        "elapsed": 0.17350000000006105,
+        "remaining": 2.026499999999939,
+        "a": "red",
+        "b": "yellow",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 253.94,
+      "mode": "car"
+    },
+    {
+      "clock": 37.84999999999999,
+      "solar": 4.983176000000004,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 786,
+        "calls": 275,
+        "triangles": 530300,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 782,
+        "textures": 146
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 9,
+        "elapsed": 0.8896999999999968,
+        "remaining": 2.610300000000003,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 264.05,
+      "mode": "car"
+    },
+    {
+      "clock": 41.249999999999794,
+      "solar": 5.784480000000002,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 854,
+        "calls": 289,
+        "triangles": 535010,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 796,
+        "textures": 150
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 7.405999999999992,
+        "remaining": 1.5940000000000083,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 274.14,
+      "mode": "car"
+    },
+    {
+      "clock": 43.499999999999666,
+      "solar": 6.584448000000005,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 899,
+        "calls": 293,
+        "triangles": 535509,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 828,
+        "textures": 151
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 5.005600000000035,
+        "remaining": 0.9943999999999651,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 284.25,
+      "mode": "car"
+    },
+    {
+      "clock": 45.59999999999955,
+      "solar": 7.389744000000011,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 941,
+        "calls": 307,
+        "triangles": 541049,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 828,
+        "textures": 151
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 5.571800000000067,
+        "remaining": 3.428199999999933,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 294.31,
+      "mode": "car"
+    },
+    {
+      "clock": 47.69999999999943,
+      "solar": 8.200384000000014,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 983,
+        "calls": 314,
+        "triangles": 548875,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 831,
+        "textures": 151
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 3.304800000000048,
+        "remaining": 2.695199999999952,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 304.44,
+      "mode": "car"
+    },
+    {
+      "clock": 49.74999999999931,
+      "solar": 9.023016000000005,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1024,
+        "calls": 320,
+        "triangles": 550859,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 833,
+        "textures": 153
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 4.087700000000034,
+        "remaining": 4.912299999999966,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 314.69,
+      "mode": "car"
+    },
+    {
+      "clock": 51.949999999999186,
+      "solar": 9.834976000000005,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1068,
+        "calls": 313,
+        "triangles": 547615,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 845,
+        "textures": 154
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 1.8372000000000226,
+        "remaining": 4.162799999999978,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 324.79,
+      "mode": "car"
+    },
+    {
+      "clock": 54.29999999999905,
+      "solar": 10.644280000000002,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1115,
+        "calls": 327,
+        "triangles": 551359,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 849,
+        "textures": 155
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 2.453499999999991,
+        "remaining": 6.546500000000009,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 334.95,
+      "mode": "car"
+    },
+    {
+      "clock": 56.349999999998936,
+      "solar": 11.452248000000004,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1156,
+        "calls": 315,
+        "triangles": 547619,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 849,
+        "textures": 155
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 0.1531000000000573,
+        "remaining": 5.846899999999943,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 345.02,
+      "mode": "car"
+    },
+    {
+      "clock": 58.54999999999881,
+      "solar": 12.26822400000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1200,
+        "calls": 302,
+        "triangles": 544066,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 850,
+        "textures": 155
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 0.8528000000000588,
+        "remaining": 8.147199999999941,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 355.21,
+      "mode": "car"
+    },
+    {
+      "clock": 60.049999999998725,
+      "solar": 12.82286400000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1230,
+        "calls": 301,
+        "triangles": 542609,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 850,
+        "textures": 156
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -1.1756204815596478,
+        "lon": -0.4775731220543036
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 7.785800000000052,
+        "remaining": 1.2141999999999484,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 362.17,
+      "mode": "car"
+    },
+    {
+      "clock": 62.2999999999986,
+      "solar": 13.69883200000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1276,
+        "calls": 316,
+        "triangles": 590217,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 960,
+        "textures": 164
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.13638589373014504,
+        "lon": 1.5891534729018026
+      },
+      "signal": {
+        "index": 4,
+        "elapsed": 0.33540000000002657,
+        "remaining": 3.1645999999999734,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true
+      },
+      "elapsed_seconds": 373.3,
+      "mode": "heli"
+    },
+    {
+      "clock": 64.64999999999847,
+      "solar": 14.51080000000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1323,
+        "calls": 190,
+        "triangles": 595551,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 971,
+        "textures": 165
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.2639573625410136,
+        "lon": 1.5289709968193415
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 6.985000000000056,
+        "remaining": 2.0149999999999437,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 383.51,
+      "mode": "heli"
+    },
+    {
+      "clock": 67.14999999999833,
+      "solar": 15.316096000000009,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1373,
+        "calls": 294,
+        "triangles": 693460,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1038,
+        "textures": 171
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.38309567644856085,
+        "lon": 1.6236574613714219
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 4.651200000000037,
+        "remaining": 1.3487999999999634,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 393.69,
+      "mode": "heli"
+    },
+    {
+      "clock": 69.14999999999822,
+      "solar": 16.132064000000007,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1413,
+        "calls": 326,
+        "triangles": 667081,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1110,
+        "textures": 175
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.36988133684285734,
+        "lon": 1.7536031559000909
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 5.350800000000056,
+        "remaining": 3.6491999999999436,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 403.8,
+      "mode": "heli"
+    },
+    {
+      "clock": 70.74999999999812,
+      "solar": 16.954696000000006,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1445,
+        "calls": 405,
+        "triangles": 704803,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1147,
+        "textures": 177
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.29053433039991405,
+        "lon": 1.8151424783063173
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 3.233699999999983,
+        "remaining": 2.766300000000017,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 414.12,
+      "mode": "heli"
+    },
+    {
+      "clock": 72.44999999999803,
+      "solar": 17.765336000000005,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1479,
+        "calls": 259,
+        "triangles": 644602,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1164,
+        "textures": 178
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.18682925102555795,
+        "lon": 1.804015259517522
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 3.866700000000023,
+        "remaining": 5.133299999999977,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 424.23,
+      "mode": "heli"
+    },
+    {
+      "clock": 75.14999999999787,
+      "solar": 18.58130400000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1533,
+        "calls": 323,
+        "triangles": 587822,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1165,
+        "textures": 178
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.1092425601455032,
+        "lon": 1.6628709276343627
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 1.666300000000055,
+        "remaining": 4.333699999999945,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false
+      },
+      "elapsed_seconds": 434.36,
+      "mode": "heli"
+    },
+    {
+      "clock": 78.2499999999977,
+      "solar": 19.393272000000003,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1595,
+        "calls": 211,
+        "triangles": 629394,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1177,
+        "textures": 178
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.2325566177536559,
+        "lon": 1.5299934641187043
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 2.3159000000000134,
+        "remaining": 6.684099999999987,
+        "a": "green",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 444.47,
+      "mode": "heli"
+    },
+    {
+      "clock": 81.59999999999751,
+      "solar": 20.19856800000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1662,
+        "calls": 284,
+        "triangles": 675525,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1180,
+        "textures": 179
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.38905076805803823,
+        "lon": 1.6463846984299393
+      },
+      "signal": {
+        "index": 2,
+        "elapsed": 1.1821000000000508,
+        "remaining": 0.01789999999994918,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 454.6,
+      "mode": "heli"
+    },
+    {
+      "clock": 84.64999999999733,
+      "solar": 21.003872,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1723,
+        "calls": 396,
+        "triangles": 703805,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1195,
+        "textures": 182
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.3025444124484171,
+        "lon": 1.8110498113472868
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 0.5484000000000009,
+        "remaining": 8.4516,
+        "a": "red",
+        "b": "green",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 464.63,
+      "mode": "heli"
+    },
+    {
+      "clock": 87.94999999999715,
+      "solar": 21.814504000000007,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1789,
+        "calls": 289,
+        "triangles": 603170,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1207,
+        "textures": 182
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.12546293670539121,
+        "lon": 1.7423633838477428
+      },
+      "signal": {
+        "index": 6,
+        "elapsed": 1.6813000000000073,
+        "remaining": 0.5186999999999928,
+        "a": "red",
+        "b": "yellow",
+        "ped": false,
+        "clearing": false
+      },
+      "elapsed_seconds": 474.7,
+      "mode": "heli"
+    },
+    {
+      "clock": 90.69999999999699,
+      "solar": 22.47048000000001,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1844,
+        "calls": 333,
+        "triangles": 606406,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1215,
+        "textures": 182
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.14363558871854404,
+        "lon": 1.5796434481778951
+      },
+      "signal": {
+        "index": 9,
+        "elapsed": 0.4810000000000709,
+        "remaining": 3.018999999999929,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true,
+        "occupied": true
+      },
+      "elapsed_seconds": 482.93,
+      "mode": "heli"
+    },
+    {
+      "clock": 94.54999999999677,
+      "solar": 23.315776000000007,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 1922,
+        "calls": 264,
+        "triangles": 594517,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1225,
+        "textures": 184
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 4
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.21280649518027767,
+        "lon": 1.4732874764597983
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 7.547200000000053,
+        "remaining": 1.4527999999999466,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 493.56,
+      "mode": "jet"
+    },
+    {
+      "clock": 98.84999999999653,
+      "solar": 0.1197440000000114,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2008,
+        "calls": 211,
+        "triangles": 561676,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1229,
+        "textures": 184
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 2
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.3261253970709761,
+        "lon": 1.3019913082738461
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 5.196800000000051,
+        "remaining": 0.8031999999999488,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 503.62,
+      "mode": "jet"
+    },
+    {
+      "clock": 102.9499999999963,
+      "solar": 0.9290480000000088,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2090,
+        "calls": 308,
+        "triangles": 597557,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1284,
+        "textures": 188
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.4253267621668277,
+        "lon": 1.1265712281950073
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 5.81310000000002,
+        "remaining": 3.18689999999998,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 513.75,
+      "mode": "jet"
+    },
+    {
+      "clock": 106.74999999999608,
+      "solar": 1.7343520000000083,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2166,
+        "calls": 347,
+        "triangles": 610534,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1328,
+        "textures": 190
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.5061301221466957,
+        "lon": 0.950319571410748
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 3.4794000000001457,
+        "remaining": 2.5205999999998543,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 523.83,
+      "mode": "jet"
+    },
+    {
+      "clock": 109.8999999999959,
+      "solar": 2.536984000000004,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2229,
+        "calls": 386,
+        "triangles": 633167,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1378,
+        "textures": 198
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.5624272141050997,
+        "lon": 0.792908526965966
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 4.012300000000067,
+        "remaining": 4.987699999999933,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 533.91,
+      "mode": "jet"
+    },
+    {
+      "clock": 112.99999999999572,
+      "solar": 3.3436160000000115,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2291,
+        "calls": 289,
+        "triangles": 627018,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1424,
+        "textures": 208
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.6061979422246826,
+        "lon": 0.6279564242099784
+      },
+      "signal": {
+        "index": 3,
+        "elapsed": 1.695200000000176,
+        "remaining": 4.304799999999824,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 543.96,
+      "mode": "jet"
+    },
+    {
+      "clock": 116.19999999999554,
+      "solar": 4.151584,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2355,
+        "calls": 347,
+        "triangles": 660199,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1448,
+        "textures": 213
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.6372656768410071,
+        "lon": 0.4486277091975154
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 2.2948000000000803,
+        "remaining": 6.70519999999992,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 554.05,
+      "mode": "jet"
+    },
+    {
+      "clock": 119.49999999999535,
+      "solar": 4.962216000000005,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2421,
+        "calls": 346,
+        "triangles": 648034,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1465,
+        "textures": 218
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.6525761599103984,
+        "lon": 0.2572432219824642
+      },
+      "signal": {
+        "index": 8,
+        "elapsed": 0.0277000000001435,
+        "remaining": 5.972299999999857,
+        "a": "red",
+        "b": "red",
+        "ped": true,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 564.19,
+      "mode": "jet"
+    },
+    {
+      "clock": 122.54999999999518,
+      "solar": 5.76352,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2482,
+        "calls": 398,
+        "triangles": 681185,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1496,
+        "textures": 220
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.6508043155242548,
+        "lon": 0.07858825164951666
+      },
+      "signal": {
+        "index": 0,
+        "elapsed": 0.5440000000000182,
+        "remaining": 8.455999999999982,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 574.22,
+      "mode": "jet"
+    },
+    {
+      "clock": 124.74999999999505,
+      "solar": 6.571488000000002,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2526,
+        "calls": 422,
+        "triangles": 692253,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1510,
+        "textures": 223
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.6400431156681615,
+        "lon": -0.048937350815318394
+      },
+      "signal": {
+        "index": 1,
+        "elapsed": 1.6436000000000277,
+        "remaining": 0.5563999999999725,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 584.4,
+      "mode": "jet"
+    },
+    {
+      "clock": 126.74999999999494,
+      "solar": 7.380784000000006,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2566,
+        "calls": 457,
+        "triangles": 690241,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1548,
+        "textures": 228
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.623623424477671,
+        "lon": -0.16253108139612438
+      },
+      "signal": {
+        "index": 4,
+        "elapsed": 2.359800000000078,
+        "remaining": 1.140199999999922,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": true,
+        "occupied": true
+      },
+      "elapsed_seconds": 594.54,
+      "mode": "jet"
+    },
+    {
+      "clock": 128.29999999999492,
+      "solar": 8.090096000000017,
+      "quality": "均衡",
+      "ratio": 1,
+      "render": {
+        "frame": 2597,
+        "calls": 405,
+        "triangles": 705464,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1572,
+        "textures": 229
+      },
+      "heap": 342000000,
+      "effects": {
+        "ripples": {
+          "capacity": 16,
+          "active": 0
+        },
+        "footprints": {
+          "capacity": 64,
+          "active": 0
+        },
+        "splashes": {
+          "capacity": 32,
+          "active": 0
+        }
+      },
+      "effectCounters": {
+        "foot": 0,
+        "car": 0,
+        "rotor": 0
+      },
+      "position": {
+        "lat": -0.6067798802889661,
+        "lon": -0.24845571921303072
+      },
+      "signal": {
+        "index": 5,
+        "elapsed": 7.7262000000001905,
+        "remaining": 1.2737999999998095,
+        "a": "red",
+        "b": "red",
+        "ped": false,
+        "clearing": false,
+        "occupied": true
+      },
+      "elapsed_seconds": 603.45,
+      "mode": "jet"
+    }
+  ],
+  "actual_seconds": 603.97,
+  "pageErrors": [],
+  "consoleErrors": [],
+  "resource_notes": "Entering modes creates a retained test vehicle/aircraft; compare begin/end within each phase. Pools remain capped; JavaScript heap varies with GC.",
+  "measurement_limits": "SwiftShader software GPU on a shared cloud CPU, not a phone. The walking phase overlapped browser smoke/visual/acceptance processes; FPS is a stress-run observation and is not comparable to isolated V0.10 measurements. No Android 30 FPS claim. JS heap is browser-reported and quantized; GPU bytes were not measured."
+}

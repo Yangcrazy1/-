@@ -10,3 +10,12 @@
 {"elapsed": 304.44, "phase": "car", "calls": 314, "geometries": 831, "textures": 151, "heap": 342000000}
 {"elapsed": 334.95, "phase": "car", "calls": 327, "geometries": 849, "textures": 155, "heap": 342000000}
 {"elapsed": 362.17, "phase": "car", "calls": 301, "geometries": 850, "textures": 156, "heap": 342000000}
+{"elapsed": 393.69, "phase": "heli", "calls": 294, "geometries": 1038, "textures": 171, "heap": 342000000}
+{"elapsed": 424.23, "phase": "heli", "calls": 259, "geometries": 1164, "textures": 178, "heap": 342000000}
+{"elapsed": 454.6, "phase": "heli", "calls": 284, "geometries": 1180, "textures": 179, "heap": 342000000}
+{"elapsed": 482.93, "phase": "heli", "calls": 333, "geometries": 1215, "textures": 182, "heap": 342000000}
+{"elapsed": 513.75, "phase": "jet", "calls": 308, "geometries": 1284, "textures": 188, "heap": 342000000}
+{"elapsed": 543.96, "phase": "jet", "calls": 289, "geometries": 1424, "textures": 208, "heap": 342000000}
+{"elapsed": 574.22, "phase": "jet", "calls": 398, "geometries": 1496, "textures": 220, "heap": 342000000}
+{"elapsed": 603.45, "phase": "jet", "calls": 405, "geometries": 1572, "textures": 229, "heap": 342000000}
+{"seconds": 603.97, "phases": [{"mode": "walk", "actual_seconds": 180.85, "frames": 310, "average_fps": 1.7195845705559418, "p95_render_interval_ms": 766.6999999999971}, {"mode": "car", "actual_seconds": 180.28, "frames": 890, "average_fps": 4.940980268278574, "p95_render_interval_ms": 316.70000000001164}, {"mode": "heli", "actual_seconds": 120.16, "frames": 611, "average_fps": 5.090453441929674, "p95_render_interval_ms": 316.5}, {"mode": "jet", "actual_seconds": 120.35, "frames": 750, "average_fps": 6.245045597159587, "p95_render_interval_ms": 266.70000000006985}], "errors": []}

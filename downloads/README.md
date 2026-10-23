@@ -1,3 +1,16 @@
+# 侠盗自由城 V0.11
+
+- [下载手机单 HTML（2,998,319 字节，无需解压）](https://github.com/Yangcrazy1/-/raw/refs/heads/codex/character-city-v011/downloads/outlaw-liberty-city-v0.11-mobile.html?download=1)
+- [人物／街道前后对比 HTML](https://github.com/Yangcrazy1/-/raw/refs/heads/codex/character-city-v011/downloads/outlaw-liberty-city-v0.11-review.html?download=1)
+- [当前工程及开发说明](../pocket-city/README_V11.md)
+- [实际检查和限制](../pocket-city/ACCEPTANCE_V11.md)
+
+若浏览器显示源码，长按下载链接选择“下载链接”，保存为 `.html` 后使用支持本地 JavaScript / WebGL 的浏览器打开。没有实体手机可验证文件管理器行为。
+
+小红书版：产品名已统一为“侠盗自由城”，H5 候选入口位于 `pocket-city/platform/h5-candidate/`；实际上传页面／文档仍待用户确认，当前不是已验证的 SDK 小游戏工程，没有执行上传审核。
+
+以下保留历史下载。
+
 # 小星球 · 自由之城 V0.10 清新海湾试玩
 
 使用本仓库独立分支交付，main 保持原样。手机建议先下载 ZIP。
