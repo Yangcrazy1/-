@@ -11,3 +11,7 @@
 - 截图、浏览器验收、十分钟云端运行：`reports/v12/`。
 
 手机文件在仓库根 `downloads/`，使用实际 HTTPS 响应及 SHA-256 校验。保持三城及全部已有玩法。真机性能与文件打开待设备验证；小红书 H5 候选仍需确认上传入口／格式。既有版本文档、CC0／MIT 授权记录继续保留。
+
+[下载手机单 HTML（3.02 MB）](https://github.com/Yangcrazy1/-/raw/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-mobile.html) · [前后实拍对比 HTML](https://github.com/Yangcrazy1/-/raw/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-review.html)
+
+链接已实际获取并校验长度与 SHA-256。手机可长按下载，使用浏览器打开，无需解压。

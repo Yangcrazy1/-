@@ -27,3 +27,7 @@
 采样绘制调用 383–574，三角形 957,431–1,083,970。完整逐次采样、效果池与堆值见 endurance.json。
 
 几何／纹理缓存在访问新街区和切换载具后增加；不能声称整个测试内存不变。performance.memory 为浏览器粗粒度统计，未直接测量 GPU 字节或手机内存。当前软件 GPU 帧率低于 30，实体安卓目标仍未验证。上一版测试存在并行浏览器负载，本次不能据此做直接性能提升百分比比较。
+
+## 交付验证
+
+单 HTML 独立重建逐字节一致。手机试玩和对比 HTML 已发布到提交 `b4b15a6f77a7cbd00302503b2f2450ffdefab736`，GitHub / raw.githubusercontent 两种 HTTPS 地址均返回 200 且字节 / SHA-256 一致。响应为 text/plain，手机应长按下载链接后打开文件。完整记录在仓库 downloads/outlaw-liberty-city-v0.12-download-verification.json。

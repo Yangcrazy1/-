@@ -1,0 +1,58 @@
+{
+  "commit": "b4b15a6f77a7cbd00302503b2f2450ffdefab736",
+  "retrieved_utc": "2026-10-23T11:29:52.747984+00:00",
+  "files": [
+    {
+      "filename": "outlaw-liberty-city-v0.12-mobile.html",
+      "expected_sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
+      "attempts": [
+        {
+          "url": "https://github.com/Yangcrazy1/-/raw/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-mobile.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-mobile.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 3019973,
+          "sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
+          "verified": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Yangcrazy1/-/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-mobile.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-mobile.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 3019973,
+          "sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "filename": "outlaw-liberty-city-v0.12-review.html",
+      "expected_sha256": "f62cf161a825d2cbd1ece56edee19ed17cda2bc0ff9fb860582e54a52e85d792",
+      "attempts": [
+        {
+          "url": "https://github.com/Yangcrazy1/-/raw/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-review.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-review.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 2525184,
+          "sha256": "f62cf161a825d2cbd1ece56edee19ed17cda2bc0ff9fb860582e54a52e85d792",
+          "verified": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Yangcrazy1/-/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-review.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-review.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 2525184,
+          "sha256": "f62cf161a825d2cbd1ece56edee19ed17cda2bc0ff9fb860582e54a52e85d792",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}
