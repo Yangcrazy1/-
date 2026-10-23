@@ -1,19 +1,58 @@
 let meleePending10=null;
-function refineCharacter10(p,id,npc){p.root.userData.ground10=true;if(npc)return;const g=p.figure.geometry,pos=g.attributes.position;if(!g.userData.bayTailored10){for(let i=0;i<pos.count;i++){let x=pos.getX(i),y=pos.getY(i),z=pos.getZ(i);if(y>.20&&y<.96){const leg=x<0?-.112:.112,fade=Math.sin((y-.2)/.76*Math.PI),scale=1-(id===0?.11:id===1?.15:.12)*fade;x=leg+(x-leg)*scale;z*=scale;}if(id===1&&y>1.02&&y<1.49&&Math.abs(x)<.28){const edge=Math.sin((y-1.02)/.47*Math.PI);x*=1+.07*edge;z+=Math.sign(z)*(.027+.022*edge);}if(id===1&&y>1.18&&y<1.48&&Math.abs(x)>.28&&Math.abs(x)<.53){x*=1.02;z+=Math.sign(z)*.018;}if(y>1.57&&y<1.76&&Math.abs(x)<.15){const jaw=Math.exp(-(((y-1.64)/.075)**2)),brow=Math.exp(-(((y-1.715)/.025)**2));x*=1+([-.015,.05,.075][id])*jaw;if(z>.04){z+=([.006,.010,.007][id])*brow;if(Math.abs(x)<.026)z+=[.008,.012,.006][id]*Math.exp(-(((y-1.68)/.05)**2));}}pos.setXYZ(i,x,y,z);}pos.needsUpdate=true;g.computeBoundingSphere();g.userData.bayTailored10=true;}
- p.figure.userData.fit10={sharedSkeleton:true,bodyUUID:p.figure.uuid,role:id,headStyle:['square-buzz','swept-jaw','mature-brow'][id]};
- if(id===1){p.garment.applyMatrix4(bindInverse9(p,p.chest).clone().invert());p.garment.position.z+=.035;p.garment.applyMatrix4(bindInverse9(p,p.chest));}
- const stitch=toon7(id===1?0x4e7d79:0x8a8e82,{gradientMap:freshRamp9});if(id===1){const pocket=new THREE.Group();for(const side of [-1,1]){const seam=new THREE.Mesh(new THREE.BoxGeometry(.003,.095,.003),stitch);seam.position.set(.115+side*.042,1.29,.199);pocket.add(seam);}const hem=new THREE.Mesh(new THREE.BoxGeometry(.087,.003,.003),stitch);hem.position.set(.115,1.245,.199);pocket.add(hem);attachDetail9(p,p.chest,pocket);}
- for(let k=0;k<2;k++){const bone=p.ankles[k],center=V().setFromMatrixPosition(bindInverse9(p,bone).clone().invert()),sole=new THREE.Mesh(new THREE.BoxGeometry(.16,.028,.31),toon7(id===2?0x283a36:0xcbd4c5));sole.position.set(center.x,.018,center.z+.055);attachDetail9(p,bone,sole);}
- p.poseState10={speed:0,jump:0,landing:0,turn:0};p.footRestNormals10=p.ankles.map(b=>V(0,1,0).applyQuaternion(new THREE.Quaternion().setFromRotationMatrix(bindInverse9(p,b))));
+// V0.11 restores the V0.9 geometry, hair and bind-space wardrobe unchanged.
+// Never deform a shared body a second time or add a detached shoe shell.
+function refineCharacter10(p,id,npc){
+ p.root.userData.ground10=true;if(npc)return;finishWardrobe11(p,id);
+ p.figure.userData.fit10={sharedSkeleton:true,bodyUUID:p.figure.uuid,role:id,headStyle:['square-buzz','swept-jaw','mature-brow'][id],geometryBaseline:'v0.9'};
+ p.poseState10={speed:0,jump:0,landing:0,sit:0,corrections:new Map()};
+}
+// Smooth authored rotations before contact correction, without changing bind poses.
+function smoothAuthoredPose11(p,dt){
+ if(p.npc||dt<=0)return;if(!p.authoredFilter11)p.authoredFilter11=new Map();
+ const alpha=1-Math.exp(-dt*28);
+ for(const b of p.skeleton.bones){let q=p.authoredFilter11.get(b);if(!q){q=b.quaternion.clone();p.authoredFilter11.set(b,q);}else q.slerp(b.quaternion,alpha);b.quaternion.copy(q);}
+}
+function applyStableCorrection11(state,bone,base,desired,dt,maxAngle=.55){
+ const target=base.clone().invert().multiply(desired),angle=2*Math.acos(clamp(Math.abs(target.w),0,1));
+ if(angle>maxAngle)target.slerp(new THREE.Quaternion(),1-maxAngle/angle);
+ let current=state.corrections.get(bone);if(!current){current=new THREE.Quaternion();state.corrections.set(bone,current);}
+ current.slerp(target,1-Math.exp(-Math.min(dt,.1)*CITY_CONFIG11.footCorrectionHz));
+ bone.quaternion.copy(base).multiply(current);bone.updateWorldMatrix(false,true);
 }
 function rotateBone10(bone,from,to,blend=1){if(from.lengthSq()<1e-8||to.lengthSq()<1e-8)return;const delta=new THREE.Quaternion().setFromUnitVectors(from.normalize(),to.normalize()),world=bone.getWorldQuaternion(new THREE.Quaternion()),parent=bone.parent.getWorldQuaternion(new THREE.Quaternion()).invert(),target=parent.multiply(delta.multiply(world));bone.quaternion.slerp(target,blend);bone.updateWorldMatrix(false,true);}
 function solveLimb10(upper,lower,end,target,bend,blend=1){const a=upper.getWorldPosition(V()),b=lower.getWorldPosition(V()),c=end.getWorldPosition(V()),l1=a.distanceTo(b),l2=b.distanceTo(c),delta=target.clone().sub(a),d=clamp(delta.length(),Math.abs(l1-l2)+.005,l1+l2-.003),u=delta.normalize(),side=bend.clone().addScaledVector(u,-bend.dot(u)).normalize(),along=(l1*l1-l2*l2+d*d)/(2*d),height=Math.sqrt(Math.max(0,l1*l1-along*along)),knee=a.clone().addScaledVector(u,along).addScaledVector(side,height);rotateBone10(upper,b.sub(a),knee.sub(a),blend);const joint=lower.getWorldPosition(V()),tip=end.getWorldPosition(V());rotateBone10(lower,tip.sub(joint),target.clone().sub(joint),blend);}
-function finishPose10(p,dt,speed,armed){if(!p.authored||p.npc)return;const state=p.poseState10;if(!state)return;const active=p===player&&(activeCar||activeHeli||activeJet),onPlanet=p.root.position.length()>R*.9,accel=(speed-state.speed)/Math.max(.001,dt);state.speed=lerp(state.speed,speed,1-Math.exp(-dt*9));
- if(active){state.sit=Math.min(1,(state.sit||0)+dt/.18);p.pilotWeapon10=weapon;p.gun.visible=false;p.body.position.y=lerp(-.045,-.48,state.sit);p.body.rotation.set(0,0,0);p.root.updateMatrixWorld(true);const f=frame(p.lat,p.lon,p.heading),origin=p.root.position;for(let i=0;i<2;i++){const target=origin.clone().addScaledVector(f.f,.45).addScaledVector(f.r,i? .13:-.13).addScaledVector(f.n,-.02);solveLimb10(p.legs[i],p.knees[i],p.ankles[i],target,f.f,1);}return;}
- state.sit=Math.max(0,(state.sit||0)-dt/.18);if(p.pilotWeapon10!==undefined){p.gun.visible=weapon>0;p.pilotWeapon10=undefined;}if(p===player){if(state.jump>.12&&jumpHeight<.02)state.landing=.18;state.jump=jumpHeight;state.landing=Math.max(0,state.landing-dt);}const settle=state.landing>0?Math.sin(state.landing/.18*Math.PI)*.055:0;p.body.position.y=lerp(-.045,-.48,state.sit)-settle+(speed>.2?Math.abs(Math.sin(p.mixer.time*(speed>4.5?9:5)))*.009:0);if(!vault||p!==player)p.body.rotation.x=lerp(p.body.rotation.x,clamp(-accel*.003,-.035,.035),1-Math.exp(-dt*10));
- if(p===player&&onPlanet&&jumpHeight<.05&&!vault){p.root.updateMatrixWorld(true);const forward=frame(p.lat,p.lon,p.heading).f;for(let i=0;i<2;i++){const ankle=p.ankles[i].getWorldPosition(V()),point=fromNormal(ankle),floor=groundHeight10(point),height=ankle.length()-R,correction=floor+.145-height,stance=speed<.2||Math.sin(p.mixer.time*5+(i?Math.PI:0))<0;if(correction>-.08&&correction<.20&&(stance||correction>0)){const target=ankle.clone().addScaledVector(ankle.clone().normalize(),correction);solveLimb10(p.legs[i],p.knees[i],p.ankles[i],target,forward,.85);if(stance){const normal=p.footRestNormals10[i].clone().applyQuaternion(p.ankles[i].getWorldQuaternion(new THREE.Quaternion())),ground=surfaceNormal10(point);if(normal.dot(ground)>.92)rotateBone10(p.ankles[i],normal,ground,.5);}}}}
+function finishPose10(p,dt,speed,armed){
+ if(!p.authored||p.npc||!p.poseState10)return;const state=p.poseState10,active=p===player&&(activeCar||activeHeli||activeJet),onPlanet=p.root.position.length()>R*.9;
+ state.speed=lerp(state.speed,speed,1-Math.exp(-dt*9));
+ if(active){
+  state.sit=Math.min(1,state.sit+dt/.18);p.pilotWeapon10=weapon;p.gun.visible=false;p.body.position.y=lerp(-.045,-.48,state.sit);p.body.rotation.set(0,0,0);p.root.updateMatrixWorld(true);
+  const f=frame(p.lat,p.lon,p.heading);for(let i=0;i<2;i++){const target=p.root.position.clone().addScaledVector(f.f,.45).addScaledVector(f.r,i?.13:-.13).addScaledVector(f.n,-.02);solveLimb10(p.legs[i],p.knees[i],p.ankles[i],target,f.f,1);}return;
+ }
+ state.sit=Math.max(0,state.sit-dt/.18);if(p.pilotWeapon10!==undefined){p.gun.visible=weapon>0;p.pilotWeapon10=undefined;state.corrections.clear();}
+ if(p===player){if(state.jump>.12&&jumpHeight<.02)state.landing=.18;state.jump=jumpHeight;state.landing=Math.max(0,state.landing-dt);}
+ const settle=state.landing>0?Math.sin(state.landing/.18*Math.PI)*.022:0;
+ p.body.position.y=lerp(-.045,-.48,state.sit)-settle;
+ // Let the authored gait control the knees: the former phase-based IK gate
+ // abruptly moved an ankle up to 24 cm between adjacent sprint frames.
+ if(!vault||p!==player)p.body.rotation.x=lerp(p.body.rotation.x,0,1-Math.exp(-dt*12));
+ if(p===player&&onPlanet&&!vault){
+  p.root.updateMatrixWorld(true);const bases=p.legs.flatMap((b,i)=>[b,p.knees[i]]).map(b=>[b,b.quaternion.clone()]);
+  const grounded=1-THREE.MathUtils.smoothstep(jumpHeight,0,.12),f=frame(p.lat,p.lon,p.heading);
+  for(let i=0;i<2;i++){
+   const ankle=p.ankles[i].getWorldPosition(V()),point=fromNormal(ankle),floor=groundHeight10(point),height=ankle.length()-R;
+   // The authored ankle-to-sole distance is 9.6 cm, not 14.5 cm.
+   const near=1-THREE.MathUtils.smoothstep(height-floor,.14,.24),raise=clamp(floor+.098-height,-.025,CITY_CONFIG11.maxFootCorrection)*near*grounded;
+   if(Math.abs(raise)>1e-5){
+    const a=p.legs[i].getWorldPosition(V()),k=p.knees[i].getWorldPosition(V()),bend=k.sub(a);if(bend.lengthSq()<1e-7)bend.copy(f.f);
+    const target=ankle.clone().addScaledVector(ankle.clone().normalize(),raise);
+    solveLimb10(p.legs[i],p.knees[i],p.ankles[i],target,bend,1);
+   }
+  }
+  const desired=bases.map(([b,base])=>[b,base,b.quaternion.clone()]);for(const [b,base] of bases)b.quaternion.copy(base);
+  for(const [b,base,q] of desired)applyStableCorrection11(state,b,base,q,dt);
+ }
  if(armed&&weapon>=3&&weapon!==4&&weapon!==5){p.root.updateMatrixWorld(true);const target=p.gun.localToWorld(V(.015,.07,.27)),up=onPlanet?nAt(p.lat,p.lon):V(0,1,0);solveLimb10(p.arms[1],p.elbows[1],p.hands[1],target,up.multiplyScalar(-1),.65);}
- if(meleePending10&&p===player){p.arms[0].quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(V(1,0,0),-.28));}
+ if(meleePending10&&p===player)p.arms[0].quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(V(1,0,0),-.28));
 }
 function attack(){if((weapon<2||weapon===4)&&started&&!menuOpen&&!orbit&&!wheelMode&&!activeCar&&!activeHeli&&!activeJet){if(cooldown>0||meleePending10)return;meleePending10={weapon,time:.105};attackTime=.30;return;}attackV9();}
 function updateMelee10(dt){if(!meleePending10)return;meleePending10.time-=dt;if(meleePending10.time>0)return;const pending=meleePending10;meleePending10=null;if(weapon!==pending.weapon||activeCar||activeHeli||activeJet)return;attackV9();attackTime=Math.max(attackTime,.18);}

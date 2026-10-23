@@ -1,0 +1,13 @@
+{
+  "version": "0.11.0",
+  "worldRadius": 116,
+  "previousRadius": 154,
+  "frontagePitch": 5.0,
+  "frontageClearance": 5.8,
+  "maxBuildings": 720,
+  "footCorrectionHz": 18,
+  "maxFootCorrection": 0.12,
+  "cameraHysteresis": 0.9,
+  "farSceneryDistance": 175,
+  "title": "侠盗自由城"
+}

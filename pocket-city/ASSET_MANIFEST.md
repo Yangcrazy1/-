@@ -44,3 +44,6 @@
 - Spherical wave geometry/normals, shore foam, lightweight sky approximation and pooled interaction meshes are authored in src-v10/coast-water.js and effects.js. No planar reflection pass or third-party water shader is bundled.
 - Bay cafe, boardwalk planks, shore props, layered vegetation instances, road facilities and signal models/logic are original procedural additions. Existing Three.js MIT and Quaternius CC0 notices remain.
 - Protagonists retain the processed Quaternius mesh/skeleton with further tailoring, facial shaping, lightweight IK and pilot pose changes; this is not a new official GTA character asset set.
+
+
+V0.11: wardrobe texture painting, continuous neck seams, weighted shoe shells, pocket places and offshore headland silhouettes are original procedural additions in src-v11. Existing Quaternius CC0 anatomy / animation and Three.js MIT licensing are preserved. No new third-party character or GTA-extracted resources were added.

@@ -1,7 +1,7 @@
 let environment10=[],foliage10=[],environmentStats10={trees:0,rocks:0,props:0},bayRoads10={},timberMat10=null;
 const foliageUniform10={value:0};
 function timber10(){if(timberMat10)return timberMat10;const map=canvasTexture(256,128,(g,W,H)=>{g.fillStyle='#b99b74';g.fillRect(0,0,W,H);for(let k=0;k<8;k++){g.strokeStyle=k%2?'#e3d3ab24':'#765a3b1c';g.lineWidth=1+k%2;g.beginPath();for(let x=0;x<W;x+=8){const y=8+k*15+Math.sin(x*.022+k)*3;x?g.lineTo(x,y):g.moveTo(x,y);}g.stroke();}g.strokeStyle='#6e563422';for(let k=0;k<3;k++){g.beginPath();g.ellipse(45+k*75,34+k*21,11,3,.08,0,TAU);g.stroke();}});timberMat10=mat(0xffffff,{map});return timberMat10;}
-function reserveBay10(p){const q=beachLocal9(p);return q.z>-51&&q.z<51&&q.x>shoreX10(q.z)-4&&q.x<80;}
+function reserveBay10(p){const q=beachLocal9(p);return q.z>-51&&q.z<51&&q.x>shoreX10(q.z)-4&&q.x<shoreX10(q.z)+26;}
 function makeStreetNetwork(){contactSites10=[];makeStreetNetworkV9();makeShoreTable10();const make=(name,kind,pointFn,length,width,ped=false)=>{const s=addStreet(name,Array.from({length:65},(_,i)=>pointFn(-length/2+i*length/64)),false,width);s.kind10=kind;s.pedestrian10=ped;return s;};
  bayRoads10.boulevard=make('海风大道','boulevard',z=>localPoint9(beach9,24+3*Math.sin(z*.055),z),96,6.4);
  bayRoads10.residential=make('鼠尾草住宅街','residential',z=>localPoint9(beach9,47+1.8*Math.sin(z*.08),z),90,4.5);
@@ -12,7 +12,7 @@ function makeStreetNetwork(){contactSites10=[];makeStreetNetworkV9();makeShoreTa
  for(const [name,s] of Object.entries(bayRoads10)){if(s.pedestrian10)continue;for(const point of [s.points[0],s.points[s.points.length-1]]){const near=streetSamples.filter(q=>q.street!==s&&!q.street.pedestrian10).sort((a,b)=>distance(point,a)-distance(point,b))[0];if(near&&distance(point,near)>2.5){const n=nAt(point.lat,point.lon);const link=addStreet(name+'接驳',Array.from({length:15},(_,i)=>fromNormal(n.clone().lerp(nAt(near.lat,near.lon),i/14))),false,4.4);link.kind10='residential';}}}
  for(const s of streets)if(!s.kind10)s.kind10=s.id<5?'boulevard':s.id<9?'residential':s.id<11?'commercial':districtAt(s.points[0].lat,s.points[0].lon)===1?'boulevard':'residential';rebuildConnections9();buildRoadGrid9();setupSignals10();mapCache9=null;
 }
-function canBuildHere(p){return !reserveBay10(p)&&canBuildHereV9(p);}
+function canBuildHere(p){return canPlaceBuilding11(p);}
 const streetMaterials10=new Map();
 function streetMaterial10(kind){if(kind==='waterfront')return timber10();if(streetMaterials10.has(kind))return streetMaterials10.get(kind);const material=mat(({boulevard:0x6c8381,residential:0x8d9688,commercial:0x747d78})[kind]||0x74857d,{map:surfaceNoise('road')});streetMaterials10.set(kind,material);return material;}
 function makeRoads(){if(renderer.isSoftwareRenderer)return;const root=new THREE.Group();root.name='Four road families / sidewalks / markings';world.add(root);const edge=mat(0xc7cbb7),walk=mat(0xe8e1cd),paint=basic(0xf0e5c7);for(const s of streets){if(s.pedestrian10)continue;for(let i=0;i<s.points.length-1;i+=24){const points=s.points.slice(i,Math.min(i+25,s.points.length));if(points.length<2)continue;roadRibbon9(root,points,s.width+4,.026,edge);roadRibbon9(root,points,s.width+3.6,.052,walk);roadRibbon9(root,points,s.width,.084,streetMaterial10(s.kind10));}if(s.kind10!=='residential')for(let i=0;i<s.points.length-3;i+=15)roadRibbon9(root,s.points.slice(i,i+4),.10,.102,paint);}

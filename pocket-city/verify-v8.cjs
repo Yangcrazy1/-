@@ -14,14 +14,14 @@ const methods=String.raw`
  npcStyle8(){const a=makeCharacter(0,true),b=makeCharacter(1,true);return {different:a.figure.geometry!==b.figure.geometry,single:!Array.isArray(a.figure.material)&&!Array.isArray(b.figure.material),weighted:a.figure.geometry.attributes.skinWeight.count>1000};},
 `;
 const checks=String.raw`
-check('V08 pedestrians stop at parked vehicle bodies instead of walking through them',()=>{const x=api.npcCar8();assert(x.lat*154< -2.1&&x.clear,JSON.stringify(x));});
+check('V08 pedestrians stop at parked vehicle bodies instead of walking through them',()=>{const x=api.npcCar8();assert(x.lat*WORLD_RADIUS< -2.1&&x.clear,JSON.stringify(x));});
 
 check('V08 armed walking animates legs while keeping the same weighted body',()=>{const x=api.armedWalk8();assert(x.state==='Walk_Loop'&&x.mesh&&x.max>.005,JSON.stringify(x));});
 check('V08 repeated animation transitions settle without accumulating active actions',()=>{const x=api.blend8();assert(x.active<=2&&x.finite,JSON.stringify(x));});
 check('V08 canopy capsule permits walking underneath but blocks a jumping head',()=>{const x=api.canopy8();assert(!x.under&&x.jump&&!x.above,JSON.stringify(x));});
 check('V08 height-aware depenetration repairs an existing wall overlap',()=>assert(api.overlap8()));
 check('V08 tank has tracks turret speed cap safe boarding and exit',()=>{const x=api.tank8();assert(x.cap<=15&&x.tracks===12&&x.turret&&x.width>2.5&&x.boarded&&x.exited&&x.clear,JSON.stringify(x));});
-check('V08 tank swept hull cannot tunnel through a thin wall',()=>{const x=api.tankWall8();assert(x.lat*154< -2.6&&x.clear,JSON.stringify(x));});
+check('V08 tank swept hull cannot tunnel through a thin wall',()=>{const x=api.tankWall8();assert(x.lat*WORLD_RADIUS< -2.6&&x.clear,JSON.stringify(x));});
 check('V08 opaque city uses a shared atlas and cached signs',()=>{const x=api.atlas8();console.log('ATLAS8',JSON.stringify(x));assert(x.tiles>100&&x.tiles<1024&&x.geometries<2200&&x.cache>10,JSON.stringify(x));});
 check('V08 NPC styles retain different painted weighted surfaces with one body draw',()=>{const x=api.npcStyle8();assert(x.different&&x.single&&x.weighted,JSON.stringify(x));});
 check('V08 offline loader and swipeable tank fleet are embedded in a small file',()=>{for(const x of ['POCKET_LOAD8','load-track8','data-vehicle="tank"','scroll-snap-type:x','html,body{touch-action:auto}'])assert(html.includes(x),x);assert(Buffer.byteLength(html)<10000000);});

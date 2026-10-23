@@ -1,0 +1,524 @@
+{
+  "html_sha256": "14bdb6cb5b22bd199a9f3c43a0ec00bd57b7aa8a541d3394083347a261bb4cf0",
+  "gpu_note": "Chromium headless WebGL with SwiftShader; not a physical phone FPS measurement",
+  "viewports": [
+    [
+      844,
+      390
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "device_scale_factor": 1,
+  "loading": {
+    "opened": 628.0999999996275,
+    "engine": 740.0999999996275,
+    "ready": 10600.39999999851
+  },
+  "landscape": {
+    "state": {
+      "started": true,
+      "menuOpen": false,
+      "city": 0,
+      "character": 0,
+      "weapon": 0,
+      "ammo": null,
+      "inCar": false,
+      "car": null,
+      "player": {
+        "lat": -0.11952646138695086,
+        "lon": -0.03982891526089627,
+        "heading": 0.41275577802837443,
+        "position": [
+          -4.5916310443514625,
+          115.22289248911278,
+          -13.849130651232358
+        ],
+        "speed": 0,
+        "jumpHeight": 0
+      },
+      "cash": 1992,
+      "health": 100,
+      "wanted": 0,
+      "missionStage": 3,
+      "driveDistance": 0,
+      "targetHits": 0,
+      "stolenCount": 0,
+      "orbit": false,
+      "cars": 116,
+      "pedestrians": 293,
+      "buildings": 352,
+      "targets": 4,
+      "nearestCar": {
+        "occupied": false,
+        "distance": 1.899999999999999
+      },
+      "aimTarget": null,
+      "renderer": {
+        "frame": 48,
+        "calls": 489,
+        "triangles": 634549,
+        "points": 0,
+        "lines": 0
+      },
+      "frame": 28
+    },
+    "metrics": {
+      "drawCalls": 489,
+      "triangles": 634549,
+      "textures": 83,
+      "atlasTiles": 313,
+      "visibleHumans": 28,
+      "renderFPS": 0.4285959197668437,
+      "heroFoot": [
+        0.0003795095550920305,
+        -0.2896794203826352,
+        0.9709936638724769
+      ],
+      "heroHead": [
+        0.002004702337240305,
+        0.16009362548963063,
+        0.9689433213292056
+      ],
+      "cameraDistance": 6.914050911007231,
+      "renderer": "webgl"
+    }
+  },
+  "rendered_motion": {
+    "cars": {
+      "sampled": 28,
+      "moved": 20,
+      "animated": 20
+    },
+    "peds": {
+      "sampled": 27,
+      "moved": 15,
+      "animated": 15
+    }
+  },
+  "native_fleet_swipe": {
+    "before": {
+      "left": 3,
+      "width": 648,
+      "total": 2332,
+      "touch": "pan-x pan-y"
+    },
+    "after": 237
+  },
+  "tank_spawn": {
+    "before": 116,
+    "after": 117,
+    "toast": "履带坦克已到达 · 靠近后上车"
+  },
+  "touch_walk": {
+    "before": {
+      "lat": -0.11952646138695086,
+      "lon": -0.03982891526089627,
+      "heading": 0.41275577802837443,
+      "position": [
+        -4.5916310443514625,
+        115.22289248911278,
+        -13.849130651232358
+      ],
+      "speed": 0,
+      "jumpHeight": 0
+    },
+    "after": {
+      "lat": -0.11554501918325306,
+      "lon": -0.03807377644955376,
+      "heading": 0.4125499606752198,
+      "position": [
+        -4.39145597209802,
+        115.28496005805037,
+        -13.38990469939412
+      ],
+      "speed": 0,
+      "jumpHeight": 0
+    }
+  },
+  "edition9": {
+    "edition": "0.9.0",
+    "islands": [
+      {
+        "id": 0,
+        "name": "圣安地列斯"
+      },
+      {
+        "id": 1,
+        "name": "自由城 · 海湾"
+      },
+      {
+        "id": 2,
+        "name": "洛圣都市区"
+      }
+    ],
+    "streets": 52,
+    "landmarks": [
+      {
+        "id": "beach",
+        "name": "自由城 · 清新海湾",
+        "lat": -0.21544663695697236,
+        "lon": 1.7630328890381055,
+        "arrival": {
+          "lat": -0.2206044301246621,
+          "lon": 1.8777007140803135
+        }
+      },
+      {
+        "id": "casino",
+        "name": "圣安地列斯 · 绿洲赌场",
+        "lat": 0.475,
+        "lon": 0.175,
+        "arrival": {
+          "lat": 0.4784514645252454,
+          "lon": -0.11626746068937076
+        }
+      },
+      {
+        "id": "sphinx",
+        "name": "圣安地列斯 · 狮身人面像",
+        "lat": 0.3134570123702677,
+        "lon": 0.13448131099118993,
+        "arrival": {
+          "lat": 0.32002920954986486,
+          "lon": 0.025832070114105946
+        }
+      }
+    ],
+    "wardrobe": "white-rib-tank / loose-indigo-denim",
+    "walkable": true,
+    "campusClearance": 14.818296005640295
+  },
+  "landmarkVisits": [
+    {
+      "id": "beach",
+      "state": {
+        "game": {
+          "started": true,
+          "menuOpen": false,
+          "city": 1,
+          "character": 0,
+          "weapon": 0,
+          "ammo": null,
+          "inCar": false,
+          "car": null,
+          "player": {
+            "lat": -0.2206044301246621,
+            "lon": 1.8777007140803135,
+            "heading": -1.5372228217556576,
+            "position": [
+              107.95098480014937,
+              -34.21156948391368,
+              -25.395084958284833
+            ],
+            "speed": 0,
+            "jumpHeight": 0
+          },
+          "cash": 1992,
+          "health": 100,
+          "wanted": 0,
+          "missionStage": 3,
+          "driveDistance": 0,
+          "targetHits": 0,
+          "stolenCount": 0,
+          "orbit": false,
+          "cars": 117,
+          "pedestrians": 293,
+          "buildings": 352,
+          "targets": 4,
+          "nearestCar": null,
+          "aimTarget": null,
+          "renderer": {
+            "frame": 108,
+            "calls": 185,
+            "triangles": 577218,
+            "points": 0,
+            "lines": 0
+          },
+          "frame": 155
+        },
+        "edition": {
+          "edition": "0.9.0",
+          "islands": [
+            {
+              "id": 0,
+              "name": "圣安地列斯"
+            },
+            {
+              "id": 1,
+              "name": "自由城 · 海湾"
+            },
+            {
+              "id": 2,
+              "name": "洛圣都市区"
+            }
+          ],
+          "streets": 52,
+          "landmarks": [
+            {
+              "id": "beach",
+              "name": "自由城 · 清新海湾",
+              "lat": -0.21544663695697236,
+              "lon": 1.7630328890381055,
+              "arrival": {
+                "lat": -0.2206044301246621,
+                "lon": 1.8777007140803135
+              }
+            },
+            {
+              "id": "casino",
+              "name": "圣安地列斯 · 绿洲赌场",
+              "lat": 0.475,
+              "lon": 0.175,
+              "arrival": {
+                "lat": 0.4784514645252454,
+                "lon": -0.11626746068937076
+              }
+            },
+            {
+              "id": "sphinx",
+              "name": "圣安地列斯 · 狮身人面像",
+              "lat": 0.3134570123702677,
+              "lon": 0.13448131099118993,
+              "arrival": {
+                "lat": 0.32002920954986486,
+                "lon": 0.025832070114105946
+              }
+            }
+          ],
+          "wardrobe": "white-rib-tank / loose-indigo-denim",
+          "walkable": true,
+          "campusClearance": 14.818296005640295
+        }
+      },
+      "toast": "已抵达 自由城 · 清新海湾"
+    },
+    {
+      "id": "casino",
+      "state": {
+        "game": {
+          "started": true,
+          "menuOpen": false,
+          "city": 0,
+          "character": 0,
+          "weapon": 0,
+          "ammo": null,
+          "inCar": false,
+          "car": null,
+          "player": {
+            "lat": 0.4784514645252454,
+            "lon": -0.11626746068937076,
+            "heading": 1.5168354147463952,
+            "position": [
+              -11.951775639965637,
+              102.33191456482109,
+              53.43461350613554
+            ],
+            "speed": 0,
+            "jumpHeight": 0
+          },
+          "cash": 1992,
+          "health": 100,
+          "wanted": 0,
+          "missionStage": 3,
+          "driveDistance": 0,
+          "targetHits": 0,
+          "stolenCount": 0,
+          "orbit": false,
+          "cars": 117,
+          "pedestrians": 293,
+          "buildings": 352,
+          "targets": 4,
+          "nearestCar": null,
+          "aimTarget": null,
+          "renderer": {
+            "frame": 127,
+            "calls": 322,
+            "triangles": 579896,
+            "points": 0,
+            "lines": 0
+          },
+          "frame": 181
+        },
+        "edition": {
+          "edition": "0.9.0",
+          "islands": [
+            {
+              "id": 0,
+              "name": "圣安地列斯"
+            },
+            {
+              "id": 1,
+              "name": "自由城 · 海湾"
+            },
+            {
+              "id": 2,
+              "name": "洛圣都市区"
+            }
+          ],
+          "streets": 52,
+          "landmarks": [
+            {
+              "id": "beach",
+              "name": "自由城 · 清新海湾",
+              "lat": -0.21544663695697236,
+              "lon": 1.7630328890381055,
+              "arrival": {
+                "lat": -0.2206044301246621,
+                "lon": 1.8777007140803135
+              }
+            },
+            {
+              "id": "casino",
+              "name": "圣安地列斯 · 绿洲赌场",
+              "lat": 0.475,
+              "lon": 0.175,
+              "arrival": {
+                "lat": 0.4784514645252454,
+                "lon": -0.11626746068937076
+              }
+            },
+            {
+              "id": "sphinx",
+              "name": "圣安地列斯 · 狮身人面像",
+              "lat": 0.3134570123702677,
+              "lon": 0.13448131099118993,
+              "arrival": {
+                "lat": 0.32002920954986486,
+                "lon": 0.025832070114105946
+              }
+            }
+          ],
+          "wardrobe": "white-rib-tank / loose-indigo-denim",
+          "walkable": true,
+          "campusClearance": 14.818296005640295
+        }
+      },
+      "toast": "已抵达 圣安地列斯 · 绿洲赌场"
+    },
+    {
+      "id": "sphinx",
+      "state": {
+        "game": {
+          "started": true,
+          "menuOpen": false,
+          "city": 0,
+          "character": 0,
+          "weapon": 0,
+          "ammo": null,
+          "inCar": false,
+          "car": null,
+          "player": {
+            "lat": 0.32002920954986486,
+            "lon": 0.02583207011410595,
+            "heading": 1.6173688997473001,
+            "position": [
+              2.8475652162128813,
+              110.20920065554157,
+              36.5379243007316
+            ],
+            "speed": 0,
+            "jumpHeight": 0
+          },
+          "cash": 1992,
+          "health": 100,
+          "wanted": 0,
+          "missionStage": 3,
+          "driveDistance": 0,
+          "targetHits": 0,
+          "stolenCount": 0,
+          "orbit": false,
+          "cars": 117,
+          "pedestrians": 293,
+          "buildings": 352,
+          "targets": 4,
+          "nearestCar": {
+            "occupied": true,
+            "distance": 3.270504318230372
+          },
+          "aimTarget": null,
+          "renderer": {
+            "frame": 145,
+            "calls": 302,
+            "triangles": 585291,
+            "points": 0,
+            "lines": 0
+          },
+          "frame": 204
+        },
+        "edition": {
+          "edition": "0.9.0",
+          "islands": [
+            {
+              "id": 0,
+              "name": "圣安地列斯"
+            },
+            {
+              "id": 1,
+              "name": "自由城 · 海湾"
+            },
+            {
+              "id": 2,
+              "name": "洛圣都市区"
+            }
+          ],
+          "streets": 52,
+          "landmarks": [
+            {
+              "id": "beach",
+              "name": "自由城 · 清新海湾",
+              "lat": -0.21544663695697236,
+              "lon": 1.7630328890381055,
+              "arrival": {
+                "lat": -0.2206044301246621,
+                "lon": 1.8777007140803135
+              }
+            },
+            {
+              "id": "casino",
+              "name": "圣安地列斯 · 绿洲赌场",
+              "lat": 0.475,
+              "lon": 0.175,
+              "arrival": {
+                "lat": 0.4784514645252454,
+                "lon": -0.11626746068937076
+              }
+            },
+            {
+              "id": "sphinx",
+              "name": "圣安地列斯 · 狮身人面像",
+              "lat": 0.3134570123702677,
+              "lon": 0.13448131099118993,
+              "arrival": {
+                "lat": 0.32002920954986486,
+                "lon": 0.025832070114105946
+              }
+            }
+          ],
+          "wardrobe": "white-rib-tank / loose-indigo-denim",
+          "walkable": true,
+          "campusClearance": 14.818296005640295
+        }
+      },
+      "toast": "已抵达 圣安地列斯 · 狮身人面像"
+    }
+  ],
+  "portrait_overflow": {
+    "body": 390,
+    "viewport": 390
+  },
+  "portrait_modal": {
+    "x": 21,
+    "y": 89.5,
+    "width": 348,
+    "height": 665
+  },
+  "file_protocol": "Cloud Chromium policy blocks file navigation; file launch on phones remains unverified.",
+  "offline_file": {
+    "started": true,
+    "networkRequests": []
+  },
+  "pageErrors": []
+}

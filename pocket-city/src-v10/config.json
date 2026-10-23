@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.11.0",
   "profile": "medium-android",
   "materials": {"cream": "#f2ead6", "wood": "#b38c63", "sage": "#91ad86", "sand": "#ecdbb3", "wetSand": "#c4b58f", "shallow": "#a6dcd0", "nearSea": "#55b9b0", "deepSea": "#368eab", "coral": "#d28670"},
   "water": {"shortAmplitude": 0.022, "longAmplitude": 0.035, "shortFrequency": 1.1, "longFrequency": 0.34, "maxWalkDepth": 0.64, "maxCarDepth": 0.34, "rippleCapacity": 16, "splashCapacity": 32, "footprintCapacity": 64, "reflectionPasses": 0},

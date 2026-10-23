@@ -1,0 +1,29 @@
+Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation
+WORLD {"lat":-0.11952646138695107,"lon":-0.03982891526089633,"heading":0.4127557780283713,"car":false,"heli":false,"health":100,"wanted":0,"cash":1992,"taxiTrips":0,"raceWins":0,"flightTrips":0,"roads":52,"buildings":352,"crowd":292,"types":21,"police":12,"job":{"type":"taxi","stage":"seek","completed":0,"aboard":false}}
+PASS V11 reported ankle snapping stays below continuity bounds at equator city and pole 215ms
+PASS V11 corrected clothing and shoes deform on one normalized skeleton without rigid chest plaques 1528ms
+PASS V11 slow render frames advance actor animation by the actual swept physics time 5ms
+node:internal/assert/utils:77
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: {"initial":0.083,"floor":0,"max":0.083,"final":0}
+    at /workspace/-/pocket-city/verify-v11.cjs:120:118
+    at check (/workspace/-/pocket-city/verify-v11.cjs:114:191)
+    at Object.<anonymous> (/workspace/-/pocket-city/verify-v11.cjs:120:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object.<anonymous> (/workspace/-/pocket-city/verify-v11.cjs:117:96)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object.<anonymous> (/workspace/-/pocket-city/verify-v11.cjs:93:104)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object.<anonymous> (/workspace/-/pocket-city/verify-v11.cjs:69:104)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

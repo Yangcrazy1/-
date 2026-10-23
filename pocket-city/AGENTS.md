@@ -39,3 +39,12 @@
 - npm test runs verify-v10.cjs with 81 cases. Legacy assertions remain; the radial error now compares analytic terrain, and melee waits for its preparation time before checking the same damage. Do not weaken those checks.
 - UI/render changes require scripts-v10/browser-smoke.py and scripts-v10/acceptance.py; the latter injects QA hooks not present in delivered HTML. Confirm report hashes match the final HTML. Run scripts-v10/endurance.py for final 600-second cloud evidence, and describe SwiftShader limits.
 - Update PROJECT_STATUS.md at substantive stages in Chinese progress updates. Keep pre/post camera evidence and explicit acceptance gaps. Package single English-named HTML, runnable ZIP, source, config, screenshots/checklist; verify ZIP CRC and actual HTTPS bytes before claiming delivery.
+
+## V0.11 character / compact city continuation
+
+- User confirmed V0.9 characters + compact streets, then requested smaller map, richer surroundings, distant scenery and the title “侠盗自由城”. Preserve the same body and avoid new hard-gated procedural pose changes.
+- Read README_V11.md and PROJECT_STATUS.md. Edit src-v11 and necessary hooks. World radius comes from src-v11/config.json and must agree across CPU, water Shader, ground and navigation.
+- npm test runs 89 checks, preserving the prior 81. Some old fixture coordinates are converted to preserve metre distances on the smaller sphere. Building centres need not remain over 5 m apart; actual non-overlap and at least 0.18 m geometric separation are required.
+- scripts-v11 contains final browser / visual / acceptance / 600-second endurance checks. Keep report SHA values tied to the delivered HTML; never represent software GPU results as handset FPS.
+- User explicitly wants a single HTML and no playable ZIP. New filename outlaw-liberty-city-v0.11-mobile.html. This overrides earlier ZIP packaging instructions for the playtest.
+- User also requested a Xiaohongshu upload version. The actual upload entry / docs are pending; platform/h5-candidate is explicitly a static H5 candidate, not an SDK mini-game project. Do not call it upload-ready until the target format is confirmed and tested.

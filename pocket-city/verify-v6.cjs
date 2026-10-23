@@ -1,5 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('assert');
 const THREE=require('./three.min.js');
+const WORLD_RADIUS=JSON.parse(fs.readFileSync('./src-v11/config.json','utf8')).worldRadius;
 const {createCanvas}=(()=>{try{return require('@napi-rs/canvas');}catch(e){return require('/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/@napi-rs/canvas');}})();
 const elements=new Map();
 function el(id){if(!elements.has(id))elements.set(id,{id,width:288,height:288,textContent:'',innerHTML:'',style:{},dataset:{},pause(){},play(){},setAttribute(){},querySelectorAll(){return []},getBoundingClientRect(){return {left:200,top:100,width:400,height:400}},classList:{add(){},remove(){},toggle(){}},addEventListener(){},setPointerCapture(){},getContext(){return createCanvas(288,288).getContext('2d');}});return elements.get(id);}
@@ -39,21 +40,21 @@ const memory=new Map();const sandbox={THREE,console,localStorage:{setItem:(k,v)=
 vm.runInNewContext(source,sandbox,{filename:'game-v6.js'});
 const results=[];function check(name,fn){if(process.env.VERIFY_ONLY&&!name.includes(process.env.VERIFY_ONLY))return;const t=Date.now();fn();results.push(name);console.log('PASS',name,Date.now()-t+'ms');}
 api.boot();console.log('WORLD',JSON.stringify(api.state()));if(process.env.DEBUG_WORLD)console.log('NEAR',JSON.stringify(api.nearbyBuildings()));
-check('full sphere reaches both poles with no open ground edge',()=>{const w=api.worldInfo();assert.equal(w.R,154);assert(w.minZ< -153.99&&w.maxZ>153.99);assert(w.radial<.000025);});
+check('full sphere reaches both poles with no open ground edge',()=>{const w=api.worldInfo();assert.equal(w.R,WORLD_RADIUS);assert(w.minZ< -WORLD_RADIUS+.01&&w.maxZ>WORLD_RADIUS-.01);assert(w.radial<.000025);});
 check('every street connects to one road network',()=>{const w=api.worldInfo();assert.equal(w.connected,w.total,JSON.stringify(w));assert(w.total>=14);});
 check('three city styles coexist without rebuilding scenes',()=>{const s=api.state();assert.equal(s.types,21);assert(s.buildings>200);assert(s.police>=6);});
 check('one great-circle circuit closes without a map boundary',()=>{const r=api.circuit();assert(r.error<1e-8);});
 check('travel crosses the north pole continuously',()=>{const r=api.pole();assert(r.lat<1.56);assert(r.dist>3.99);assert(Number.isFinite(r.turn));});
 check('adult head proportion, knees and elbows, weapon attached to hand',()=>{const r=api.human();assert(r.headHeight<.33);assert(r.handGap<.06);assert(r.jointed);});
-check('swept walking collision stops at a thin wall',()=>assert(api.walkWall()*154<-.33));
-check('high-speed car rebounds instead of tunnelling through a wall',()=>{const r=api.carWall();assert(r.lat*154< -1.7);assert(r.bounced);});
-check('player cannot walk through parked car body',()=>{const r=api.walkCar();assert(r.lat*154< -2.1);assert(!r.contact);});
+check('swept walking collision stops at a thin wall',()=>assert(api.walkWall()*WORLD_RADIUS<-.33));
+check('high-speed car rebounds instead of tunnelling through a wall',()=>{const r=api.carWall();assert(r.lat*WORLD_RADIUS< -1.7);assert(r.bounced);});
+check('player cannot walk through parked car body',()=>{const r=api.walkCar();assert(r.lat*WORLD_RADIUS< -2.1);assert(!r.contact);});
 check('initial overlaps are repaired outside obstacles',()=>assert(api.repair()));
 check('screen click locks a visible civilian and equips pistol',()=>{const r=api.lock();assert(r.candidate);assert(r.ok&&r.locked);assert.equal(r.weapon,2);});
 check('weapon and radio wheels select and close',()=>{const r=api.wheels();assert.equal(r.gun,3);assert(r.closed);});
 check('taxi passenger walks to door without clipping then rides and exits for payment',()=>{const r=api.taxi();assert(r.boarded,JSON.stringify(r));assert(!r.clipped);assert(r.delivered);assert(r.reward>40);assert(r.trips>=1);});
 check('helicopter takeoff, hover, horizontal flight, landing and safe exit',()=>{const r=api.flight();assert(r.takeoff>5);assert(r.hoverSpeed<.1);assert(r.moved>10);assert(r.landed&&r.exited,JSON.stringify(r));});
-check('helicopter fuselage and rotor footprint cannot cross buildings',()=>assert(api.heliCollision()*154< -2.6));
+check('helicopter fuselage and rotor footprint cannot cross buildings',()=>assert(api.heliCollision()*WORLD_RADIUS< -2.6));
 check('helicopter delivery has a start, landing condition and reward',()=>{const r=api.flightJob();assert(r.entered&&r.completed);assert.equal(r.reward,850);});
 check('six race checkpoints complete with a reward',()=>{const r=api.race();assert(r.done);assert.equal(r.count,6);assert.equal(r.reward,600);});
 check('local save round-trips money and activity results',()=>{const r=api.save();assert.deepEqual(r.after,r.before);});

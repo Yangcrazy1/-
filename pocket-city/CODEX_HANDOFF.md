@@ -2,13 +2,13 @@
 
 ## 当前交付
 
-V0.10 清新海湾手机 H5。用户选择中档安卓优先，稳定 30 FPS 是目标，尚无真机验收。参考会话 01a16708-2512-71fc-94bc-1e85de06a0a9。读取 PROJECT_STATUS.md、README_V10.md、AGENTS.md 和 reports/v10/；以本工作区和当前分支为基线，不要覆盖旧压缩包。
+“侠盗自由城” V0.11 手机 H5。当前分支 codex/character-city-v011；基线 2f5a4e6。读取 README_V11.md、PROJECT_STATUS.md、AGENTS.md 和 reports/v11。保留当前工作区，禁止从旧压缩包覆盖。
 
-本轮加入球面微波浪与同步法线、浅深水和干湿沙／缓坡海底、自然岸线、实体木栈道／咖啡／礁石／植被，四类道路与六处实际信控，限量脚印／涟漪／水花，衣服肩线、体态与接地／握持／驾驶姿态，48 CSS 像素手机热区和防穿透。保留三城完整球面和原有玩法。
+用户确认 V0.9 人物观感及紧凑街区；本轮恢复其体型基础，重做连续领口、蒙皮胸前衣物和鞋子，修正硬门槛 IK／慢帧动作不同步／路缘视觉跳变与机位切换。半径 116 米、352 栋建筑、21 处街角休憩点和三处远景礁岸。保留全部原有玩法。
 
-新代码 src-v10/，配置 src-v10/config.json，构建仍 scripts-v7/build.py。npm test 执行 81 项；browser-smoke.py 和 acceptance.py 保存实际 WebGL/UI 证据；endurance.py 记录十分钟真实墙钟的云端稳定性。所有报告必须与当前 HTML SHA 对应。不要将云端 SwiftShader FPS 说成手机 FPS。
+新代码 src-v11，配置 src-v11/config.json；水面和交通沿用 src-v10。npm test 为 89 项（原 81 项继续保留）。scripts-v11 下有浏览器、服装三视图、验收与持续运行脚本，所有最终报告必须匹配 HTML SHA。云端 SwiftShader 不能替代安卓真机。
 
-GitHub 下载交付沿用用户已连接仓库独立分支，主分支不变；实际取回 HTTPS 文件并校验后再给链接。小游戏平台适配留待用户指定目标。
+交付只给可下载单 HTML，用户不要试玩 ZIP。发布到用户指定 GitHub 仓库的独立分支，main 不变，实际 HTTPS 下载核对字节及 SHA 后再发链接。用户新增小红书上传版与改名请求；H5 候选文件位于 platform/h5-candidate，但上传入口／文档尚待回复，禁止将 H5 换后缀冒充小游戏工程。
 
 ## 保留的全部目标
 
@@ -26,7 +26,7 @@ GitHub 下载交付沿用用户已连接仓库独立分支，主分支不变；�
 
 ## 数据与坐标
 
-`R=154`；`nAt(lat,lon)=(sin(lon)cos(lat),cos(lon)cos(lat),sin(lat))`。角色本地 +Y 是向上，+Z 向前。`frame.r=n×forward`，屏幕右侧为 `-r`。不要为了普通平面控制而破坏跨极点运动。
+`R=116`（构建从 src-v11/config.json 替换兼容核心的旧常量）；`nAt(lat,lon)=(sin(lon)cos(lat),cos(lon)cos(lat),sin(lat))`。角色本地 +Y 是向上，+Z 向前。`frame.r=n×forward`，屏幕右侧为 `-r`。不要为了普通平面控制而破坏跨极点运动。
 
 主角原始身体：7,281 顶点、12,566 三角面，CJ/Tommy 运行时在服装接缝切分增加顶点；骨骼 65；眉眼和头发独立附件。路人身体：2,142 顶点、4,358 三角面；采用同一权重与关节命名。`assets/rig-v7.json` 包含目标 bind pose、逆绑定矩阵、量化权重和八套重定向动作。每个量化权重顶点总和严格为 255。
 

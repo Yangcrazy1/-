@@ -9,3 +9,6 @@ reports/v10/*-run.log
 reports/v10/initial-*.log
 reports/v10/baseline/capture.log
 __pycache__/
+
+reports/v11/endurance-progress.json
+reports/v11/*-partial.json

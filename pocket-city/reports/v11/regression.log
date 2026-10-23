@@ -1,0 +1,202 @@
+
+> pocket-city-mobile@0.11.0 test
+> node verify-v11.cjs
+
+Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation
+WORLD {"lat":-0.11952646138695107,"lon":-0.03982891526089633,"heading":0.4127557780283713,"car":false,"heli":false,"health":100,"wanted":0,"cash":1992,"taxiTrips":0,"raceWins":0,"flightTrips":0,"roads":52,"buildings":352,"crowd":292,"types":21,"police":12,"job":{"type":"taxi","stage":"seek","completed":0,"aboard":false}}
+PASS V11 reported ankle snapping stays below continuity bounds at equator city and pole 377ms
+PASS V11 corrected clothing and shoes deform on one normalized skeleton without rigid chest plaques 2663ms
+PASS V11 slow render frames advance actor animation by the actual swept physics time 8ms
+PASS V11 crossing a curb smooths support without teleporting or changing physical floor 4ms
+PASS V11 smaller connected planet retains street families and useful pocket places with visible headlands 1ms
+PASS V11 compact districts reduce typical gaps while increasing buildings per unit area 338ms
+PASS V11 all three compact cities have clear arrivals and active local populations 158ms
+PASS V11 renamed standalone H5 contains the complete game and no QA code 6ms
+PASS V10 local bay decks and sand do not project onto the antipodal city 1ms
+PASS V10 spherical waves have finite synchronized unit normals, move, and join the longitude seam 0ms
+SHORE10 [{"d":-9.999999104360972,"height":0,"depth":0.04,"bridge":false,"walk":true,"drive":true,"color":15851444},{"d":-3.9999987382759628,"height":-0.01800002271103267,"depth":0.058000022711032675,"bridge":false,"walk":true,"drive":true,"color":12891535},{"d":-1.0000004118876338,"height":-0.07199999258602259,"depth":0.11199999258602258,"bridge":false,"walk":true,"drive":true,"color":12891535},{"d":0.9999983975197317,"height":-0.2029998141122966,"depth":0.2429998141122966,"bridge":false,"walk":true,"drive":true,"color":10935504},{"d":3.000000422674016,"height":-0.4470000541022745,"depth":0.4870000541022745,"bridge":false,"walk":true,"drive":false,"color":5618096},{"d":9.000001009478886,"height":-1.3230001655545405,"depth":1.3630001655545405,"bridge":false,"walk":false,"drive":false,"color":5618096},{"d":19.00000282591992,"height":-3.263000633006086,"depth":3.303000633006086,"bridge":true,"walk":true,"drive":true,"color":3575467}]
+PASS V10 seabed depth, shore layers, wading and vehicle permissions use the same surface 5ms
+PASS V10 capped footprints, splashes and ripples expire without growing pools 96ms
+ENVIRONMENT10 {"kinds":["boulevard","residential","commercial","waterfront"],"ped":[{"name":"海湾木栈步道","length":90.49013180060818,"width":3.2}],"sample":94.49237762303662,"stats":{"trees":22,"rocks":14,"props":829,"shrubs":41},"signals":6}
+PASS V10 four road families include a pedestrian-only 80m waterfront sample and layered nature 1ms
+PASS V10 configurable red yellow green all-red and pedestrian phases never conflict 6ms
+TRAFFIC20 {"stopped":20,"passed":20,"maxCreep":0.03366235639526294}
+PASS V10 actual AI brakes at red and starts at green for 20 consecutive crossings 895ms
+PASS V10 pedestrians complete 20 crossings with shared vehicle clearing protection 1099ms
+PASS V10 environmental clock pauses with menus and background 302ms
+PASS V10 analytic shore and seabed are continuous at the longitude seam 0ms
+PASS V10 all protagonists retain normalized weighted bodies and fitted accessories on planet-space actions 122ms
+MOTION9 {"cars":23,"peds":84,"walks":26}
+PASS V09 nearby traffic drives and pedestrians translate with walking animations over four seconds 13346ms
+PASS V09 hair and clothing remain attached to their intended bones through idle walk sprint 58ms
+PASS V09 three island centers are land with sea gaps, a sandy beach and a walkable pier 80ms
+PASS V09 swept walking stops at the shoreline while preserving land movement 7ms
+PASS V09 every landmark has a clear reachable arrival without resetting money or weapons 221ms
+PASS V09 sphinx sculpture and casino have solid collision and swept approach 134ms
+PASS V09 tailored clothing retains normalized weighted anatomy and a local palm pattern 48ms
+PASS V09 scenic travel requires leaving the active vehicle 72ms
+PASS V09 offline atlas and three destination controls are embedded below 10 MB 4ms
+PASS V08 pedestrians stop at parked vehicle bodies instead of walking through them 13ms
+PASS V08 armed walking animates legs while keeping the same weighted body 23ms
+PASS V08 repeated animation transitions settle without accumulating active actions 275ms
+PASS V08 canopy capsule permits walking underneath but blocks a jumping head 0ms
+PASS V08 height-aware depenetration repairs an existing wall overlap 0ms
+PASS V08 tank has tracks turret speed cap safe boarding and exit 31ms
+PASS V08 tank swept hull cannot tunnel through a thin wall 33ms
+ATLAS8 {"tiles":313,"geometries":247,"chunks":117,"cache":198}
+PASS V08 opaque city uses a shared atlas and cached signs 98ms
+PASS V08 NPC styles retain different painted weighted surfaces with one body draw 7ms
+PASS V08 offline loader and swipeable tank fleet are embedded in a small file 7ms
+MODEL7 [{"id":0,"bones":65,"vertices":84246,"uuid":true,"weights":[177,64,14,0,178,64,13,0,140,96,19,0,177,64,14,0,140,96,19,0,139,96,20,0],"ranges":[{"speed":0,"min":[-0.35765690231941655,0.03616781091554345,-0.4090593061551885],"max":[0.34849460608729027,1.8120359208633379,0.32002366325589643],"finite":true},{"speed":2,"min":[-0.3292124286168497,0.019807925487924653,-0.5005067146435717],"max":[0.3433736000572632,1.8014297499949667,0.28570645108570775],"finite":true},{"speed":6,"min":[-0.4466620381692882,0.10796114747373056,-0.5291975774791605],"max":[0.3981374426729217,1.6727456335302695,0.5965424391524571],"finite":true},{"speed":0,"min":[-0.35765678278735585,0.036167747478870645,-0.40905965895288354],"max":[0.3484400297885855,1.8120357996707388,0.32002317166502886],"finite":true}]},{"id":1,"bones":65,"vertices":83382,"uuid":true,"weights":[177,64,14,0,178,64,13,0,140,96,19,0,177,64,14,0,140,96,19,0,139,96,20,0],"ranges":[{"speed":0,"min":[-0.35765690231941655,0.03616781091554345,-0.4090593061551885],"max":[0.34849460608729027,1.8120120817943506,0.32002366325589643],"finite":true},{"speed":2,"min":[-0.3292124286168497,0.019807925487924653,-0.5005067146435717],"max":[0.3433736000572632,1.8014258808163963,0.28570645108570775],"finite":true},{"speed":6,"min":[-0.4466620381692882,0.10796114747373056,-0.5291975774791605],"max":[0.3989786737054565,1.672703701725681,0.5965424391524571],"finite":true},{"speed":0,"min":[-0.35765678278735585,0.036167747478870645,-0.40905965895288354],"max":[0.3484400297885855,1.812011960664322,0.32002317166502886],"finite":true}]},{"id":2,"bones":65,"vertices":84066,"uuid":true,"weights":[177,64,14,0,178,64,13,0,140,96,19,0,177,64,14,0,140,96,19,0,139,96,20,0],"ranges":[{"speed":0,"min":[-0.35765690231941655,0.03616781091554345,-0.4090593061551885],"max":[0.34849460608729027,1.81203856965783,0.32002366325589643],"finite":true},{"speed":2,"min":[-0.3292124286168497,0.019807925487924653,-0.5005067146435717],"max":[0.3433736000572632,1.8014301799051684,0.28695500168717475],"finite":true},{"speed":6,"min":[-0.4466620381692882,0.10796114747373056,-0.5291975774791605],"max":[0.3981374426729217,1.6727502925970872,0.5965424391524571],"finite":true},{"speed":0,"min":[-0.35765678278735585,0.036167747478870645,-0.40905965895288354],"max":[0.3484400297885855,1.8120384484582535,0.32002317166502886],"finite":true}]}]
+PASS authored CC0 humanoids keep one mesh and bounded finite deformation for idle walk sprint 915ms
+POPULATION7 [{"id":0,"peds":89,"cars":30,"visible":28,"attached":28,"blocked":false},{"id":1,"peds":52,"cars":28,"visible":28,"attached":28,"blocked":false},{"id":2,"peds":28,"cars":17,"visible":28,"attached":28,"blocked":false},{"id":1,"peds":52,"cars":28,"visible":28,"attached":28,"blocked":false},{"id":0,"peds":89,"cars":30,"visible":28,"attached":28,"blocked":false},{"id":2,"peds":28,"cars":17,"visible":28,"attached":28,"blocked":false}]
+PASS all three districts and return trips have nearby cars and pedestrians immediately 185ms
+PASS population simulation remains finite after returning to the second district 9049ms
+PASS 300-second day begins 08:00 and includes sunset night dawn then loops 1ms
+PASS solar clock advances during play and pauses in menus and background, new start resets morning 180ms
+PASS adaptive rendering never shrinks below one CSS pixel per canvas pixel 1ms
+PASS offline build stays below 10 MB and embeds rig fabric inventory and source credit 6ms
+PASS full sphere reaches both poles with no open ground edge 487ms
+PASS every street connects to one road network 786ms
+PASS three city styles coexist without rebuilding scenes 2ms
+PASS one great-circle circuit closes without a map boundary 38ms
+PASS travel crosses the north pole continuously 1ms
+PASS adult head proportion, knees and elbows, weapon attached to hand 62ms
+PASS swept walking collision stops at a thin wall 120ms
+PASS high-speed car rebounds instead of tunnelling through a wall 29ms
+PASS player cannot walk through parked car body 157ms
+PASS initial overlaps are repaired outside obstacles 2ms
+PASS screen click locks a visible civilian and equips pistol 337ms
+PASS weapon and radio wheels select and close 23ms
+PASS taxi passenger walks to door without clipping then rides and exits for payment 104ms
+PASS helicopter takeoff, hover, horizontal flight, landing and safe exit 49ms
+PASS helicopter fuselage and rotor footprint cannot cross buildings 11ms
+PASS helicopter delivery has a start, landing condition and reward 8ms
+PASS six race checkpoints complete with a reward 139ms
+PASS local save round-trips money and activity results 34ms
+PASS joystick screen-right and outer-ring running remain correct 3ms
+PASS camera stays outside the planet surface 92ms
+PASS civilian capsules separate rather than overlap 10ms
+PASS flight camera frames helicopter and nearby city ground 4ms
+PASS muzzle is clamped before a wall so shots cannot start beyond it 1ms
+PASS cancelling an occupied taxi order releases rider and clears the fare 49ms
+PASS single-file download has no remote script or texture requirement 9ms
+PASS RPG destroys a vehicle with persistent burned wreck, smoke, fire and collision 163ms
+PASS destroyed occupied car ejects player safely and supports resource cleanup 49ms
+PASS explosion particles have a fixed allocation limit and all expire 19ms
+PASS portrait globe fits fully, rotates finitely and restores street fog and camera 172ms
+PASS classic minimap queries local cached road segments and draws an opaque player 321ms
+PASS long stalled animation frame is capped at three swept physics steps 179ms
+V06 CANOPY CAMERA {"clear":true,"proxies":20,"extra":313,"distance":7.281308192900503,"subjectY":-0.022538414664390702}
+PASS coastal awnings stop the camera while the character stays in frame 159ms
+PASS eight weapon and eight radio sectors can all be selected by dragging 0ms
+PASS katana uses melee damage, infinite ammo and temporary non-graphic effects 40ms
+PASS rocket impacts a thin wall and cannot damage civilians through it 10ms
+PASS rocket flies to an actor then produces knockdown and comic impact 6ms
+PASS new firearms consume correct ammunition and use finite hand-mounted muzzles 10ms
+PASS two Ferrari silhouettes have wheels, bespoke bodies and stronger drivetrain 26ms
+PASS dense neighboring buildings retain non-overlapping collision footprints 144ms
+PASS fighter boards, takes off, cruises, stays boarded aloft, lands and exits 44ms
+PASS fighter swept collision blocks the fuselage at buildings 11ms
+PASS parked fighter body blocks the walking capsule and allows clear space 28ms
+PASS all six radio arrangements have valid chords, drums and four sections 40ms
+PASS offline package embeds three portraits, song import and release checklist 5ms
+{
+  "passed": 89,
+  "checks": [
+    "V11 reported ankle snapping stays below continuity bounds at equator city and pole",
+    "V11 corrected clothing and shoes deform on one normalized skeleton without rigid chest plaques",
+    "V11 slow render frames advance actor animation by the actual swept physics time",
+    "V11 crossing a curb smooths support without teleporting or changing physical floor",
+    "V11 smaller connected planet retains street families and useful pocket places with visible headlands",
+    "V11 compact districts reduce typical gaps while increasing buildings per unit area",
+    "V11 all three compact cities have clear arrivals and active local populations",
+    "V11 renamed standalone H5 contains the complete game and no QA code",
+    "V10 local bay decks and sand do not project onto the antipodal city",
+    "V10 spherical waves have finite synchronized unit normals, move, and join the longitude seam",
+    "V10 seabed depth, shore layers, wading and vehicle permissions use the same surface",
+    "V10 capped footprints, splashes and ripples expire without growing pools",
+    "V10 four road families include a pedestrian-only 80m waterfront sample and layered nature",
+    "V10 configurable red yellow green all-red and pedestrian phases never conflict",
+    "V10 actual AI brakes at red and starts at green for 20 consecutive crossings",
+    "V10 pedestrians complete 20 crossings with shared vehicle clearing protection",
+    "V10 environmental clock pauses with menus and background",
+    "V10 analytic shore and seabed are continuous at the longitude seam",
+    "V10 all protagonists retain normalized weighted bodies and fitted accessories on planet-space actions",
+    "V09 nearby traffic drives and pedestrians translate with walking animations over four seconds",
+    "V09 hair and clothing remain attached to their intended bones through idle walk sprint",
+    "V09 three island centers are land with sea gaps, a sandy beach and a walkable pier",
+    "V09 swept walking stops at the shoreline while preserving land movement",
+    "V09 every landmark has a clear reachable arrival without resetting money or weapons",
+    "V09 sphinx sculpture and casino have solid collision and swept approach",
+    "V09 tailored clothing retains normalized weighted anatomy and a local palm pattern",
+    "V09 scenic travel requires leaving the active vehicle",
+    "V09 offline atlas and three destination controls are embedded below 10 MB",
+    "V08 pedestrians stop at parked vehicle bodies instead of walking through them",
+    "V08 armed walking animates legs while keeping the same weighted body",
+    "V08 repeated animation transitions settle without accumulating active actions",
+    "V08 canopy capsule permits walking underneath but blocks a jumping head",
+    "V08 height-aware depenetration repairs an existing wall overlap",
+    "V08 tank has tracks turret speed cap safe boarding and exit",
+    "V08 tank swept hull cannot tunnel through a thin wall",
+    "V08 opaque city uses a shared atlas and cached signs",
+    "V08 NPC styles retain different painted weighted surfaces with one body draw",
+    "V08 offline loader and swipeable tank fleet are embedded in a small file",
+    "authored CC0 humanoids keep one mesh and bounded finite deformation for idle walk sprint",
+    "all three districts and return trips have nearby cars and pedestrians immediately",
+    "population simulation remains finite after returning to the second district",
+    "300-second day begins 08:00 and includes sunset night dawn then loops",
+    "solar clock advances during play and pauses in menus and background, new start resets morning",
+    "adaptive rendering never shrinks below one CSS pixel per canvas pixel",
+    "offline build stays below 10 MB and embeds rig fabric inventory and source credit",
+    "full sphere reaches both poles with no open ground edge",
+    "every street connects to one road network",
+    "three city styles coexist without rebuilding scenes",
+    "one great-circle circuit closes without a map boundary",
+    "travel crosses the north pole continuously",
+    "adult head proportion, knees and elbows, weapon attached to hand",
+    "swept walking collision stops at a thin wall",
+    "high-speed car rebounds instead of tunnelling through a wall",
+    "player cannot walk through parked car body",
+    "initial overlaps are repaired outside obstacles",
+    "screen click locks a visible civilian and equips pistol",
+    "weapon and radio wheels select and close",
+    "taxi passenger walks to door without clipping then rides and exits for payment",
+    "helicopter takeoff, hover, horizontal flight, landing and safe exit",
+    "helicopter fuselage and rotor footprint cannot cross buildings",
+    "helicopter delivery has a start, landing condition and reward",
+    "six race checkpoints complete with a reward",
+    "local save round-trips money and activity results",
+    "joystick screen-right and outer-ring running remain correct",
+    "camera stays outside the planet surface",
+    "civilian capsules separate rather than overlap",
+    "flight camera frames helicopter and nearby city ground",
+    "muzzle is clamped before a wall so shots cannot start beyond it",
+    "cancelling an occupied taxi order releases rider and clears the fare",
+    "single-file download has no remote script or texture requirement",
+    "RPG destroys a vehicle with persistent burned wreck, smoke, fire and collision",
+    "destroyed occupied car ejects player safely and supports resource cleanup",
+    "explosion particles have a fixed allocation limit and all expire",
+    "portrait globe fits fully, rotates finitely and restores street fog and camera",
+    "classic minimap queries local cached road segments and draws an opaque player",
+    "long stalled animation frame is capped at three swept physics steps",
+    "coastal awnings stop the camera while the character stays in frame",
+    "eight weapon and eight radio sectors can all be selected by dragging",
+    "katana uses melee damage, infinite ammo and temporary non-graphic effects",
+    "rocket impacts a thin wall and cannot damage civilians through it",
+    "rocket flies to an actor then produces knockdown and comic impact",
+    "new firearms consume correct ammunition and use finite hand-mounted muzzles",
+    "two Ferrari silhouettes have wheels, bespoke bodies and stronger drivetrain",
+    "dense neighboring buildings retain non-overlapping collision footprints",
+    "fighter boards, takes off, cruises, stays boarded aloft, lands and exits",
+    "fighter swept collision blocks the fuselage at buildings",
+    "parked fighter body blocks the walking capsule and allows clear space",
+    "all six radio arrangements have valid chords, drums and four sections",
+    "offline package embeds three portraits, song import and release checklist"
+  ]
+}
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

@@ -1,0 +1,13 @@
+{
+  "name": "侠盗自由城",
+  "version": "0.11.0",
+  "entry": "index.html",
+  "runtime": "H5 DOM/WebGL/WebAudio",
+  "bytes": 2998319,
+  "sha256": "14bdb6cb5b22bd199a9f3c43a0ec00bd57b7aa8a541d3394083347a261bb4cf0",
+  "offlineAssetsEmbedded": true,
+  "platformSDKIntegrated": false,
+  "uploadFormatConfirmed": false,
+  "requiredInput": "小红书上传页面链接或官方开发文档；H5 小工具与小游戏工具所需工程格式不同",
+  "uploadReady": false
+}

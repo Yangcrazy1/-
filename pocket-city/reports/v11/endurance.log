@@ -1,0 +1,12 @@
+{"elapsed": 35.16, "phase": "walk", "calls": 174, "geometries": 249, "textures": 48, "heap": 342000000}
+{"elapsed": 66.39, "phase": "walk", "calls": 203, "geometries": 281, "textures": 70, "heap": 342000000}
+{"elapsed": 97.26, "phase": "walk", "calls": 218, "geometries": 290, "textures": 70, "heap": 342000000}
+{"elapsed": 127.67, "phase": "walk", "calls": 218, "geometries": 290, "textures": 70, "heap": 342000000}
+{"elapsed": 158.04, "phase": "walk", "calls": 215, "geometries": 290, "textures": 70, "heap": 342000000}
+{"elapsed": 180.35, "phase": "walk", "calls": 226, "geometries": 290, "textures": 70, "heap": 342000000}
+{"elapsed": 213.59, "phase": "car", "calls": 198, "geometries": 544, "textures": 99, "heap": 342000000}
+{"elapsed": 243.87, "phase": "car", "calls": 285, "geometries": 782, "textures": 146, "heap": 342000000}
+{"elapsed": 274.14, "phase": "car", "calls": 289, "geometries": 796, "textures": 150, "heap": 342000000}
+{"elapsed": 304.44, "phase": "car", "calls": 314, "geometries": 831, "textures": 151, "heap": 342000000}
+{"elapsed": 334.95, "phase": "car", "calls": 327, "geometries": 849, "textures": 155, "heap": 342000000}
+{"elapsed": 362.17, "phase": "car", "calls": 301, "geometries": 850, "textures": 156, "heap": 342000000}
