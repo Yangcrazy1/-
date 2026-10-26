@@ -1,0 +1,84 @@
+[
+  {
+    "build": "Single HTML",
+    "seconds": 604.62,
+    "phases": [
+      {
+        "mode": "walk",
+        "average_fps": 2.471634522457993,
+        "p95_render_interval_ms": 583.3000000000029,
+        "frames": 445
+      },
+      {
+        "mode": "car",
+        "average_fps": 3.1045293361361113,
+        "p95_render_interval_ms": 499.9000000000233,
+        "frames": 559
+      },
+      {
+        "mode": "heli",
+        "average_fps": 2.728894331886797,
+        "p95_render_interval_ms": 500,
+        "frames": 328
+      },
+      {
+        "mode": "jet",
+        "average_fps": 3.3491649941618156,
+        "p95_render_interval_ms": 466.5999999999767,
+        "frames": 403
+      }
+    ],
+    "begin_memory": {
+      "geometries": 528,
+      "textures": 56
+    },
+    "end_memory": {
+      "geometries": 1455,
+      "textures": 199
+    },
+    "max_draw_calls": 563,
+    "max_triangles": 1095820,
+    "base_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf"
+  },
+  {
+    "build": "MiniTool CSP + SDK mock",
+    "seconds": 604.72,
+    "phases": [
+      {
+        "mode": "walk",
+        "average_fps": 2.7372252642005357,
+        "p95_render_interval_ms": 533.3000000000029,
+        "frames": 493
+      },
+      {
+        "mode": "car",
+        "average_fps": 3.243223464749487,
+        "p95_render_interval_ms": 483.19999999995343,
+        "frames": 585
+      },
+      {
+        "mode": "heli",
+        "average_fps": 2.8655896825443112,
+        "p95_render_interval_ms": 466.70000000001164,
+        "frames": 344
+      },
+      {
+        "mode": "jet",
+        "average_fps": 3.3445315664026447,
+        "p95_render_interval_ms": 499.9000000000233,
+        "frames": 403
+      }
+    ],
+    "begin_memory": {
+      "geometries": 514,
+      "textures": 55
+    },
+    "end_memory": {
+      "geometries": 1337,
+      "textures": 181
+    },
+    "max_draw_calls": 557,
+    "max_triangles": 1097387,
+    "base_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf"
+  }
+]

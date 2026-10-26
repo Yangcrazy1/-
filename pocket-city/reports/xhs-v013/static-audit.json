@@ -1,0 +1,7 @@
+{
+  "upstream": "wenyuanw/xhs-minitool@1e526cba484819a1196196fd542979d53f9b5a55",
+  "errors": [],
+  "warnings": [],
+  "proven_packed_geometry_false_positives": [],
+  "network_rules_unchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "title": "侠盗自由城",
+  "filename": "outlaw-liberty-city-v0.13-xhs-minitool.zip",
+  "bytes": 1403005,
+  "sha256": "5f5aec322f81b8b0f03acd9d68f1598658d343389cfef493bfb284f305032161",
+  "manifest_sha256": "ad6e35b8932d47022953f11e2ad4e9a7b42b50b3f97368f7c112015e1dffe825",
+  "base_html_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+  "root": "index.html + assets/",
+  "files": 12,
+  "uncompressed_bytes": 2512311,
+  "crc": "pass",
+  "rebuild": "byte identical",
+  "entry": "https://creator.xiaohongshu.com/new/red-app",
+  "local_csp_and_mock_sdk_tested": true,
+  "actual_xhs_container_tested": false,
+  "uploaded": false,
+  "review_approved": false
+}

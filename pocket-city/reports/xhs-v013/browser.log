@@ -1,0 +1,5 @@
+Production CSP/native boot and failure feedback PASS
+Layout PASS {'width': 844, 'height': 390}
+Layout PASS {'width': 390, 'height': 844}
+Layout PASS {'width': 360, 'height': 740}
+CSP/browser PASS

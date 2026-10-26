@@ -9,7 +9,7 @@ for name in ['bridge-tests','browser','endurance']:
  if name=='bridge-tests':assert r['bridge_checks']==12 and r['es2017_scripts']==4
 r=json.loads((REPORT/'static-audit.json').read_text());assert not r['errors'] and not r['warnings'] and not r['proven_packed_geometry_false_positives']
 for name,record in manifest['files'].items():
- data=(DIST/name).read_bytes();assert len(data)==record['bytes'] and hashlib.sha256(data).hexdigest()==record['sha256']
+ data=(DIST/name).read_bytes();assert all(marker not in data for marker in [b'__BAY_QA10__',b'__XHS_CALLS__',b'__RENDER_INTERVALS10__']);assert len(data)==record['bytes'] and hashlib.sha256(data).hexdigest()==record['sha256']
 # A second build must reproduce the manifest and every file exactly.
 subprocess.run(['python3','build.py'],cwd=BASE,check=True,capture_output=True);assert (REPORT/'build.json').read_bytes()==manifest_bytes,'Platform rebuild differed'
 allowed={'.html','.css','.js','.json','.png','.jpg','.jpeg','.webp','.svg','.gif','.woff','.woff2'}

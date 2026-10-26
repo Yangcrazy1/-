@@ -1,0 +1,60 @@
+{
+  "title": "侠盗自由城",
+  "version": "0.13.0-xhs",
+  "base_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+  "upload_entry": "https://creator.xiaohongshu.com/new/red-app",
+  "format": "MiniTool offline HTML/CSS/classic JS ZIP",
+  "bridge": "Injected window.xhs.miniTool; no app credentials bundled",
+  "files": {
+    "assets/2a6cd9f1e78061.jpg": {
+      "bytes": 130779,
+      "sha256": "2a6cd9f1e78061456c168794eaab68691c91df5a0d66c84c3868302e9c5e069d"
+    },
+    "assets/bc7a6b0bc8488d.jpg": {
+      "bytes": 139423,
+      "sha256": "bc7a6b0bc8488dc1d3d82de061c12715a6027575f49aac7be27c80bb2a40699b"
+    },
+    "assets/bridge.js": {
+      "bytes": 5114,
+      "sha256": "ef4fa96c962b8600f0a402c51f90730679422ef2f87a873fd8f55a369643377f"
+    },
+    "assets/cd893ab8c16ab3.jpg": {
+      "bytes": 221324,
+      "sha256": "cd893ab8c16ab3b01f5ef30c035906fc2f4030c5631e2dbe1543ef5469bdc589"
+    },
+    "assets/credits.json": {
+      "bytes": 1493,
+      "sha256": "98c6d76075c6b3c412d06c9e995bc71c5e005c9defd4d6a4e09fd1c2ae163b6c"
+    },
+    "assets/d9f4a3b05a5373.jpg": {
+      "bytes": 150557,
+      "sha256": "d9f4a3b05a5373aa79c6cb353bb8b3b9eb66f34f258d7b4833db0f6a920bf90c"
+    },
+    "assets/engine.js": {
+      "bytes": 538933,
+      "sha256": "b1c7ed85b1fa8bc119e324554d72160b881b32d89b585272352ecaade81a96b1"
+    },
+    "assets/game.js": {
+      "bytes": 1224526,
+      "sha256": "d6e87d9cedb9b403205535781e44c5dad31663c5815cb53a9a5c8a26934fcfcc"
+    },
+    "assets/icon.svg": {
+      "bytes": 417,
+      "sha256": "ed040d25693ad950ea3acf3626944d8b3410aa6e89ca7a92ec8bb673934ea435"
+    },
+    "assets/loader.js": {
+      "bytes": 1198,
+      "sha256": "c954a6b35a6d79470d9417d5b43a26f34daf2c06e1ae6fb4367f86306fe8c5ee"
+    },
+    "assets/styles.css": {
+      "bytes": 70788,
+      "sha256": "ad41a6f59e3f368a1307a97bc6e72c54f8e19c1e966a74faef443681f72af5b1"
+    },
+    "index.html": {
+      "bytes": 27759,
+      "sha256": "e73641bb57bc17dc5917a0dbb5119f8b526ee25f7d24e8f082c845d0d7b9fbf2"
+    }
+  },
+  "containerTested": false,
+  "reviewApproved": false
+}

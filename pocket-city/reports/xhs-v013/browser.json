@@ -1,0 +1,452 @@
+{
+  "manifest_sha256": "ad6e35b8932d47022953f11e2ad4e9a7b42b50b3f97368f7c112015e1dffe825",
+  "environment": "Linux Chromium / SwiftShader; not a real Xiaohongshu client",
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self'; connect-src 'none'; worker-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'",
+  "production_boot": {
+    "game": {
+      "started": false,
+      "menuOpen": false,
+      "city": 0,
+      "character": 1,
+      "weapon": 0,
+      "ammo": Infinity,
+      "inCar": false,
+      "car": null,
+      "player": {
+        "lat": -0.34498444205322365,
+        "lon": -0.3826884078259817,
+        "heading": -1.536104840683952,
+        "position": [
+          -36.60437456715993,
+          90.93500619314948,
+          -35.2260554163948
+        ],
+        "speed": 0,
+        "jumpHeight": 0
+      },
+      "cash": 7777,
+      "health": 100,
+      "wanted": 0,
+      "missionStage": 3,
+      "driveDistance": 0,
+      "targetHits": 0,
+      "stolenCount": 0,
+      "orbit": false,
+      "cars": 106,
+      "pedestrians": 298,
+      "buildings": 320,
+      "targets": 4,
+      "nearestCar": null,
+      "aimTarget": null,
+      "renderer": {
+        "frame": 3,
+        "calls": 4,
+        "triangles": 10154,
+        "points": 0,
+        "lines": 0
+      },
+      "frame": 2
+    },
+    "storage": {
+      "backend": "native",
+      "version": 9490,
+      "writable": true,
+      "ready": true,
+      "writes": 0,
+      "error": null,
+      "pending": false
+    },
+    "violations": [],
+    "loading": {
+      "opened": 226.19999998807907,
+      "engine": 285.89999997615814,
+      "ready": 3953
+    }
+  },
+  "qa_hooks_not_in_release": true,
+  "native_save": {
+    "record": {
+      "schema": 1,
+      "cash": 7777,
+      "taxiTrips": 2,
+      "raceWins": 1,
+      "flightTrips": 3,
+      "charId": 0,
+      "quality": "流畅"
+    },
+    "calls": [
+      {
+        "key": "pocket-city-v4",
+        "data": {
+          "schema": 1,
+          "cash": 7777,
+          "taxiTrips": 2,
+          "raceWins": 1,
+          "flightTrips": 3,
+          "charId": 0,
+          "quality": "流畅"
+        }
+      }
+    ],
+    "state": {
+      "backend": "native",
+      "version": 9490,
+      "writable": true,
+      "ready": true,
+      "writes": 1,
+      "error": null,
+      "pending": false
+    }
+  },
+  "storage_failure_feedback": "本次进度未保存，退出后可能丢失；后续保存会重试",
+  "production_csp_violations": [],
+  "traffic": {
+    "stopped": 20,
+    "passed": 20
+  },
+  "layouts": [
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "car",
+      "boxes": {
+        "touchEnter": {
+          "x": 774,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 772,
+          "y": 246,
+          "width": 60,
+          "height": 60
+        },
+        "touchJump": {
+          "x": 702,
+          "y": 248,
+          "width": 56,
+          "height": 56
+        },
+        "touchStop": {
+          "x": 702,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "heli",
+      "boxes": {
+        "touchEnter": {
+          "x": 774,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 772,
+          "y": 178,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 702,
+          "y": 180,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 702,
+          "y": 248,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mode": "jet",
+      "boxes": {
+        "touchEnter": {
+          "x": 774,
+          "y": 316,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 772,
+          "y": 178,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 702,
+          "y": 180,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 702,
+          "y": 248,
+          "width": 56,
+          "height": 56
+        },
+        "flightMode": {
+          "x": 700,
+          "y": 112,
+          "width": 132,
+          "height": 48
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "car",
+      "boxes": {
+        "touchEnter": {
+          "x": 320,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 318,
+          "y": 700,
+          "width": 60,
+          "height": 60
+        },
+        "touchJump": {
+          "x": 248,
+          "y": 702,
+          "width": 56,
+          "height": 56
+        },
+        "touchStop": {
+          "x": 248,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "heli",
+      "boxes": {
+        "touchEnter": {
+          "x": 320,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 318,
+          "y": 632,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 248,
+          "y": 634,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 248,
+          "y": 702,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mode": "jet",
+      "boxes": {
+        "touchEnter": {
+          "x": 320,
+          "y": 770,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 318,
+          "y": 632,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 248,
+          "y": 634,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 248,
+          "y": 702,
+          "width": 56,
+          "height": 56
+        },
+        "flightMode": {
+          "x": 246,
+          "y": 566,
+          "width": 132,
+          "height": 48
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "mode": "car",
+      "boxes": {
+        "touchEnter": {
+          "x": 290,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 288,
+          "y": 596,
+          "width": 60,
+          "height": 60
+        },
+        "touchJump": {
+          "x": 218,
+          "y": 598,
+          "width": 56,
+          "height": 56
+        },
+        "touchStop": {
+          "x": 218,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "mode": "heli",
+      "boxes": {
+        "touchEnter": {
+          "x": 290,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 288,
+          "y": 528,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 218,
+          "y": 530,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 218,
+          "y": 598,
+          "width": 56,
+          "height": 56
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "mode": "jet",
+      "boxes": {
+        "touchEnter": {
+          "x": 290,
+          "y": 666,
+          "width": 56,
+          "height": 56
+        },
+        "touchFire": {
+          "x": 288,
+          "y": 528,
+          "width": 60,
+          "height": 60
+        },
+        "touchLiftUp": {
+          "x": 218,
+          "y": 530,
+          "width": 56,
+          "height": 56
+        },
+        "touchLiftDown": {
+          "x": 218,
+          "y": 598,
+          "width": 56,
+          "height": 56
+        },
+        "flightMode": {
+          "x": 216,
+          "y": 462,
+          "width": 132,
+          "height": 48
+        }
+      }
+    }
+  ],
+  "multitouch": {
+    "held": {
+      "x": 0,
+      "y": 0.7777774144732763,
+      "fire": true,
+      "brake": false,
+      "sprint": false,
+      "lift": 1,
+      "menu": false,
+      "weapon": 0,
+      "ammo": Infinity
+    },
+    "released": {
+      "x": 0,
+      "y": 0,
+      "fire": false,
+      "brake": false,
+      "sprint": false,
+      "lift": 0,
+      "menu": false,
+      "weapon": 0,
+      "ammo": Infinity
+    }
+  },
+  "qa_csp_violations": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "external_requests": []
+}

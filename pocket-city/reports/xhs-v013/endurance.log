@@ -1,0 +1,21 @@
+{"elapsed": 32.28, "phase": "walk", "calls": 468, "memory": {"geometries": 542, "textures": 58}}
+{"elapsed": 62.85, "phase": "walk", "calls": 478, "memory": {"geometries": 560, "textures": 60}}
+{"elapsed": 93.14, "phase": "walk", "calls": 462, "memory": {"geometries": 589, "textures": 66}}
+{"elapsed": 124.07, "phase": "walk", "calls": 421, "memory": {"geometries": 597, "textures": 70}}
+{"elapsed": 154.62, "phase": "walk", "calls": 385, "memory": {"geometries": 603, "textures": 72}}
+{"elapsed": 180.14, "phase": "walk", "calls": 392, "memory": {"geometries": 633, "textures": 80}}
+{"elapsed": 211.67, "phase": "car", "calls": 502, "memory": {"geometries": 878, "textures": 107}}
+{"elapsed": 241.92, "phase": "car", "calls": 482, "memory": {"geometries": 964, "textures": 128}}
+{"elapsed": 272.55, "phase": "car", "calls": 452, "memory": {"geometries": 991, "textures": 134}}
+{"elapsed": 302.94, "phase": "car", "calls": 429, "memory": {"geometries": 995, "textures": 134}}
+{"elapsed": 333.43, "phase": "car", "calls": 436, "memory": {"geometries": 995, "textures": 134}}
+{"elapsed": 361.33, "phase": "car", "calls": 414, "memory": {"geometries": 995, "textures": 134}}
+{"elapsed": 393.53, "phase": "heli", "calls": 449, "memory": {"geometries": 1095, "textures": 150}}
+{"elapsed": 424.04, "phase": "heli", "calls": 436, "memory": {"geometries": 1149, "textures": 157}}
+{"elapsed": 454.86, "phase": "heli", "calls": 492, "memory": {"geometries": 1215, "textures": 168}}
+{"elapsed": 482.52, "phase": "heli", "calls": 504, "memory": {"geometries": 1234, "textures": 169}}
+{"elapsed": 514.17, "phase": "jet", "calls": 440, "memory": {"geometries": 1259, "textures": 170}}
+{"elapsed": 544.72, "phase": "jet", "calls": 476, "memory": {"geometries": 1278, "textures": 173}}
+{"elapsed": 575.14, "phase": "jet", "calls": 541, "memory": {"geometries": 1298, "textures": 175}}
+{"elapsed": 603.88, "phase": "jet", "calls": 496, "memory": {"geometries": 1337, "textures": 181}}
+{"seconds": 604.72, "phases": [{"mode": "walk", "actual_seconds": 180.34, "frames": 493, "average_fps": 2.7372252642005357, "p95_render_interval_ms": 533.3000000000029}, {"mode": "car", "actual_seconds": 180.69, "frames": 585, "average_fps": 3.243223464749487, "p95_render_interval_ms": 483.19999999995343}, {"mode": "heli", "actual_seconds": 120.32, "frames": 344, "average_fps": 2.8655896825443112, "p95_render_interval_ms": 466.70000000001164}, {"mode": "jet", "actual_seconds": 120.89, "frames": 403, "average_fps": 3.3445315664026447, "p95_render_interval_ms": 499.9000000000233}], "errors": []}

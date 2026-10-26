@@ -19,7 +19,7 @@ CJ 保持白背心、宽松蓝裤、短发；Tommy 重塑下颌／鼻部、收�
 ## 两个交付格式
 
 - 手机试玩：`outlaw-liberty-city-v0.13-mobile.html`。全部资源内嵌，小于 10,000,000 字节；无需 ZIP。长按 HTTPS 链接下载，用支持本地 HTML / JavaScript / WebGL 的外部浏览器打开。文件管理器预览或 iPhone 文件预览可能不执行脚本，真机本地打开未验证。
-- 小红书小工具：`outlaw-liberty-city-v0.13-xhs-minitool.zip`。针对创作服务平台「小工具」的离线 ZIP 入口，不是普通笔记附件，也不是小程序原生小游戏工程。前往 `https://creator.xiaohongshu.com/new/red-app`，将 ZIP 原样上传，无需解压。平台账号、类目与审核以后台实际提示为准。
+- 小红书小工具：`outlaw-liberty-city-v0.13-xhs-minitool.zip`，1.40 MB。针对创作服务平台「小工具」的离线 ZIP 入口，不是普通笔记附件，也不是小程序原生小游戏工程。前往 `https://creator.xiaohongshu.com/new/red-app`，将 ZIP 原样上传，无需解压。平台账号、类目与审核以后台实际提示为准。
 
 平台版使用外置经典脚本、包内资源、ES2017 / Chrome 61 语法与旧 CSS 回退；不依赖 CDN、eval、内联 JS 或网络。原生 Storage 的版本检测／错误反馈和串行保存保持旧存档字段。平台限制不允许音频文件选择，故保留六套内置合成电台；单 HTML 仍保留本机歌曲导入。平台容器不支持 requestFullscreen，按钮提示旋转手机。无 SDK 的浏览器可用兼容存档；现代 SDK 读失败时保留临时进度并明确提示，避免覆盖未读出的旧档。
 

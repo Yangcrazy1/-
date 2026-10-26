@@ -1,0 +1,13 @@
+PASS Native 9.46+ loads original save schema
+PASS Native reads never overwrite existing data with browser copies
+PASS Missing SDK and unavailable browser storage still allow temporary play
+PASS Unknown and pre-9.46 versions only use compatibility storage
+PASS Async getLaunchOptions version detection uses documented build number
+PASS New native client missing API fails closed without silent browser divergence
+PASS Read rejection or timeout cannot overwrite unread native progress
+PASS Native absence must be confirmed before migrating browser data
+PASS Corrupted stored records remain unmodified
+PASS Queued native mutations preserve latest save without overlapping requests
+PASS Save quota failure retains latest memory record and reports failure
+PASS Invalid schema and unrelated keys cannot modify progress
+{"es2017_scripts":4,"bridge_checks":12,"manifest_sha256":"ad6e35b8932d47022953f11e2ad4e9a7b42b50b3f97368f7c112015e1dffe825"}
