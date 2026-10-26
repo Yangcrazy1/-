@@ -1,0 +1,11 @@
+Scripts "build/three.js" and "build/three.min.js" are deprecated with r150+, and will be removed with r160. Please use ES Modules or alternatives: https://threejs.org/docs/index.html#manual/en/introduction/Installation
+WORLD {"lat":-0.34498444205322365,"lon":-0.3826884078259816,"heading":-1.536104840683952,"car":false,"heli":false,"health":100,"wanted":0,"cash":1992,"taxiTrips":0,"raceWins":0,"flightTrips":0,"roads":52,"buildings":320,"crowd":297,"types":21,"police":12,"job":{"type":"taxi","stage":"seek","completed":0,"aboard":false}}
+[{"id":0,"shoulderEdges":0,"triangles":28082,"vertices":84246,"metadata":{"refined9":true,"wardrobe11":true}},{"id":1,"shoulderEdges":0,"triangles":27794,"vertices":83382,"metadata":{"refined9":true,"wardrobe11":true}},{"id":2,"shoulderEdges":0,"triangles":28022,"vertices":84066,"metadata":{"refined9":true,"wardrobe11":true}}]
+PASS DIAG13 1666ms
+{
+  "passed": 1,
+  "html_sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
+  "checks": [
+    "DIAG13"
+  ]
+}

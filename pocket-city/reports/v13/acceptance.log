@@ -1,0 +1,6 @@
+/workspace/-/pocket-city/scripts-v13/acceptance.py:22: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  im1=Image.open(io.BytesIO(a)).convert('RGB');im2=Image.open(io.BytesIO(b)).convert('RGB');pixels1=list(im1.getdata());pixels2=list(im2.getdata());selected=[i for i,(r,g,bb) in enumerate(pixels1) if i%844<280 and i//844>100 and i//844<330 and g>r*1.13 and bb>r*1.08]
+Water and pooled contacts PASS
+Traffic / night / overview PASS
+Nine layouts PASS
+{"same_camera": true, "water_pixels": {"selected": 54310, "changed": 8733}, "traffic": {"stopped": 20, "passed": 20}, "layouts": 9, "effects_recovered": true, "multi_touch_cancel": true, "pageErrors": [], "consoleErrors": []}

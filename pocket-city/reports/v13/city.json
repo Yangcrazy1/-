@@ -1,0 +1,26 @@
+{
+  "buildings": 320,
+  "districts": [
+    {
+      "id": 0,
+      "count": 102,
+      "medianGap": 1.32397817245424
+    },
+    {
+      "id": 1,
+      "count": 87,
+      "medianGap": 1.248036933772526
+    },
+    {
+      "id": 2,
+      "count": 131,
+      "medianGap": 1.4175354425881581
+    }
+  ],
+  "stats": {
+    "frontages": 276,
+    "infill": 44,
+    "pockets": 16,
+    "reefs": 2
+  }
+}

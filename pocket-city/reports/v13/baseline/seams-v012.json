@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "shoulderEdges": 0,
+    "triangles": 28082,
+    "vertices": 84246,
+    "metadata": {
+      "refined9": true,
+      "wardrobe11": true
+    }
+  },
+  {
+    "id": 1,
+    "shoulderEdges": 0,
+    "triangles": 27794,
+    "vertices": 83382,
+    "metadata": {
+      "refined9": true,
+      "wardrobe11": true
+    }
+  },
+  {
+    "id": 2,
+    "shoulderEdges": 0,
+    "triangles": 28022,
+    "vertices": 84066,
+    "metadata": {
+      "refined9": true,
+      "wardrobe11": true
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "html_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+  "environment": "Linux Chromium; all WebGL contexts deliberately disabled",
+  "state": {
+    "software": true,
+    "groups": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      3,
+      5
+    ],
+    "skin": "956443",
+    "shirt": "f6f3e8",
+    "vertices": 7601
+  },
+  "pageErrors": [],
+  "expected_webgl_failure_messages": [
+    "THREE.WebGLRenderer: Error creating WebGL context."
+  ]
+}

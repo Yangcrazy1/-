@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "weights": true,
+    "normals": true,
+    "maxGap": 0,
+    "vertices": 7601,
+    "triangles": 11802,
+    "clipCount": 8,
+    "shoulderEdges": 0
+  },
+  {
+    "id": 1,
+    "weights": true,
+    "normals": true,
+    "maxGap": 0,
+    "vertices": 7601,
+    "triangles": 11802,
+    "clipCount": 8,
+    "shoulderEdges": 0
+  },
+  {
+    "id": 2,
+    "weights": true,
+    "normals": true,
+    "maxGap": 0,
+    "vertices": 7601,
+    "triangles": 11802,
+    "clipCount": 8,
+    "shoulderEdges": 0
+  }
+]

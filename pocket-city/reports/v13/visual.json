@@ -1,0 +1,457 @@
+{
+  "v012": {
+    "html_sha256": "7d0d1d9245502c607c40b54b09f902fa06d2638bfb6a15506cede29655043dbc",
+    "heroes": [
+      {
+        "id": 0,
+        "pose": "front",
+        "vertices": 84246,
+        "triangles": 28082,
+        "metadata": null
+      },
+      {
+        "id": 0,
+        "pose": "face",
+        "vertices": 84246,
+        "triangles": 28082,
+        "metadata": null
+      },
+      {
+        "id": 0,
+        "pose": "walk",
+        "vertices": 84246,
+        "triangles": 28082,
+        "metadata": null
+      },
+      {
+        "id": 0,
+        "pose": "run-back",
+        "vertices": 84246,
+        "triangles": 28082,
+        "metadata": null
+      },
+      {
+        "id": 1,
+        "pose": "front",
+        "vertices": 83382,
+        "triangles": 27794,
+        "metadata": null
+      },
+      {
+        "id": 1,
+        "pose": "face",
+        "vertices": 83382,
+        "triangles": 27794,
+        "metadata": null
+      },
+      {
+        "id": 1,
+        "pose": "walk",
+        "vertices": 83382,
+        "triangles": 27794,
+        "metadata": null
+      },
+      {
+        "id": 1,
+        "pose": "run-back",
+        "vertices": 83382,
+        "triangles": 27794,
+        "metadata": null
+      },
+      {
+        "id": 2,
+        "pose": "front",
+        "vertices": 84066,
+        "triangles": 28022,
+        "metadata": null
+      },
+      {
+        "id": 2,
+        "pose": "face",
+        "vertices": 84066,
+        "triangles": 28022,
+        "metadata": null
+      },
+      {
+        "id": 2,
+        "pose": "walk",
+        "vertices": 84066,
+        "triangles": 28022,
+        "metadata": null
+      },
+      {
+        "id": 2,
+        "pose": "run-back",
+        "vertices": 84066,
+        "triangles": 28022,
+        "metadata": null
+      }
+    ],
+    "camera": {
+      "road": 5,
+      "index": 306,
+      "offset": [
+        -6.2,
+        3.1,
+        0.35
+      ],
+      "fov": 55
+    },
+    "cities": [
+      {
+        "R": 104,
+        "player": {
+          "lat": -0.34498444205322365,
+          "lon": -0.3826884078259817
+        },
+        "camera": [
+          -31.92334370756363,
+          95.9320766907147,
+          -36.12055892889243
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 30,
+          "calls": 507,
+          "triangles": 1150879,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 650,
+          "textures": 85
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      },
+      {
+        "R": 104,
+        "player": {
+          "lat": 0.31446108621258695,
+          "lon": 2.7832739918001144
+        },
+        "camera": [
+          41.581564438636896,
+          -93.34090164089406,
+          32.94248880549901
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 31,
+          "calls": 435,
+          "triangles": 1110238,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 709,
+          "textures": 93
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      },
+      {
+        "R": 104,
+        "player": {
+          "lat": -0.2912165940309692,
+          "lon": -1.3157230300179312
+        },
+        "camera": [
+          -98.35935866659814,
+          31.7800032663519,
+          -29.021129269657468
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 32,
+          "calls": 521,
+          "triangles": 1150155,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 794,
+          "textures": 114
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      }
+    ]
+  },
+  "v013": {
+    "html_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+    "heroes": [
+      {
+        "id": 0,
+        "pose": "front",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 0,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-0",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 0,
+        "pose": "face",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 0,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-0",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 0,
+        "pose": "walk",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 0,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-0",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 0,
+        "pose": "run-back",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 0,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-0",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 1,
+        "pose": "front",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 1,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-1",
+          "hair": "swept-shell"
+        }
+      },
+      {
+        "id": 1,
+        "pose": "face",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 1,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-1",
+          "hair": "swept-shell"
+        }
+      },
+      {
+        "id": 1,
+        "pose": "walk",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 1,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-1",
+          "hair": "swept-shell"
+        }
+      },
+      {
+        "id": 1,
+        "pose": "run-back",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 1,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-1",
+          "hair": "swept-shell"
+        }
+      },
+      {
+        "id": 2,
+        "pose": "front",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 2,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-2",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 2,
+        "pose": "face",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 2,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-2",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 2,
+        "pose": "walk",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 2,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-2",
+          "hair": "trimmed-shell"
+        }
+      },
+      {
+        "id": 2,
+        "pose": "run-back",
+        "vertices": 7601,
+        "triangles": 11802,
+        "metadata": {
+          "role": 2,
+          "closedShoulders": true,
+          "continuousWeights": true,
+          "head": "sculpted-2",
+          "hair": "trimmed-shell"
+        }
+      }
+    ],
+    "camera": {
+      "road": 5,
+      "index": 306,
+      "offset": [
+        -6.2,
+        3.1,
+        0.35
+      ],
+      "fov": 55
+    },
+    "cities": [
+      {
+        "R": 104,
+        "player": {
+          "lat": -0.34498444205322365,
+          "lon": -0.3826884078259817
+        },
+        "camera": [
+          -31.92334370756363,
+          95.9320766907147,
+          -36.12055892889243
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 28,
+          "calls": 499,
+          "triangles": 1113353,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 646,
+          "textures": 84
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      },
+      {
+        "R": 104,
+        "player": {
+          "lat": 0.31446108621258695,
+          "lon": 2.7832739918001144
+        },
+        "camera": [
+          41.581564438636896,
+          -93.34090164089406,
+          32.94248880549901
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 29,
+          "calls": 427,
+          "triangles": 1070672,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 705,
+          "textures": 92
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      },
+      {
+        "R": 104,
+        "player": {
+          "lat": -0.2912165940309692,
+          "lon": -1.3157230300179312
+        },
+        "camera": [
+          -98.35935866659814,
+          31.7800032663519,
+          -29.021129269657468
+        ],
+        "buildings": 320,
+        "render": {
+          "frame": 30,
+          "calls": 513,
+          "triangles": 1111765,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 790,
+          "textures": 113
+        },
+        "garden": {
+          "trees": 52,
+          "shrubs": 156,
+          "decks": 15,
+          "far": 62
+        }
+      }
+    ]
+  },
+  "errors": []
+}
