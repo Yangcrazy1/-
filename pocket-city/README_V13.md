@@ -48,3 +48,9 @@ python3 scripts-v13/endurance.py
 - 可复核证据：`verification-v13.json`、`reports/v13/`、`reports/xhs-v013/`、`ACCEPTANCE_V13.md`。
 
 本轮真人体、美术、交通、碰撞、旧玩法回归在云端完成。性能目标为中档安卓稳定 30 FPS，云端 SwiftShader 不能证明手机达到目标。没有实体手机与小红书容器，不声明可上线终极成品或审核通过；人物与建筑细节仍与商业参考有差距。
+
+## 最终下载
+
+[手机单 HTML（3.04 MB）](https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-mobile.html) · [小红书小工具上传 ZIP（1.40 MB）](https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-xhs-minitool.zip) · [人物与街区实拍对比](https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-review.html)
+
+两种 HTTPS 地址均返回 200，长度和 SHA 与本地交付文件相同。完整记录见仓库 downloads/outlaw-liberty-city-v0.13-download-verification.json。

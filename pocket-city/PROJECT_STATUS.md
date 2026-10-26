@@ -1,17 +1,20 @@
 # PROJECT STATUS — V0.13 海岛街区 / 肩部与 Tommy 重制 / 小红书适配
 
-- 仓库 `Yangcrazy1/-`，当前分支 `codex/island-characters-v013`，源码提交 `f6e9ef6433714aa8a1c10f35b631a014aa8b5c8e`，工程基线 `c27720a`（V0.12）。现有工作区含本轮小红书适配修改，继续保留；不从旧 ZIP 覆盖。
+- 仓库 `Yangcrazy1/-`，当前分支 `codex/island-characters-v013`，游戏实现提交 `f6e9ef6433714aa8a1c10f35b631a014aa8b5c8e`，工程基线 `c27720a`（V0.12）。现有工作区含本轮小红书适配修改，继续保留；不从旧 ZIP 覆盖。
 - 新参考：用户 `1000117039.jpg`，MINIPOLY 风格海岛建筑、鲜明橙蓝立面、白窗框、蓝屋顶、青蓝海水与金色沙岸。以原创程序化资源重建风格，不提取商业资源。
 - 新约束：人物肩膀出现破面，重做连续肩部网格；改善 Tommy 的头脸、发际线和后梳发型。沿用三位身份、同一动作骨架和全部既有玩法。
 - 同时完成小红书小工具上传包；已找到 creator.xiaohongshu.com/new/red-app 的离线 ZIP 格式，需外置经典脚本、无 eval / 无联网、ES2017 / Chrome 61、原生 Storage 9.46+。格式参考来自公开同步的官方 1.6.0 资料，具体版本及来源将记录在平台目录。
-- 当前进度 98%：实现冻结；98 项逻辑回归通过；三角色 8 套动作肩部接缝间距测得 0，7,601 顶点 / 11,802 三角形；Tommy 头脸／后梳发、CJ 悬浮纹身片已重做／清理。
+- 当前进度 100%：本轮实现、调试、交付与 HTTPS 校验完成；实现冻结；98 项逻辑回归通过；三角色 8 套动作肩部接缝间距测得 0，7,601 顶点 / 11,802 三角形；Tommy 头脸／后梳发、CJ 悬浮纹身片已重做／清理。
 - 软件回退实际测试：主动禁用全部 WebGL 后仍可启动，皮肤／上衣／裤子材质正确分开，无脚本错误；Shader 缺失时不会把身体全部染成衣色。
 - 最终手机 HTML：3,035,963 字节，SHA-256 `b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf`。同镜头实拍与断网启动、横竖屏／滑动／三城景点 smoke 已通过，浏览器无脚本错误。
 - 平台版：12 文件 / 2,512,311 未压缩字节；4 外部经典脚本 ES2017，12 存档桥接检查；上游静态验证器零错误、零警告、零豁免。骨骼 buffer 使用等价 URL-safe base64，避免外链误报。CSS 回退已修复，九组布局此前通过；最终 SHA 完整验收通过；手机 HTML 已完成 604.62 秒持续运行，小红书 ZIP 已完成 604.72 秒独立持续运行。两包均无脚本／Shader 错误；平台版零 CSP 违规与外部请求。
 - 持续运行统计：手机各模式平均 2.47 / 3.10 / 2.73 / 3.35 FPS，平台 2.74 / 3.24 / 2.87 / 3.34 FPS，均为云端 SwiftShader。不能作为安卓达标或两个包性能对比。访问新区域有缓存增长，详见 reports/v13/SUMMARY.md 和两份 endurance.json；未证明无限长运行资源完全收敛。
 - 测试边界：Linux Chromium / WebGL / SwiftShader，原生 SDK 为本地 mock；没有实体安卓、小红书 iOS / Android 容器与后台账号。未上传、未审核，不把模拟测试作为平台通过证明。
 - 交付文件：手机 `outlaw-liberty-city-v0.13-mobile.html` 3,035,963 字节；小红书 `outlaw-liberty-city-v0.13-xhs-minitool.zip` 1,403,005 字节，SHA-256 `5f5aec322f81b8b0f03acd9d68f1598658d343389cfef493bfb284f305032161`。独立／二次重建逐字节一致；ZIP CRC 和上游归档体积检查通过（12 文件、零警告）。
-- 手机下载已在提交 `90182f3afb23a8c7968df96c849cf5cb3af5d3c9` 发布并实际取回验证；下一步发布最终 ZIP 并完成全部 HTTPS 字节核验。
+- 最终交付提交 `ebe574cd667955dc1a62c2402b4edde578fdb2d8`：手机 HTML、实拍对比 HTML、小红书 ZIP 均已发布；GitHub raw 和 raw.githubusercontent.com 两个 HTTPS 地址全部返回 200，实际取回内容逐字节／SHA-256 一致。校验记录 `downloads/outlaw-liberty-city-v0.13-download-verification.json`。
+- 下一步：真实安卓 30 FPS／文件打开及小红书 iOS / Android 容器导入、后台审核；依据实际设备和上传提示继续适配，当前未声称这些项目完成。
+
+[手机单 HTML（3.04 MB）](https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-mobile.html) · [小红书小工具上传 ZIP（1.40 MB）](https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-xhs-minitool.zip) · [人物与街区实拍对比](https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-review.html)
 
 <details><summary>V0.12 交付历史</summary>
 

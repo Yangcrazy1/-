@@ -1,0 +1,84 @@
+{
+  "commit": "ebe574cd667955dc1a62c2402b4edde578fdb2d8",
+  "retrieved_utc": "2026-10-26T02:40:14.578987+00:00",
+  "files": [
+    {
+      "filename": "outlaw-liberty-city-v0.13-mobile.html",
+      "expected_sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+      "attempts": [
+        {
+          "url": "https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-mobile.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-mobile.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 3035963,
+          "sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+          "verified": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-mobile.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-mobile.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 3035963,
+          "sha256": "b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "filename": "outlaw-liberty-city-v0.13-review.html",
+      "expected_sha256": "96a12749a743164ff41927b6e60d0dff987e1cc5e9d9f1adcb7935b1dcf2d142",
+      "attempts": [
+        {
+          "url": "https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-review.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-review.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 1798902,
+          "sha256": "96a12749a743164ff41927b6e60d0dff987e1cc5e9d9f1adcb7935b1dcf2d142",
+          "verified": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-review.html",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-review.html",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "content_disposition": null,
+          "bytes": 1798902,
+          "sha256": "96a12749a743164ff41927b6e60d0dff987e1cc5e9d9f1adcb7935b1dcf2d142",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "filename": "outlaw-liberty-city-v0.13-xhs-minitool.zip",
+      "expected_sha256": "5f5aec322f81b8b0f03acd9d68f1598658d343389cfef493bfb284f305032161",
+      "attempts": [
+        {
+          "url": "https://github.com/Yangcrazy1/-/raw/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-xhs-minitool.zip",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-xhs-minitool.zip",
+          "http_status": 200,
+          "content_type": "application/zip",
+          "content_disposition": null,
+          "bytes": 1403005,
+          "sha256": "5f5aec322f81b8b0f03acd9d68f1598658d343389cfef493bfb284f305032161",
+          "verified": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-xhs-minitool.zip",
+          "resolved_url": "https://raw.githubusercontent.com/Yangcrazy1/-/ebe574cd667955dc1a62c2402b4edde578fdb2d8/downloads/outlaw-liberty-city-v0.13-xhs-minitool.zip",
+          "http_status": 200,
+          "content_type": "application/zip",
+          "content_disposition": null,
+          "bytes": 1403005,
+          "sha256": "5f5aec322f81b8b0f03acd9d68f1598658d343389cfef493bfb284f305032161",
+          "verified": true
+        }
+      ]
+    }
+  ]
+}
