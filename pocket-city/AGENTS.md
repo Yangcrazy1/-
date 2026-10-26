@@ -57,3 +57,11 @@
 - Use atan of tangent length and radial cosine near the player; acos quantizes millimetre offsets in GLSL. Nested preview / PMREM scenes must temporarily disable projection and restore the parent render state.
 - Material projection hooks use a WeakSet because cloned userData flags alone do not prove that a cloned material retained its compile callback. Preserve Canvas fallback for instanced scenery.
 - Browser checks / actual captures / final 600-second endurance live in scripts-v12 and reports/v12; freeze HTML before final evidence. No Android FPS claim from SwiftShader. Deliver single outlaw-liberty-city-v0.12-mobile.html, no playable ZIP.
+
+## V0.13 island art / characters / MiniTool continuation
+
+- User's latest reference is 1000117039.jpg: coral/orange, slate/ocean blue, cream frames, blue roofs, warm sand and clear cyan water. Preserve the compact R=104 cities and V0.12 projection; do not enlarge the map.
+- Edit src-v13 plus required hooks. Heroes use continuous CC0 body topology, canonical duplicate-position skin weights and normals, bind-space painted clothes, and merged shoes. Never reapply the old triangle cutting / hard outline to a coastal13 body. Keep every protagonist's one body through actions.
+- Build scripts-v7/build.py; npm test runs verify-v13.cjs (98 checks, retaining the prior 95). Browser, visual, acceptance and final 600-second evidence live in scripts-v13 and reports/v13; match artifact SHA.
+- User explicitly requested a Xiaohongshu upload package. platform/xhs-minitool targets Creator MiniTool offline ZIP (root index.html and local classic scripts), based on publicly synchronized official 1.6.0 docs. Read its README.md and SOURCES.md. No eval / inline JS / network / Worker / WASM. ES2017 / Chrome 61. Keep native Storage error handling and schema. Do not call local CSP/mock evidence real-container acceptance or review approval.
+- Phone playtest remains a single English-named HTML, no playable ZIP. The separate xhs-minitool ZIP is for platform upload, not for phone unpacking. Publish downloads to the already specified Yangcrazy1/- repository feature branch and verify actual HTTPS bytes. No new host, identity or main-branch push is implied.

@@ -2,8 +2,8 @@ let meleePending10=null;
 // V0.11 restores the V0.9 geometry, hair and bind-space wardrobe unchanged.
 // Never deform a shared body a second time or add a detached shoe shell.
 function refineCharacter10(p,id,npc){
- p.root.userData.ground10=true;if(npc)return;finishWardrobe11(p,id);
- p.figure.userData.fit10={sharedSkeleton:true,bodyUUID:p.figure.uuid,role:id,headStyle:['square-buzz','swept-jaw','mature-brow'][id],geometryBaseline:'v0.9'};
+ p.root.userData.ground10=true;if(npc)return;if(!p.figure.geometry.userData.coastal13)finishWardrobe11(p,id);
+ p.figure.userData.fit10={sharedSkeleton:true,bodyUUID:p.figure.uuid,role:id,headStyle:['square-buzz','swept-jaw','mature-brow'][id],geometryBaseline:p.figure.geometry.userData.coastal13?'continuous-CC0-v13':'v0.9'};
  p.poseState10={speed:0,jump:0,landing:0,sit:0,corrections:new Map()};
 }
 // Smooth authored rotations before contact correction, without changing bind poses.

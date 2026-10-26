@@ -1,0 +1,7 @@
+{
+  "name": "outlaw-liberty-city-xhs-build",
+  "version": "0.13.0",
+  "private": true,
+  "scripts": {"build": "python3 build.py", "check": "node check.cjs"},
+  "devDependencies": {"acorn": "8.15.0", "esbuild": "0.25.5", "three": "0.160.0"}
+}

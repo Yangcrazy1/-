@@ -234,7 +234,7 @@ function makeBuilding(lat,lon,index,headingOverride=null){const g=new THREE.Grou
  if(cityId===0){h=[3.4,3.7,3.3,6.7,5.9,4.8,4.0][kind]+rng()*.6;label=['独栋住宅','修车库','街角商店','红砖公寓','汽车旅馆','带露台住宅','双拼住宅'][kind];}
  else if(cityId===1){h=[8.4,6.1,3.6,9.5,4.3,11.6,4.0][kind]+rng()*.8;label=['装饰艺术酒店','海滨公寓','露天咖啡馆','圆角酒店','海滨别墅','霓虹旅馆','码头商店'][kind];}
  else{h=[15.5,9.6,7.3,5.8,4.5,7.5,3.5][kind]+rng()*2;label=['玻璃办公楼','现代公寓','工业阁楼','汽车展厅','悬挑别墅','停车楼','街区咖啡馆'][kind];}
- buildingKinds.push(label);const facade=materials.facades[index%6],cream=mat(0xe0d8c5),trim=mat(cityId===1?0xb8d8cf:0xa6b8ad),dark=mat(0x3a514f),roof=mat(theme.roof,{roughness:.88}),glass=mat(0x7699a7,{metalness:.45,roughness:.25});const body=box(g,facade,0,h/2,0,w,h,d);
+ buildingKinds.push(label);const facade=materials.facades[index%6],cream=mat(0xf6f1e6),trim=mat(cityId===1?0xb8d8cf:0xa6b8ad),dark=mat(0x3a514f),roof=mat(theme.roof,{roughness:.88}),glass=mat(0x7699a7,{metalness:.45,roughness:.25});const body=box(g,facade,0,h/2,0,w,h,d);
  box(g,cream,0,.14,0,w+.15,.28,d+.15);box(g,roof,0,h+.1,0,w+.18,.20,d+.18);
  const front=d/2+.055;
  if(cityId===0){
@@ -395,7 +395,7 @@ function makeBuildingAsset(lat,lon,index,headingOverride=null){const g=new THREE
  if(cityId===0){h=[3.4,3.7,3.3,6.7,5.9,4.8,4.0][kind]+rng()*.6;label=['独栋住宅','修车库','街角商店','红砖公寓','汽车旅馆','带露台住宅','双拼住宅'][kind];}
  else if(cityId===1){h=[8.4,6.1,3.6,9.5,4.3,11.6,4.0][kind]+rng()*.8;label=['装饰艺术酒店','海滨公寓','露天咖啡馆','圆角酒店','海滨别墅','霓虹旅馆','码头商店'][kind];}
  else{h=[15.5,9.6,7.3,5.8,4.5,7.5,3.5][kind]+rng()*2;label=['玻璃办公楼','现代公寓','工业阁楼','汽车展厅','悬挑别墅','停车楼','街区咖啡馆'][kind];}
- buildingKinds.push(label);const facade=buildingFacade(kind,theme.build[index%6]),cream=mat(0xe0d8c5),trim=mat(cityId===1?0xb8d8cf:0xa6b8ad),dark=mat(0x3a514f),roof=mat(theme.roof,{roughness:.88}),glass=mat(0x7699a7,{metalness:.45,roughness:.25});const body=box(g,facade,0,h/2,0,w,h,d);
+ buildingKinds.push(label);const facade=buildingFacade(kind,theme.build[index%6]),cream=mat(0xf6f1e6),trim=mat(cityId===1?0xb8d8cf:0xa6b8ad),dark=mat(0x3a514f),roof=mat(theme.roof,{roughness:.88}),glass=mat(0x7699a7,{metalness:.45,roughness:.25});const body=box(g,facade,0,h/2,0,w,h,d);
  box(g,cream,0,.14,0,w+.15,.28,d+.15);box(g,roof,0,h+.1,0,w+.18,.20,d+.18);
  const front=d/2+.055;
  if(cityId===0){

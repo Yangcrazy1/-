@@ -1,0 +1,10 @@
+/* Chrome 61 baseline spacing; new clients retain the original enhanced CSS. */
+.xhs-idle #utility7,.xhs-idle #solarLabel7{display:none!important}
+#xhsStorageStatus{font-size:12px;line-height:1.7;padding:8px 10px;color:#426c56;background:#f2eddf;border-radius:8px}
+#xhsStorageStatus[data-warning=true]{color:#8a503e}
+.xhs-no-flex-gap .selectors>button+button{margin-left:6px}
+.xhs-no-flex-gap .utility>button+button{margin-left:4px}
+.xhs-no-flex-gap .quickbar>button+button{margin-left:5px}
+.xhs-no-flex-gap #utility7>button+button{margin-left:6px}
+.xhs-no-flex-gap .tabs>button+button{margin-left:5px}
+.import-button input[hidden]{display:none!important}

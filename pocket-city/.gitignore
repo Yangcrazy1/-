@@ -12,3 +12,7 @@ __pycache__/
 
 reports/v11/endurance-progress.json
 reports/v11/*-partial.json
+
+reports/v13/endurance-progress.json
+reports/v13/*-partial.json
+reports/xhs-v013/endurance-progress.json

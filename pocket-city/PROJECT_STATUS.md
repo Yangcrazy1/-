@@ -1,3 +1,18 @@
+# PROJECT STATUS — V0.13 海岛街区 / 肩部与 Tommy 重制 / 小红书适配
+
+- 当前分支 `codex/island-characters-v013`，工程基线 `c27720a`（V0.12）。现有工作区含本轮小红书适配修改，继续保留；不从旧 ZIP 覆盖。
+- 新参考：用户 `1000117039.jpg`，MINIPOLY 风格海岛建筑、鲜明橙蓝立面、白窗框、蓝屋顶、青蓝海水与金色沙岸。以原创程序化资源重建风格，不提取商业资源。
+- 新约束：人物肩膀出现破面，重做连续肩部网格；改善 Tommy 的头脸、发际线和后梳发型。沿用三位身份、同一动作骨架和全部既有玩法。
+- 同时完成小红书小工具上传包；已找到 creator.xiaohongshu.com/new/red-app 的离线 ZIP 格式，需外置经典脚本、无 eval / 无联网、ES2017 / Chrome 61、原生 Storage 9.46+。格式参考来自公开同步的官方 1.6.0 资料，具体版本及来源将记录在平台目录。
+- 当前进度 78%：实现冻结；98 项逻辑回归通过；三角色 8 套动作肩部接缝间距测得 0，7,601 顶点 / 11,802 三角形；Tommy 头脸／后梳发、CJ 悬浮纹身片已重做／清理。
+- 软件回退实际测试：主动禁用全部 WebGL 后仍可启动，皮肤／上衣／裤子材质正确分开，无脚本错误；Shader 缺失时不会把身体全部染成衣色。
+- 最终手机 HTML：3,035,963 字节，SHA-256 `b35f30af3372f901b3e8590d073f968e0a4fa5cd7663fdbaaebc3fec636a5adf`。同镜头实拍与断网启动、横竖屏／滑动／三城景点 smoke 已通过，浏览器无脚本错误。
+- 平台版：12 文件 / 2,512,311 未压缩字节；4 外部经典脚本 ES2017，12 存档桥接检查；上游静态验证器零错误、零警告、零豁免。骨骼 buffer 使用等价 URL-safe base64，避免外链误报。CSS 回退已修复，九组布局此前通过；最终 SHA 的完整验收和两个 600 秒持续运行正在进行。
+- 测试边界：Linux Chromium / WebGL / SwiftShader，原生 SDK 为本地 mock；没有实体安卓、小红书 iOS / Android 容器与后台账号。未上传、未审核，不把模拟测试作为平台通过证明。
+- 下一步：完成最终 SHA 验收／持续运行，独立重建、ZIP CRC、源码与截图交付，以及 GitHub HTTPS 实际字节校验。
+
+<details><summary>V0.12 交付历史</summary>
+
 # PROJECT STATUS — V0.12 紧凑街景与庭院环境
 
 - 参考会话：`01a16708-2512-71fc-94bc-1e85de06a0a9`。
@@ -44,5 +59,7 @@
 - Delivery status: mobile HTML and comparison HTML published and retrieved over HTTPS with HTTP 200 / exact bytes. Xiaohongshu upload target is still pending user input.
 
 - Main remains d30c042fff4f8bc01324b3d5440ae286463db6e0. Actual HTTPS proof: ../downloads/outlaw-liberty-city-v0.11-download-verification.json. Both download URL forms return text/plain, so long-press / download link may be required. Physical phone opening remains unverified.
+
+</details>
 
 </details>

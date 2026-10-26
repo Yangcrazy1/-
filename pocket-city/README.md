@@ -1,17 +1,15 @@
-# 侠盗自由城 V0.12
+# 侠盗自由城 V0.13
 
-手机离线单 HTML：更小的地图、更紧密的楼间距、连续远景、木庭院和成组植被。
+紧凑海岛三城、橙蓝建筑和白窗框；连续肩部网格与 Tommy 头脸／后梳发型重制。保留全部既有玩法与存档。
 
-- [本轮说明与运行方式](README_V12.md)
-- [验收与已知问题](ACCEPTANCE_V12.md)
-- [实际仓库、分支及测试状态](PROJECT_STATUS.md)
-- [地图与建筑配置](src-v11/config.json)、[水面／材质／交通配置](src-v10/config.json)
-- 源码 `src-v12/` 与原模块兼容钩子；运行 `dist/index.html`。
-- 构建 `npm run build`，语法 `npm run check`，回归 `npm test`（95 项）。
-- 截图、浏览器验收、十分钟云端运行：`reports/v12/`。
+- [本轮说明、手机打开与源码配置](README_V13.md)
+- [验收证据与已知问题](ACCEPTANCE_V13.md)
+- [实际分支、提交与最终交付状态](PROJECT_STATUS.md)
+- [小红书小工具 ZIP 构建与上传说明](platform/xhs-minitool/README.md)
+- [格式资料的精确来源与授权](platform/xhs-minitool/SOURCES.md)
 
-手机文件在仓库根 `downloads/`，使用实际 HTTPS 响应及 SHA-256 校验。保持三城及全部已有玩法。真机性能与文件打开待设备验证；小红书 H5 候选仍需确认上传入口／格式。既有版本文档、CC0／MIT 授权记录继续保留。
+手机试玩是单独的英文文件名 HTML，无需解压；小红书另有离线 ZIP，用于创作服务平台「小工具」入口。最终 HTTPS 下载链接与字节核验记录在项目状态中。没有上传、真实小红书客户端或平台审核的通过声明。
 
-[下载手机单 HTML（3.02 MB）](https://github.com/Yangcrazy1/-/raw/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-mobile.html) · [前后实拍对比 HTML](https://github.com/Yangcrazy1/-/raw/b4b15a6f77a7cbd00302503b2f2450ffdefab736/downloads/outlaw-liberty-city-v0.12-review.html)
+源码 `src-v13/` 与既有兼容钩子，水面／交通配置 `src-v10/config.json`，地图与密度 `src-v11/config.json`。运行 `npm run build`、`npm run check`、`npm test`（98 项）；浏览器与持续运行脚本在 `scripts-v13/`，报告在 `reports/v13/`；平台适配及测试在 `platform/xhs-minitool/`。真实安卓的 30 FPS 目标仍需设备验收。
 
-链接已实际获取并校验长度与 SHA-256。手机可长按下载，使用浏览器打开，无需解压。
+V0.7–V0.12 的文档、许可证、旧下载和报告保留作为历史，不代表当前包的验收。

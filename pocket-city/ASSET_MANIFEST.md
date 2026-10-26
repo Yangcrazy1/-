@@ -51,3 +51,9 @@ V0.11: wardrobe texture painting, continuous neck seams, weighted shoe shells, p
 ## V0.12 original procedural additions
 
 Local street projection and inverse screen picking, instanced distant window facades, wood storefront slats, pergolas, garden deck planks, fence rails, tree / shrub clusters and contact-shadow texture are authored in src-v12. No new external model or texture downloads. Existing CC0 character and MIT engine credits remain unchanged.
+
+## V0.13 processing and platform delivery
+
+Continuous original CC0 skin topology replaces repeatedly clipped hero wardrobe triangles. Coincident bind vertices share normalized weights and normals; shoes remain in the same weighted body. Clothing is painted in bind space in WebGL and uses material groups in Canvas fallback. Tommy's head/face and authored CC0 hair silhouette are resculpted; no commercial GTA / MINIPOLY model was extracted. Island facade textures, white cornices and bridge rails are original procedural art inspired by the user's reference palette.
+
+The separate Xiaohongshu MiniTool package uses a local, tree-shaken Three.js r160 build and an original storage / loading adapter. MIT engine text is retained in its runtime banner and credits JSON. Geometry / animation bytes are unchanged by URL-safe base64 encoding. The format validator is reused from the MIT wenyuanw/xhs-minitool repository with its license, outside the runtime ZIP; see platform/xhs-minitool/SOURCES.md. No external runtime SDK, account credentials, commercial music or remote art is packaged.
